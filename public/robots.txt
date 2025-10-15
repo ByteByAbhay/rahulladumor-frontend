@@ -1,0 +1,39 @@
+# https://www.robotstxt.org/robotstxt.html
+# Robots.txt for Rahul Ladumor - AWS Solutions Architect
+
+User-agent: *
+Allow: /
+
+# Explicitly allow important pages for SEO
+Allow: /about
+Allow: /services
+Allow: /contact
+Allow: /booking
+Allow: /reviews
+Allow: /blogs
+
+# Allow assets and images
+Allow: /assets/
+Allow: /_next/static/
+Allow: /favicon.ico
+Allow: /apple-touch-icon.png
+Allow: /site.webmanifest
+
+# Disallow sensitive areas and build artifacts
+Disallow: /admin/
+Disallow: /.env*
+Disallow: /config/
+Disallow: /build/
+Disallow: /node_modules/
+Disallow: /.next/
+Disallow: /api/
+Disallow: /_next/webpack-hmr
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://www.rahulladumor.in/sitemap.xml
+
+# Host preference (www version)
+Host: https://www.rahulladumor.in

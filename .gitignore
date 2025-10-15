@@ -1,0 +1,14 @@
+.DS_Store
+node_modules
+.idea
+package-lock.json
+.next
+/build
+.vscode/
+.idea/
+vite.config.*s.*
+
+# Environment variables
+.env
+.env.local
+.env.production

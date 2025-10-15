@@ -1,0 +1,33 @@
+{
+  "short_name": "Rahul Ladumor Pro",
+  "name": "Rahul Ladumor Pro - AWS Cloud Consulting & Mentorship",
+  "description": "Reduce AWS costs by 40% while scaling efficiently. Get proven solutions from 3x AWS certified expert.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "assets/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1B365D",
+  "background_color": "#FFFFFF",
+  "categories": ["business", "consulting", "education"],
+  "lang": "en-US",
+  "scope": "/",
+  "id": "rahul-ladumor-pro"
+}

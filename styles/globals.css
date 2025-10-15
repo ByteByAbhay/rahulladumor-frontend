@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Typography with Inter Font */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    @apply bg-background text-text-primary;
+    font-family: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #1a1a1a; /* Softer than pure black */
+  }
+
+  /* Heading Styles - Professional Modern Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5em;
+  }
+
+  h1 {
+    @apply text-6xl md:text-7xl;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-5xl;
+    font-weight: 600;
+  }
+
+  h3 {
+    @apply text-3xl;
+    font-weight: 600;
+  }
+
+  h4 {
+    @apply text-2xl;
+    font-weight: 600;
+  }
+
+  h5 {
+    @apply text-xl;
+    font-weight: 600;
+  }
+
+  h6 {
+    @apply text-lg;
+    font-weight: 600;
+  }
+
+  /* Paragraph Styles */
+  p {
+    /* margin-bottom: 1em; */
+    line-height: 1.6;
+  }
+
+  /* Link Styles */
+  a {
+    @apply text-accent transition-colors duration-200;
+  }
+
+  a:hover {
+    @apply text-primary;
+  }
+
+  /* Strong and Bold */
+  strong, b {
+    font-weight: 600;
+  }
+
+  /* Uppercase Text - Professional Letter Spacing */
+  .uppercase {
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent hover:bg-accent/90 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-surface border border-border rounded-lg shadow-card p-6;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
