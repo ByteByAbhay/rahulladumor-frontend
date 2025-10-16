@@ -34,38 +34,29 @@ jobs:
       - name: Test SSH Connection
         run: ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "echo SSH connection successful"
 
-      # 5️⃣ Create .env file directly on EC2
-      - name: Create Environment File on EC2
-        env:
-          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
-          FRONTEND_BACKEND_API_URL: ${{ secrets.FRONTEND_BACKEND_API_URL }}
-          FRONTEND_CALENDLY_URL: ${{ secrets.FRONTEND_CALENDLY_URL }}
-        run: |
-          # Create frontend .env
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "cat > $DEPLOY_PATH/rahulladumor-frontend/.env" << EOF
-          NEXT_PUBLIC_BACKEND_API_URL=$FRONTEND_BACKEND_API_URL
-          NEXT_PUBLIC_CALENDLY_URL=$FRONTEND_CALENDLY_URL
-          EOF
-
-          echo "✅ Environment file created successfully on EC2"
-
-      # 6️⃣ Deploy to EC2
+      # 5️⃣ Deploy to EC2
       - name: Pull latest code, build and restart frontend service
         run: |
-          ssh -o StrictHostKeyChecking=no -t ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'ENDSSH'
+          ssh -o StrictHostKeyChecking=no -t ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << ENDSSH
             set -e
 
             echo "🚀 Starting frontend deployment..."
             cd ${{ secrets.DEPLOY_PATH }}/rahulladumor-frontend
 
             # Pull latest code
-            OLD_HASH=$(git rev-parse HEAD)
+            OLD_HASH=\$(git rev-parse HEAD)
             git fetch origin
             git reset --hard origin/main
-            NEW_HASH=$(git rev-parse HEAD)
+            NEW_HASH=\$(git rev-parse HEAD)
 
-            if [ "$OLD_HASH" != "$NEW_HASH" ]; then
+            if [ "\$OLD_HASH" != "\$NEW_HASH" ]; then
               echo "Code updated. Installing dependencies..."
+
+              # Create .env file BEFORE build
+              echo "Creating .env file..."
+              echo "NEXT_PUBLIC_BACKEND_API_URL=${{ secrets.FRONTEND_BACKEND_API_URL }}" > .env
+              echo "NEXT_PUBLIC_CALENDLY_URL=${{ secrets.FRONTEND_CALENDLY_URL }}" >> .env
+              echo "✅ Environment file created"
 
               # Install dependencies
               npm install
