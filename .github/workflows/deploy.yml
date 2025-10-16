@@ -1,0 +1,85 @@
+name: Deploy Admin Frontend to EC2
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1️⃣ Configure AWS credentials (optional if you use S3 or AWS CLI)
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      # 2️⃣ Setup SSH
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+
+      # 3️⃣ Add EC2 host to known_hosts
+      - name: Add EC2 host to known_hosts
+        run: |
+          ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+
+      # 4️⃣ Test SSH connection
+      - name: Test SSH Connection
+        run: ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "echo SSH connection successful"
+
+      # 5️⃣ Create .env file directly on EC2
+      - name: Create Environment File on EC2
+        env:
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          FRONTEND_BACKEND_API_URL: ${{ secrets.FRONTEND_BACKEND_API_URL }}
+          FRONTEND_CALENDLY_URL: ${{ secrets.FRONTEND_CALENDLY_URL }}
+        run: |
+          # Create frontend .env
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "cat > $DEPLOY_PATH/rahulladumor-frontend/.env" << EOF
+          NEXT_PUBLIC_BACKEND_API_URL=$FRONTEND_BACKEND_API_URL
+          NEXT_PUBLIC_CALENDLY_URL=$FRONTEND_CALENDLY_URL
+          EOF
+
+          echo "✅ Environment file created successfully on EC2"
+
+      # 6️⃣ Deploy to EC2
+      - name: Pull latest code, build and restart frontend service
+        run: |
+          ssh -o StrictHostKeyChecking=no -t ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'ENDSSH'
+            set -e
+
+            echo "🚀 Starting frontend deployment..."
+            cd ${{ secrets.DEPLOY_PATH }}/rahulladumor-frontend
+
+            # Pull latest code
+            OLD_HASH=$(git rev-parse HEAD)
+            git fetch origin
+            git reset --hard origin/main
+            NEW_HASH=$(git rev-parse HEAD)
+
+            if [ "$OLD_HASH" != "$NEW_HASH" ]; then
+              echo "Code updated. Installing dependencies..."
+
+              # Install dependencies
+              npm install
+
+              # Build Next.js application
+              echo "Building Next.js application..."
+              npm run build
+
+              # Restart PM2 process for frontend
+              pm2 reload frontend --update-env || pm2 start npm --name frontend -- start
+              pm2 save
+
+              echo "✅ Frontend deployment completed successfully!"
+            else
+              echo "No changes detected. Skipping deployment."
+            fi
+          ENDSSH
