@@ -1,10 +1,12 @@
 import { personalInfo } from "../config/personalInfo";
 import apiEndpoints from "../utils/api/apiEndpoints";
 
+//get backend url 
 const getBackendUrl = () => {
   return process.env.NEXT_PUBLIC_BACKEND_API_URL || "http://localhost:3002";
 };
 
+//fetch profile data
 export const fetchProfileData = async () => {
   try {
     const response = await fetch(`${getBackendUrl()}${apiEndpoints.profile}`, {
@@ -33,6 +35,7 @@ export const fetchProfileData = async () => {
   }
 };
 
+//fetch blogs
 export const fetchBlogs = async () => {
   try {
     const response = await fetch(
