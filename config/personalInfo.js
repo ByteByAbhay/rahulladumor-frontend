@@ -2409,12 +2409,12 @@ export const extendedTestimonials = [
 // Page-specific SEO configurations for unique meta titles
 export const pageSEO = {
   home: {
-    title: "Rahul Ladumor | AWS Solutions Architect & Cloud Expert",
+    title: "Rahul Ladumor | 4x AWS Community Builder | 60% Cost Reduction Specialist",
     description: "4x AWS Community Builder helping startups scale securely and cost-efficiently using AWS serverless and cloud-native architectures.",
     keywords: ["AWS Solutions Architect", "Cloud Expert", "AWS Community Builder", "Serverless Architecture", "Cloud Consulting"],
     canonicalUrl: "https://www.rahulladumor.in/",
     openGraph: {
-      title: "Rahul Ladumor | AWS Solutions Architect & Cloud Expert",
+      title: "Rahul Ladumor | 4x AWS Community Builder | 60% Cost Reduction Specialist",
       description: "4x AWS Community Builder helping startups scale securely and cost-efficiently using AWS serverless and cloud-native architectures.",
       url: "https://www.rahulladumor.in/",
     }
