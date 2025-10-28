@@ -11,13 +11,17 @@ function MetaHead({
   structuredDataType = "all",
 }) {
   const s = seo || {};
+  
+  // Default fallback title if none provided
+  const defaultTitle = "Rahul Ladumor | AWS Expert & Cost Reduction Specialist";
   const fullTitle =
-    titleOverride || (s.title ? `${s.title}${titleSuffix}` : undefined);
-  const desc = s.description || "";
+    titleOverride || (s.title ? `${s.title}${titleSuffix}` : defaultTitle);
+  
+  const desc = s.description || "4x AWS Community Builder specializing in serverless architecture and cloud cost optimization. Helping startups and enterprises reduce AWS costs by 60% while scaling securely.";
   const keywords = Array.isArray(s.keywords)
     ? s.keywords.join(", ")
-    : s.keywords;
-  const canonical = s.canonicalUrl;
+    : s.keywords || "AWS Expert, Cloud Consulting, Cost Optimization, Serverless Architecture, AWS Community Builder";
+  const canonical = s.canonicalUrl || "https://www.rahulladumor.in";
   const og = s.openGraph || {};
   const twitter = s.twitter || {};
   const structured = s.structuredData;
@@ -36,9 +40,9 @@ function MetaHead({
   return (
     <Head>
       {/* Basic Meta Tags */}
-      {fullTitle && <title>{fullTitle}</title>}
-      {desc && <meta name="description" content={desc} />}
-      {keywords && <meta name="keywords" content={keywords} />}
+      <title>{fullTitle}</title>
+      <meta name="description" content={desc} />
+      <meta name="keywords" content={keywords} />
       <meta name="robots" content={robots} />
       <meta
         name="googlebot"
@@ -69,15 +73,9 @@ function MetaHead({
         property="og:site_name"
         content="Rahul Ladumor - AWS Solutions Architect"
       />
-      {og.title || fullTitle ? (
-        <meta property="og:title" content={og.title || fullTitle} />
-      ) : null}
-      {og.description || desc ? (
-        <meta property="og:description" content={og.description || desc} />
-      ) : null}
-      {og.url || canonical ? (
-        <meta property="og:url" content={og.url || canonical} />
-      ) : null}
+      <meta property="og:title" content={og.title || fullTitle} />
+      <meta property="og:description" content={og.description || desc} />
+      <meta property="og:url" content={og.url || canonical} />
       <meta
         property="og:type"
         content={article ? "article" : og.type || "website"}
