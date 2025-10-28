@@ -339,7 +339,7 @@ const ContactSection = ({ profileData }) => {
                       onChange={(e) =>
                         handleInputChange("name", e.target.value)
                       }
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
+                      className="w-full px-4 py-3 bg-white border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200 autofill:bg-white"
                       placeholder="Enter your full name"
                       required
                     />
@@ -355,7 +355,7 @@ const ContactSection = ({ profileData }) => {
                       onChange={(e) =>
                         handleInputChange("email", e.target.value)
                       }
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
+                      className="w-full px-4 py-3 bg-white border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200 autofill:bg-white"
                       placeholder="your.email@company.com"
                       required
                     />
@@ -375,7 +375,7 @@ const ContactSection = ({ profileData }) => {
                         handleInputChange("customSubject", "");
                       }
                     }}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
+                    className="w-full px-4 py-3 bg-white border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
                     required
                   >
                     <option value="">Select a subject</option>
@@ -400,7 +400,7 @@ const ContactSection = ({ profileData }) => {
                         onChange={(e) =>
                           handleInputChange("customSubject", e.target.value)
                         }
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
+                        className="w-full px-4 py-3 bg-white border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200 autofill:bg-white"
                         placeholder="Please specify your subject"
                         required
                       />
@@ -418,7 +418,7 @@ const ContactSection = ({ profileData }) => {
                       handleInputChange("message", e.target.value)
                     }
                     rows={6}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
+                    className="w-full px-4 py-3 bg-white border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
                     placeholder="Tell me about your AWS challenges, goals, or questions. The more details you provide, the better I can help you."
                     required
                   />

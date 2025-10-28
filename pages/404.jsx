@@ -3,16 +3,13 @@ import { useRouter } from "next/router";
 import MainLayout from "../components/ui/MainLayout";
 import MetaHead from "../components/MetaHead";
 import Icon from "../components/AppIcon";
-import { personalInfo as localPersonalInfo } from "../config/personalInfo";
+import { personalInfo as localPersonalInfo, pageSEO } from "../config/personalInfo";
 
 const NotFoundPage = ({ profileData }) => {
   const router = useRouter();
 
-  const seo = {
-    title: "Page Not Found - 404",
-    description: "The page you're looking for doesn't exist. Return to our homepage or explore our services.",
-    keywords: "404, page not found, error"
-  };
+  // Use page-specific SEO for unique meta title
+  const seo = pageSEO.notFound;
 
   const handleGoHome = () => {
     router.push("/");

@@ -5,7 +5,7 @@ import MetaHead from "../components/MetaHead";
 import Icon from "../components/AppIcon";
 import Image from "../components/AppImage";
 import api from "../utils/api/api";
-import { personalInfo as localPersonalInfo } from "../config/personalInfo";
+import { personalInfo as localPersonalInfo, pageSEO } from "../config/personalInfo";
 
 const BlogsPage = ({ profileData }) => {
   const router = useRouter();
@@ -74,17 +74,12 @@ const BlogsPage = ({ profileData }) => {
     fetchBlogs(1, selectedTag, searchQuery);
   };
 
-  const seo = {
-    title: "Tech Articles & Insights",
-    description:
-      "Explore the latest articles, tutorials, and insights from the tech community. Stay updated with trends in JavaScript, React, AWS, and more.",
-    keywords:
-      "tech articles, programming tutorials, javascript, react, aws, web development",
-  };
+  // Use page-specific SEO for unique meta title
+  const seo = pageSEO.blogs;
 
   return (
     <MainLayout profileData={profileData}>
-      <MetaHead seo={seo} titleSuffix=" - Tech Blog" />
+      <MetaHead seo={seo} />
 
       {/* Hero Section */}
       <section id="about" className="py-20 bg-surface">

@@ -1,15 +1,34 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-function MetaHead({ seo, titleOverride, titleSuffix = '' }) {
-  const s = seo || {}
-  const fullTitle = titleOverride || (s.title ? `${s.title}${titleSuffix}` : undefined)
-  const desc = s.description || ''
-  const keywords = Array.isArray(s.keywords) ? s.keywords.join(', ') : s.keywords
-  const canonical = s.canonicalUrl
-  const og = s.openGraph || {}
-  const twitter = s.twitter || {}
-  const structured = s.structuredData
-  const robots = s.robots || 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
+function MetaHead({
+  seo,
+  titleOverride,
+  titleSuffix = "",
+  article = null,
+  breadcrumbs = null,
+}) {
+  const s = seo || {};
+  const fullTitle =
+    titleOverride || (s.title ? `${s.title}${titleSuffix}` : undefined);
+  const desc = s.description || "";
+  const keywords = Array.isArray(s.keywords)
+    ? s.keywords.join(", ")
+    : s.keywords;
+  const canonical = s.canonicalUrl;
+  const og = s.openGraph || {};
+  const twitter = s.twitter || {};
+  const structured = s.structuredData;
+  const robots =
+    s.robots ||
+    "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
+
+  // Default OG image if not provided
+  const defaultOgImage = {
+    url: "https://www.rahulladumor.in/assets/images/profile.avif",
+    width: "1200",
+    height: "630",
+    alt: "Rahul Ladumor - AWS Solutions Architect & Cloud Expert",
+  };
 
   return (
     <Head>
@@ -18,16 +37,19 @@ function MetaHead({ seo, titleOverride, titleSuffix = '' }) {
       {desc && <meta name="description" content={desc} />}
       {keywords && <meta name="keywords" content={keywords} />}
       <meta name="robots" content={robots} />
-      <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+      <meta
+        name="googlebot"
+        content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+      />
       <meta name="bingbot" content="index, follow" />
       <meta name="language" content="English" />
       <meta name="author" content={s.author || "Rahul Ladumor"} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      
+
       {/* Canonical URL */}
       {canonical && <link rel="canonical" href={canonical} />}
-      
+
       {/* Geo Tags */}
       {s.geo && (
         <>
@@ -40,7 +62,10 @@ function MetaHead({ seo, titleOverride, titleSuffix = '' }) {
 
       {/* Open Graph Meta Tags */}
       <meta property="og:locale" content="en_US" />
-      <meta property="og:site_name" content="Rahul Ladumor - AWS Solutions Architect" />
+      <meta
+        property="og:site_name"
+        content="Rahul Ladumor - AWS Solutions Architect"
+      />
       {og.title || fullTitle ? (
         <meta property="og:title" content={og.title || fullTitle} />
       ) : null}
@@ -50,20 +75,71 @@ function MetaHead({ seo, titleOverride, titleSuffix = '' }) {
       {og.url || canonical ? (
         <meta property="og:url" content={og.url || canonical} />
       ) : null}
-      <meta property="og:type" content={og.type || 'website'} />
+      <meta
+        property="og:type"
+        content={article ? "article" : og.type || "website"}
+      />
+
+      {/* Article-specific Open Graph tags */}
+      {article && (
+        <>
+          <meta
+            property="article:published_time"
+            content={article.publishedTime}
+          />
+          <meta
+            property="article:modified_time"
+            content={article.modifiedTime || article.publishedTime}
+          />
+          <meta
+            property="article:author"
+            content={article.author || "Rahul Ladumor"}
+          />
+          <meta
+            property="article:section"
+            content={article.section || "Technology"}
+          />
+          {article.tags &&
+            article.tags.map((tag, index) => (
+              <meta key={index} property="article:tag" content={tag} />
+            ))}
+        </>
+      )}
+
+      {/* Open Graph Images */}
       {Array.isArray(og.images) && og.images[0] ? (
         <>
           <meta property="og:image" content={og.images[0].url} />
           <meta property="og:image:secure_url" content={og.images[0].url} />
-          <meta property="og:image:width" content={og.images[0].width || '1200'} />
-          <meta property="og:image:height" content={og.images[0].height || '630'} />
-          <meta property="og:image:alt" content={og.images[0].alt || fullTitle} />
+          <meta
+            property="og:image:width"
+            content={og.images[0].width || "1200"}
+          />
+          <meta
+            property="og:image:height"
+            content={og.images[0].height || "630"}
+          />
+          <meta
+            property="og:image:alt"
+            content={og.images[0].alt || fullTitle}
+          />
           <meta property="og:image:type" content="image/jpeg" />
         </>
-      ) : null}
+      ) : (
+        <>
+          <meta property="og:image" content={defaultOgImage.url} />
+          <meta property="og:image:secure_url" content={defaultOgImage.url} />
+          <meta property="og:image:width" content={defaultOgImage.width} />
+          <meta property="og:image:height" content={defaultOgImage.height} />
+          <meta property="og:image:alt" content={defaultOgImage.alt} />
+        </>
+      )}
 
       {/* Twitter Card Meta Tags */}
-      <meta name="twitter:card" content={twitter.cardType || 'summary_large_image'} />
+      <meta
+        name="twitter:card"
+        content={twitter.cardType || "summary_large_image"}
+      />
       {twitter.handle && (
         <>
           <meta name="twitter:creator" content={twitter.handle} />
@@ -87,16 +163,23 @@ function MetaHead({ seo, titleOverride, titleSuffix = '' }) {
       <meta name="theme-color" content="#1B365D" />
       <meta name="msapplication-TileColor" content="#1B365D" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent"
+      />
       <meta name="format-detection" content="telephone=no" />
-      
+
       {/* Preconnect for Performance */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="anonymous"
+      />
       <link rel="preconnect" href="https://images.unsplash.com" />
       <link rel="preconnect" href="https://www.google-analytics.com" />
       <link rel="preconnect" href="https://www.googletagmanager.com" />
-      
+
       {/* DNS Prefetch */}
       <link rel="dns-prefetch" href="//linkedin.com" />
       <link rel="dns-prefetch" href="//github.com" />
@@ -105,9 +188,23 @@ function MetaHead({ seo, titleOverride, titleSuffix = '' }) {
 
       {/* Favicon and Icons */}
       <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
       <link rel="manifest" href="/site.webmanifest" />
 
       {/* Structured Data */}
@@ -122,12 +219,57 @@ function MetaHead({ seo, titleOverride, titleSuffix = '' }) {
       {s.additionalStructuredData && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(s.additionalStructuredData) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(s.additionalStructuredData),
+          }}
         />
       )}
+
+      {/* Breadcrumb Structured Data */}
+      {breadcrumbs && breadcrumbs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: breadcrumbs.map((crumb, index) => ({
+                "@type": "ListItem",
+                position: index + 1,
+                name: crumb.name,
+                item: crumb.url,
+              })),
+            }),
+          }}
+        />
+      )}
+
+      {/* Additional SEO Meta Tags */}
+      <meta name="referrer" content="origin-when-cross-origin" />
+      <meta name="color-scheme" content="light dark" />
+      <meta name="creator" content="Rahul Ladumor" />
+      <meta name="publisher" content="Rahul Ladumor" />
+
+      {/* Mobile App Meta Tags */}
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-title" content="Rahul Ladumor" />
+
+      {/* Security Headers */}
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+
+      {/* Verification Tags (add your verification codes) */}
+      {s.googleVerification && (
+        <meta name="google-site-verification" content={s.googleVerification} />
+      )}
+      {s.bingVerification && (
+        <meta name="msvalidate.01" content={s.bingVerification} />
+      )}
+      {s.pinterestVerification && (
+        <meta name="p:domain_verify" content={s.pinterestVerification} />
+      )}
     </Head>
-  )
+  );
 }
 
-export default MetaHead
-
+export default MetaHead;

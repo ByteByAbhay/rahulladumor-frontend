@@ -4,13 +4,14 @@ import BookingSection from '../components/aws-cloud-consulting-mentorship-landin
 import FAQSection from '../components/aws-cloud-consulting-mentorship-landing-page/FAQSection';
 import { fetchProfileData } from '../services/profileService';
 import MetaHead from '../components/MetaHead';
-import { personalInfo as localPersonalInfo } from '../config/personalInfo';
+import { personalInfo as localPersonalInfo, pageSEO } from '../config/personalInfo';
 
 export default function BookingPage({ profileData }) {
-  const seo = profileData?.seo || localPersonalInfo?.seo;
+  // Use page-specific SEO for unique meta title
+  const seo = pageSEO.booking;
   return (
     <MainLayout profileData={profileData}>
-      <MetaHead seo={seo} titleSuffix=" | Book a Call" />
+      <MetaHead seo={seo} />
       <BookingSection profileData={profileData} />
       <FAQSection profileData={profileData} />
     </MainLayout>
