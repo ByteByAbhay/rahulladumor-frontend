@@ -10,14 +10,14 @@ const GoogleAnalytics = () => {
 
   return (
     <>
-      {/* Google tag (gtag.js) */}
+      {/* Google tag (gtag.js) - Deferred for performance */}
       <Script
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
       />
       <Script
         id="google-analytics"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];

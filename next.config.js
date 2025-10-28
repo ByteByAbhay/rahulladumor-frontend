@@ -4,6 +4,15 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
+
+  // Compiler optimizations
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+
+  // Script optimization
+  optimizeFonts: true,
+  swcMinify: true,
   
   // Image optimization
   images: {
