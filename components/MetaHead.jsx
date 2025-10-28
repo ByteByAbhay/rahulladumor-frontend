@@ -1,5 +1,6 @@
 import Head from "next/head";
 import StructuredData from "./StructuredData";
+import AuthorSchema from "./AuthorSchema";
 
 function MetaHead({
   seo,
@@ -9,6 +10,7 @@ function MetaHead({
   breadcrumbs = null,
   includeStructuredData = true,
   structuredDataType = "all",
+  includeAuthorSchema = true, // New prop for E-E-A-T
 }) {
   const s = seo || {};
   
@@ -280,6 +282,14 @@ function MetaHead({
             description: desc,
             breadcrumbs: breadcrumbs,
           }}
+        />
+      )}
+
+      {/* Author Schema for E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) */}
+      {includeAuthorSchema && (
+        <AuthorSchema 
+          type={article ? "article" : "person"}
+          articleData={article}
         />
       )}
     </Head>

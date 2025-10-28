@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Icon from "components/AppIcon";
 import api from "utils/api/api";
 import apiEndpoints from "utils/api/apiEndpoints";
+import { trackContactFormSubmit, trackCTAClick } from "../../utils/ga4Events";
 
 const ContactSection = ({ profileData }) => {
   const personalInfo = profileData || {};
@@ -52,6 +53,7 @@ const ContactSection = ({ profileData }) => {
       description: "Book a time that works for both of us",
       responseTime: "Immediate",
       onclick: () => {
+        trackCTAClick('Schedule Call', 'contact_section');
         window.open(
           process.env.NEXT_PUBLIC_CALENDLY_URL ||
             "https://calendly.com/rahuldladumor/30min",
@@ -98,6 +100,10 @@ const ContactSection = ({ profileData }) => {
       });
 
       console.log("Contact form submitted successfully:", response);
+      
+      // Track successful form submission in GA4
+      trackContactFormSubmit(formData.subject || 'general');
+      
       setIsSubmitted(true);
     } catch (error) {
       console.error("Error submitting contact form:", error);

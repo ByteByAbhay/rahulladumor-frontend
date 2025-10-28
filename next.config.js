@@ -32,7 +32,7 @@ const nextConfig = {
     ],
   },
   
-  // Redirects for old routes
+  // Redirects for old routes and URL consistency
   async redirects() {
     return [
       {
@@ -40,6 +40,12 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Ensure trailing slashes are consistent (optional - remove if you prefer no trailing slash)
+      // {
+      //   source: '/:path*/',
+      //   destination: '/:path*',
+      //   permanent: true,
+      // },
     ]
   },
   

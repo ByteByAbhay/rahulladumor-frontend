@@ -3,6 +3,7 @@ import Icon from "components/AppIcon";
 import RenderHTML from "../ui/RenderHTML";
 import Image from "components/AppImage";
 import { useRouter } from "next/navigation";
+import { trackConsultationBooked, trackCTAClick } from "../../utils/ga4Events";
 
 const HeroSection = ({ profileData }) => {
   const personalInfo = profileData || {};
@@ -42,6 +43,10 @@ const HeroSection = ({ profileData }) => {
   }, []);
 
   const handleBookingClick = () => {
+    // Track consultation booking click in GA4
+    trackConsultationBooked('hero_section');
+    trackCTAClick('Get Free AWS Cost Audit', 'hero_section');
+    
     // Open Calendly in new tab or scroll to booking section
     const calendlyUrl =
       process.env.NEXT_PUBLIC_CALENDLY_URL ||
@@ -62,6 +67,7 @@ const HeroSection = ({ profileData }) => {
   };
 
   const handleTestimonialsClick = () => {
+    trackCTAClick('View Success Stories', 'hero_section');
     router.push("/reviews");
   };
 

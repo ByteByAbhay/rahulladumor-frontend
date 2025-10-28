@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Icon from "components/AppIcon";
+import { trackDiscoveryCallBooked } from "../../utils/ga4Events";
 
 const BookingSection = ({
   calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ||
@@ -31,6 +32,29 @@ const BookingSection = ({
       setIsIframeLoaded(true);
     }, 1000);
   };
+
+  // Listen for Calendly events and track in GA4
+  useEffect(() => {
+    const handleCalendlyEvent = (e) => {
+      if (e.data.event && e.data.event.indexOf('calendly') === 0) {
+        console.log('[Calendly Event]', e.data.event);
+        
+        // Track when event is scheduled
+        if (e.data.event === 'calendly.event_scheduled') {
+          console.log('[GA4] Discovery call booked via Calendly');
+          trackDiscoveryCallBooked('booking_page_calendly');
+        }
+      }
+    };
+
+    // Add event listener for Calendly postMessage events
+    window.addEventListener('message', handleCalendlyEvent);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('message', handleCalendlyEvent);
+    };
+  }, []);
 
   const embedUrl = getEmbedUrl(calendlyUrl);
 

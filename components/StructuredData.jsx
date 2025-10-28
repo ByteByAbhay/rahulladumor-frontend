@@ -252,6 +252,113 @@ const StructuredData = ({ type = 'consulting', pageData = {} }) => {
     };
   };
 
+  const generateLocalBusinessSchema = () => {
+    return {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://www.rahulladumor.in/#localbusiness",
+      "name": "Rahul Ladumor - AWS Cloud Consulting",
+      "alternateName": "A Cloud With Rahul",
+      "image": "https://www.rahulladumor.in/assets/images/profile.avif",
+      "url": "https://www.rahulladumor.in/",
+      "telephone": personalInfo.phone || "+91 958 666 1233",
+      "email": personalInfo.email || "contact@acloudwithrahul.in",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Surat",
+        "addressLocality": "Surat",
+        "addressRegion": "Gujarat",
+        "postalCode": "395007",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "21.1702",
+        "longitude": "72.8311"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        personalInfo.social?.linkedin || "https://www.linkedin.com/in/rahulladumor",
+        personalInfo.social?.github || "https://github.com/Rahulladumor",
+        personalInfo.social?.twitter || "https://twitter.com/Rahul__ladumor",
+        "https://dev.to/rahulladumor",
+        "https://medium.com/@rahulladumor"
+      ],
+      "description": "AWS Solutions Architect & Cloud Consultant helping startups optimize AWS costs, build serverless architectures, and scale AI on AWS. 4x AWS Community Builder with 8+ years of experience.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "50",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "founder": {
+        "@type": "Person",
+        "@id": "https://www.rahulladumor.in/#person",
+        "name": personalInfo.name || "Rahul Ladumor",
+        "jobTitle": "AWS Solutions Architect & Cloud Consultant"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "India"
+        },
+        {
+          "@type": "Country",
+          "name": "United States"
+        },
+        {
+          "@type": "Country",
+          "name": "Worldwide"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AWS Consulting Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AWS Cost Optimization",
+              "description": "Reduce AWS costs by 30-60% through expert optimization"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Serverless Architecture",
+              "description": "Build scalable serverless applications on AWS"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AWS Mentorship",
+              "description": "1-on-1 AWS training and career guidance"
+            }
+          }
+        ]
+      }
+    };
+  };
+
   const getSchemaData = () => {
     const schemas = [];
 
@@ -269,6 +376,10 @@ const StructuredData = ({ type = 'consulting', pageData = {} }) => {
 
     if (type === 'organization' || type === 'all') {
       schemas.push(generateOrganizationSchema());
+    }
+
+    if (type === 'localbusiness' || type === 'all') {
+      schemas.push(generateLocalBusinessSchema());
     }
 
     return schemas;
