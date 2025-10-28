@@ -111,7 +111,7 @@ After deployment, check each page:
 
 ### Before (❌ Issues):
 ```
-All pages: "Rahul Ladumor - AWS Cloud Consulting & Mentorship"
+All pages: "Rahul Ladumor | 4x AWS Community Builder | 60% Cost Reduction Specialist"
 - Duplicate titles across all pages
 - Generic, not keyword-optimized
 - Poor search visibility
