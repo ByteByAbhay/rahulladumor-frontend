@@ -17,8 +17,13 @@ import MetaHead from "../components/MetaHead";
 import { personalInfo as localPersonalInfo, seo as localSeo, pageSEO } from "../config/personalInfo";
 
 export default function HomePage({ profileData, blogs = [] }) {
-  // Use page-specific SEO for unique meta title
-  const seo = pageSEO.home;
+  // Merge page-specific SEO with global verification codes
+  const seo = {
+    ...pageSEO.home,
+    googleVerification: localSeo.googleVerification,
+    bingVerification: localSeo.bingVerification,
+    pinterestVerification: localSeo.pinterestVerification,
+  };
   return (
     <MainLayout profileData={profileData}>
       <MetaHead seo={seo} titleSuffix="" />

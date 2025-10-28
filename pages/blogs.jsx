@@ -5,7 +5,7 @@ import MetaHead from "../components/MetaHead";
 import Icon from "../components/AppIcon";
 import Image from "../components/AppImage";
 import api from "../utils/api/api";
-import { personalInfo as localPersonalInfo, pageSEO } from "../config/personalInfo";
+import { personalInfo as localPersonalInfo, seo as localSeo, pageSEO } from "../config/personalInfo";
 
 const BlogsPage = ({ profileData }) => {
   const router = useRouter();
@@ -74,8 +74,13 @@ const BlogsPage = ({ profileData }) => {
     fetchBlogs(1, selectedTag, searchQuery);
   };
 
-  // Use page-specific SEO for unique meta title
-  const seo = pageSEO.blogs;
+  // Merge page-specific SEO with global verification codes
+  const seo = {
+    ...pageSEO.blogs,
+    googleVerification: localSeo.googleVerification,
+    bingVerification: localSeo.bingVerification,
+    pinterestVerification: localSeo.pinterestVerification,
+  };
 
   return (
     <MainLayout profileData={profileData}>

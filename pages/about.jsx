@@ -3,11 +3,16 @@ import MainLayout from '../components/ui/MainLayout';
 import AboutSection from '../components/aws-cloud-consulting-mentorship-landing-page/AboutSection';
 import { fetchProfileData } from '../services/profileService';
 import MetaHead from '../components/MetaHead';
-import { personalInfo as localPersonalInfo, workExperience as exportedWorkExperience, education as exportedEducation, pageSEO } from '../config/personalInfo';
+import { personalInfo as localPersonalInfo, seo as localSeo, workExperience as exportedWorkExperience, education as exportedEducation, pageSEO } from '../config/personalInfo';
 
 export default function AboutPage({ profileData }) {
-  // Use page-specific SEO for unique meta title
-  const seo = pageSEO.about;
+  // Merge page-specific SEO with global verification codes
+  const seo = {
+    ...pageSEO.about,
+    googleVerification: localSeo.googleVerification,
+    bingVerification: localSeo.bingVerification,
+    pinterestVerification: localSeo.pinterestVerification,
+  };
   return (
     <MainLayout profileData={profileData}>
       <MetaHead seo={seo} />

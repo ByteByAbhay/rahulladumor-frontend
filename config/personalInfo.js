@@ -2044,6 +2044,10 @@ export const seo = {
     ],
     type: "website",
   },
+  // Site Verification Codes
+  googleVerification: "xecud0u9Se_xT3rkV8a9R3IJugrjazdJ4CyFmiHp-f8",
+  bingVerification: "",
+  pinterestVerification: "",
   structuredData: {
     "@context": "https://schema.org",
     "@type": "Person",

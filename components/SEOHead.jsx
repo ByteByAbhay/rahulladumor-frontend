@@ -85,7 +85,7 @@ const SEOHead = ({
             <meta name="msapplication-starturl" content="/" />
             
             {/* Professional Verification */}
-            <meta name="google-site-verification" content="" />
+            <meta name="google-site-verification" content="xecud0u9Se_xT3rkV8a9R3IJugrjazdJ4CyFmiHp-f8" />
             <meta name="msvalidate.01" content="" />
             <meta name="yandex-verification" content="" />
 

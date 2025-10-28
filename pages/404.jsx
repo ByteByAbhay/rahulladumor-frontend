@@ -3,13 +3,18 @@ import { useRouter } from "next/router";
 import MainLayout from "../components/ui/MainLayout";
 import MetaHead from "../components/MetaHead";
 import Icon from "../components/AppIcon";
-import { personalInfo as localPersonalInfo, pageSEO } from "../config/personalInfo";
+import { personalInfo as localPersonalInfo, seo as localSeo, pageSEO } from "../config/personalInfo";
 
 const NotFoundPage = ({ profileData }) => {
   const router = useRouter();
 
-  // Use page-specific SEO for unique meta title
-  const seo = pageSEO.notFound;
+  // Merge page-specific SEO with global verification codes
+  const seo = {
+    ...pageSEO.notFound,
+    googleVerification: localSeo.googleVerification,
+    bingVerification: localSeo.bingVerification,
+    pinterestVerification: localSeo.pinterestVerification,
+  };
 
   const handleGoHome = () => {
     router.push("/");
