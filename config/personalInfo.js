@@ -2409,97 +2409,97 @@ export const extendedTestimonials = [
 // Page-specific SEO configurations for unique meta titles
 export const pageSEO = {
   home: {
-    title: "Rahul Ladumor | 4x AWS Community Builder | 60% Cost Reduction Specialist",
-    description: "4x AWS Community Builder helping startups scale securely and cost-efficiently using AWS serverless and cloud-native architectures.",
+    title: "Rahul Ladumor | AWS Expert & Cost Reduction Specialist",
+    description: "4x AWS Community Builder specializing in serverless architecture and cloud cost optimization. Helping startups and enterprises reduce AWS costs by 60% while scaling securely with cloud-native solutions. Expert in DevOps, Lambda, and infrastructure automation.",
     keywords: ["AWS Solutions Architect", "Cloud Expert", "AWS Community Builder", "Serverless Architecture", "Cloud Consulting"],
     canonicalUrl: "https://www.rahulladumor.in/",
     openGraph: {
-      title: "Rahul Ladumor | 4x AWS Community Builder | 60% Cost Reduction Specialist",
-      description: "4x AWS Community Builder helping startups scale securely and cost-efficiently using AWS serverless and cloud-native architectures.",
+      title: "Rahul Ladumor | AWS Expert & Cost Reduction Specialist",
+      description: "4x AWS Community Builder specializing in serverless architecture and cloud cost optimization. Helping startups and enterprises reduce AWS costs by 60% while scaling securely with cloud-native solutions.",
       url: "https://www.rahulladumor.in/",
     }
   },
   
   services: {
     title: "AWS Cloud Services | Serverless, DevOps & Cost Optimization",
-    description: "Expert AWS consulting services: serverless architecture, DevOps automation, cost optimization, cloud migration, and AI/ML integration.",
+    description: "Expert AWS consulting services specializing in serverless architecture, DevOps automation, and cost optimization. Get cloud migration support, infrastructure as code implementation, and AI/ML integration for scalable, efficient cloud solutions.",
     keywords: ["AWS Services", "Serverless", "DevOps", "Cost Optimization", "Cloud Migration", "AWS Consulting"],
     canonicalUrl: "https://www.rahulladumor.in/services",
     openGraph: {
       title: "AWS Cloud Services | Serverless, DevOps & Cost Optimization",
-      description: "Expert AWS consulting services: serverless architecture, DevOps automation, cost optimization, cloud migration, and AI/ML integration.",
+      description: "Expert AWS consulting services specializing in serverless architecture, DevOps automation, and cost optimization. Get cloud migration support, infrastructure as code implementation, and AI/ML integration.",
       url: "https://www.rahulladumor.in/services",
     }
   },
   
   about: {
     title: "About Rahul Ladumor | AWS Community Builder & Expert",
-    description: "4x AWS Community Builder with 8+ years experience in cloud architecture, serverless solutions, and helping enterprises scale on AWS.",
+    description: "Meet Rahul Ladumor, 4x AWS Community Builder with 8+ years of experience in cloud architecture and serverless solutions. Passionate about helping startups and enterprises scale efficiently on AWS with proven cost-saving strategies.",
     keywords: ["AWS Community Builder", "Cloud Architect", "AWS Expert", "Serverless Expert", "Cloud Engineer"],
     canonicalUrl: "https://www.rahulladumor.in/about",
     openGraph: {
       title: "About Rahul Ladumor | AWS Community Builder & Expert",
-      description: "4x AWS Community Builder with 8+ years experience in cloud architecture, serverless solutions, and helping enterprises scale on AWS.",
+      description: "Meet Rahul Ladumor, 4x AWS Community Builder with 8+ years of experience in cloud architecture and serverless solutions. Helping startups and enterprises scale efficiently on AWS with proven strategies.",
       url: "https://www.rahulladumor.in/about",
     }
   },
   
   contact: {
     title: "Contact Rahul Ladumor | Hire AWS Cloud Consultant",
-    description: "Get in touch with Rahul Ladumor for AWS cloud consulting, architecture reviews, cost optimization, and serverless solutions.",
+    description: "Ready to optimize your AWS infrastructure? Contact Rahul Ladumor for expert cloud consulting, architecture reviews, cost optimization audits, and serverless solutions. Get personalized guidance for your cloud journey.",
     keywords: ["Contact", "Hire AWS Consultant", "Cloud Consulting", "AWS Expert", "Get in Touch"],
     canonicalUrl: "https://www.rahulladumor.in/contact",
     openGraph: {
       title: "Contact Rahul Ladumor | Hire AWS Cloud Consultant",
-      description: "Get in touch with Rahul Ladumor for AWS cloud consulting, architecture reviews, cost optimization, and serverless solutions.",
+      description: "Ready to optimize your AWS infrastructure? Contact Rahul Ladumor for expert cloud consulting, architecture reviews, cost optimization audits, and serverless solutions. Get personalized guidance.",
       url: "https://www.rahulladumor.in/contact",
     }
   },
   
   booking: {
     title: "Book Consultation | AWS Cloud Solutions by Rahul Ladumor",
-    description: "Schedule a free discovery call to discuss your AWS cloud needs, cost optimization strategies, and serverless architecture solutions.",
+    description: "Schedule a free 30-minute discovery call to discuss your AWS challenges and goals. Get expert insights on cost optimization, serverless architecture, and cloud migration strategies tailored to your business needs.",
     keywords: ["Book Consultation", "AWS Consultation", "Discovery Call", "Cloud Solutions", "Free Consultation"],
     canonicalUrl: "https://www.rahulladumor.in/booking",
     openGraph: {
       title: "Book Consultation | AWS Cloud Solutions by Rahul Ladumor",
-      description: "Schedule a free discovery call to discuss your AWS cloud needs, cost optimization strategies, and serverless architecture solutions.",
+      description: "Schedule a free 30-minute discovery call to discuss your AWS challenges. Get expert insights on cost optimization, serverless architecture, and cloud migration strategies tailored to your needs.",
       url: "https://www.rahulladumor.in/booking",
     }
   },
   
   reviews: {
     title: "Client Reviews | AWS Consulting by Rahul Ladumor",
-    description: "Read testimonials from clients who achieved 60% cost reduction and improved cloud performance with Rahul Ladumor's AWS consulting.",
+    description: "Read real testimonials from satisfied clients who achieved 60% AWS cost reduction and significantly improved cloud performance. Discover how Rahul Ladumor's expert consulting transformed their infrastructure and business outcomes.",
     keywords: ["Client Reviews", "Testimonials", "AWS Consulting Reviews", "Client Success", "Customer Feedback"],
     canonicalUrl: "https://www.rahulladumor.in/reviews",
     openGraph: {
       title: "Client Reviews | AWS Consulting by Rahul Ladumor",
-      description: "Read testimonials from clients who achieved 60% cost reduction and improved cloud performance with Rahul Ladumor's AWS consulting.",
+      description: "Read real testimonials from satisfied clients who achieved 60% AWS cost reduction and improved cloud performance. Discover how Rahul Ladumor's expert consulting transformed their infrastructure.",
       url: "https://www.rahulladumor.in/reviews",
     }
   },
   
   blogs: {
     title: "AWS Insights & Tutorials | Cloud Tips by Rahul Ladumor",
-    description: "Learn AWS best practices, cost-saving tips, and serverless design patterns from 4x AWS Community Builder Rahul Ladumor.",
+    description: "Explore comprehensive AWS tutorials, best practices, and cost-saving strategies from 4x AWS Community Builder Rahul Ladumor. Learn serverless design patterns, DevOps automation, and cloud optimization techniques.",
     keywords: ["AWS Tutorials", "Cloud Tips", "AWS Best Practices", "Serverless Patterns", "AWS Insights"],
     canonicalUrl: "https://www.rahulladumor.in/blogs",
     openGraph: {
       title: "AWS Insights & Tutorials | Cloud Tips by Rahul Ladumor",
-      description: "Learn AWS best practices, cost-saving tips, and serverless design patterns from 4x AWS Community Builder Rahul Ladumor.",
+      description: "Explore comprehensive AWS tutorials, best practices, and cost-saving strategies from 4x AWS Community Builder Rahul Ladumor. Learn serverless design patterns and cloud optimization techniques.",
       url: "https://www.rahulladumor.in/blogs",
     }
   },
   
   notFound: {
     title: "Page Not Found - 404 | Rahul Ladumor",
-    description: "The page you're looking for doesn't exist. Explore our AWS consulting services, cloud solutions, and serverless architecture expertise.",
+    description: "Oops! The page you're looking for doesn't exist. No worries—explore our comprehensive AWS consulting services, cloud cost optimization solutions, and serverless architecture expertise to find what you need.",
     keywords: ["404", "Page Not Found", "AWS Services", "Cloud Consulting", "Serverless Solutions"],
     canonicalUrl: "https://www.rahulladumor.in/404",
     openGraph: {
       title: "Page Not Found - 404 | Rahul Ladumor",
-      description: "The page you're looking for doesn't exist. Explore our AWS consulting services, cloud solutions, and serverless architecture expertise.",
+      description: "Oops! The page you're looking for doesn't exist. Explore our comprehensive AWS consulting services, cloud cost optimization solutions, and serverless architecture expertise to find what you need.",
       url: "https://www.rahulladumor.in/404",
     }
   }
