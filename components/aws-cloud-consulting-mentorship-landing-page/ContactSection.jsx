@@ -119,7 +119,7 @@ const ContactSection = ({ profileData }) => {
               <Icon name="CheckCircle" size={32} color="#38A169" />
             </div>
             <h2 className="text-3xl font-bold text-primary mb-4">
-              Message Sent Successfully! 📧
+              Message Sent Successfully!
             </h2>
             <p className="text-lg text-text-secondary mb-6">
               Thank you for reaching out. I've received your message and will

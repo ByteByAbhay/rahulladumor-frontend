@@ -427,7 +427,7 @@ const AboutSection = ({ profileData }) => {
                 <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4 border-4 border-accent">
                   <Image
                     src={aboutInfo.image || "/assets/images/profile.avif"}
-                    alt={aboutInfo.name}
+                    alt={aboutInfo.name || "Profile"}
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       // Fallback to placeholder if image doesn't exist

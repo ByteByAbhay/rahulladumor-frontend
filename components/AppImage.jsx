@@ -27,6 +27,7 @@ function Image({
       <img
         src={hasError ? "/assets/images/no_image.png" : src}
         alt={alt}
+        loading="lazy"
         className={className}
         onError={handleError}
         {...props}
@@ -40,6 +41,7 @@ function Image({
       <NextImage
         src={src}
         alt={alt}
+        loading="lazy"
         fill
         className={className}
         priority={priority}
@@ -53,6 +55,7 @@ function Image({
     <NextImage
       src={src}
       alt={alt}
+      loading="lazy"
       width={width || 800}
       height={height || 600}
       className={className}

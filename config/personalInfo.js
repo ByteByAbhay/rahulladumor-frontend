@@ -2,78 +2,74 @@
 // This file centralizes all personal information used throughout the portfolio
 
 export const personalInfo = {
-  "social": {
-    "linkedin": "https://linkedin.com/in/rahulladumor",
-    "github": "https://github.com/Rahulladumor",
-    "twitter": "https://twitter.com/Rahul__ladumor"
+  social: {
+    linkedin: "https://linkedin.com/in/rahulladumor",
+    github: "https://github.com/Rahulladumor",
+    twitter: "https://twitter.com/Rahul__ladumor",
   },
-  "experience": {
-    "years": "8+",
-    "companies": "10+",
-    "projects": "50+"
+  experience: {
+    years: "8+",
+    companies: "10+",
+    projects: "50+",
   },
-  "availability": {
-    "status": "open",
-    "types": [
-      "full-time",
-      "contract",
-      "consulting"
-    ],
-    "remote": true,
-    "relocation": true,
-    "preferredRoles": [
+  availability: {
+    status: "open",
+    types: ["full-time", "contract", "consulting"],
+    remote: true,
+    relocation: true,
+    preferredRoles: [
       "Senior Cloud Engineer",
       "Solutions Architect",
       "Technical Lead",
-      "DevOps Engineer"
-    ]
+      "DevOps Engineer",
+    ],
   },
-  "_id": "68e38f7160782e175700efce",
-  "name": "Rahul Ladumor",
-  "title": "4x AWS Community Builder (Serverless) | Serverless Expert | LLM | AI ML",
-  "tagline": "30-70% Cost Reduction Specialist | DevOps & CI/CD Automation | Helping Enterprises Scale with Lambda & Kubernetes",
-  "location": "Surat, Gujarat, India",
-  "timezone": "GMT+5:30",
-  "image": "/assets/images/profile.avif",
-  "email": "contact@acloudwithrahul.in",
-  "phone": "+91-9586661233",
-  "website": "https://www.rahulladumor.in",
-  "metrics": [
+  _id: "68f08f570fbf5f6c0d02c861",
+  mainHeading:
+    '<h1 class="text-3xl md:text-3xl lg:text-4xl font-bold leading-tight tracking-tight">\n                I\'ll Cut Your AWS Bill by\n                <span class="text-accent">60%</span>\n                <span class="text-white">(Guaranteed)</span>\n              </h1>',
+  name: "Rahul Ladumor",
+  title:
+    "4x AWS Community Builder (Serverless) | Serverless Expert | LLM | AI ML",
+  tagline:
+    "30-70% Cost Reduction Specialist | DevOps & CI/CD Automation | Helping Enterprises Scale with Lambda & Kubernetes",
+  location: "Surat, Gujarat, India",
+  timezone: "GMT+5:30",
+  image: "/assets/images/profile.avif",
+  email: "contact@acloudwithrahul.in",
+  phone: "+91 958 666 1233",
+  website: "https://www.rahulladumor.in",
+  metrics: [
     {
-      "value": "60%",
-      "label": "Average Cost Reduction",
-      "_id": "68e38f7160782e175700efcf"
+      value: "60%",
+      label: "Average Cost Reduction",
+      _id: "68f1f1b0763a78c4c5ad31df",
     },
     {
-      "value": "200+",
-      "label": "Engineers Mentored",
-      "_id": "68e38f7160782e175700efd0"
+      value: "200+",
+      label: "Engineers Mentored",
+      _id: "68f1f1b0763a78c4c5ad31e0",
     },
     {
-      "value": "8+",
-      "label": "Years Experience",
-      "_id": "68e38f7160782e175700efd1"
+      value: "8+",
+      label: "Years Experience",
+      _id: "68f1f1b0763a78c4c5ad31e1",
     },
     {
-      "value": "3+",
-      "label": "AWS Certifications",
-      "_id": "68e38f7160782e175700efd2"
-    }
+      value: "3+",
+      label: "AWS Certifications",
+      _id: "68f1f1b0763a78c4c5ad31e2",
+    },
   ],
-  "bio": "<div class=\"space-y-4\">\n    <p class=\"text-gray-800\">\n      Hey, I'm Rahul, <strong>4x AWS Community Builder</strong>, three-time certified, and the guy start-ups call when \"it just needs to <em>WORK (securely)</em> by launch day.\"\n    </p>\n    \n    <div class=\"mt-4\">\n      <p class=\"font-semibold text-gray-900 mb-3\">8 years building micro-service & event-driven stacks:</p>\n      <ul class=\"space-y-2 text-gray-700\">\n        <li>• Architected a <strong>zero-downtime migration</strong> to AWS Lambda + EventBridge that now processes <span class=\"font-medium\">5M orders/mo &lt;200ms</span>.</li>\n        <li>• Hardened fintech APIs with <strong>DevSecOps pipelines</strong> (SCA + DAST) reducing vuln MTTR from <span class=\"font-medium\">14 days → 48 hrs</span>.</li>\n        <li>• Rolled out <strong>IAM least-privilege</strong> and KMS envelope encryption across <span class=\"font-medium\">200+ resources</span>—passed audit first try.</li>\n        <li>• Prototyped an <strong>Agentic-AI workflow</strong> (Bedrock + LangChain) that auto-triages cloud incidents.</li>\n      </ul>\n    </div>\n    \n    <p class=\"text-gray-800 mt-4\">\n      Trusted by <strong>Series A-C startups</strong> & <strong>Fortune 500 companies</strong> for mission-critical cloud transformations. Currently pursuing <em>PG Certificate in Agentic AI from IIT Roorkee</em>.\n    </p>\n  </div>",
-  "valuePropositions": [
+  bio: '<div class="space-y-4">\n    <p class="text-gray-800">\n      Hey, I\'m Rahul, <strong>4x AWS Community Builder</strong>, three-time certified, and the guy start-ups call when "it just needs to <em>WORK (securely)</em> by launch day."\n    </p>\n    \n    <div class="mt-4">\n      <p class="font-semibold text-gray-900 mb-3">8 years building micro-service & event-driven stacks:</p>\n      <ul class="space-y-2 text-gray-700">\n        <li>• Architected a <strong>zero-downtime migration</strong> to AWS Lambda + EventBridge that now processes <span class="font-medium">5M orders/mo &lt;200ms</span>.</li>\n        <li>• Hardened fintech APIs with <strong>DevSecOps pipelines</strong> (SCA + DAST) reducing vuln MTTR from <span class="font-medium">14 days → 48 hrs</span>.</li>\n        <li>• Rolled out <strong>IAM least-privilege</strong> and KMS envelope encryption across <span class="font-medium">200+ resources</span>—passed audit first try.</li>\n        <li>• Prototyped an <strong>Agentic-AI workflow</strong> (Bedrock + LangChain) that auto-triages cloud incidents.</li>\n      </ul>\n    </div>\n    \n    <p class="text-gray-800 mt-4">\n      Trusted by <strong>Series A-C startups</strong> & <strong>Fortune 500 companies</strong> for mission-critical cloud transformations. Currently pursuing <em>PG Certificate in Agentic AI from IIT Roorkee</em>.\n    </p>\n  </div>',
+  valuePropositions: [
     "Cost Optimization Expert: Proven record cutting costs by $100K+ annually through serverless architecture",
     "High Availability Specialist: Achieving 99.99% uptime across multiple production systems",
     "Automation Pioneer: Freeing 100+ engineering hours/month through intelligent automation",
     "Performance Engineer: Reducing deployment times by 70% and latency by 30%",
-    "AI Integration Leader: Boosting development velocity by 60% with AI-powered DevOps"
+    "AI Integration Leader: Boosting development velocity by 60% with AI-powered DevOps",
   ],
-  "languages": [
-    "English (Fluent)",
-    "Hindi (Native)",
-    "Gujarati (Native)"
-  ],
-  "achievements": [
+  languages: ["English (Fluent)", "Hindi (Native)", "Gujarati (Native)"],
+  achievements: [
     "8+ years architecting high-impact web and cloud-native AI-powered solutions",
     "4x AWS Community Builder (Serverless) - Multi-year recognition",
     "Architected zero-downtime migration processing 5M orders/mo <200ms",
@@ -81,23 +77,23 @@ export const personalInfo = {
     "Distinguished Alumni Recognition - 60th Anniversary Celebration",
     "Implemented IAM least-privilege across 200+ resources—passed audit first try",
     "Prototyped Agentic-AI workflow (Bedrock + LangChain) for auto-incident triage",
-    "Currently pursuing PG Certificate in Agentic AI from IIT Roorkee"
+    "Currently pursuing PG Certificate in Agentic AI from IIT Roorkee",
   ],
-  "createdAt": "2025-10-06T09:44:17.159Z",
-  "updatedAt": "2025-10-06T09:44:17.159Z",
-  "__v": 0,
-  "skills": {
-    "_id": "68e38f7160782e175700efd4",
-    "primary": [
+  createdAt: "2025-10-16T06:23:19.860Z",
+  updatedAt: "2025-10-17T07:35:12.966Z",
+  __v: 0,
+  skills: {
+    _id: "68f08f570fbf5f6c0d02c867",
+    primary: [
       "AWS Lambda & Serverless Architecture",
       "Chatbot Development (AWS Lex, Azure Bot Service)",
       "Kubernetes & Container Orchestration",
       "Go (Programming Language)",
       "AI-Powered Cloud Systems Integration",
       "LLM Training & Agentic AI",
-      "Technical Leadership & System Architecture"
+      "Technical Leadership & System Architecture",
     ],
-    "secondary": [
+    secondary: [
       "API Gateway & Microservices",
       "DynamoDB & Database Design",
       "CI/CD Pipeline Optimization",
@@ -105,1502 +101,1554 @@ export const personalInfo = {
       "Real-time Data Processing (5M orders/mo)",
       "Performance Optimization & Cost Reduction (30-70%)",
       "DevSecOps & Security Automation",
-      "Event-Driven Architecture"
+      "Event-Driven Architecture",
     ],
-    "tools": [
+    tools: [
       "AWS (Lambda, EventBridge, ECS/EKS, Bedrock, CDK)",
       "Terraform & CloudFormation (Infrastructure as Code)",
       "Docker & Kubernetes",
       "Node.js, Go, Python, TypeScript",
       "LangChain, AWS Lex, Azure Bot Service",
       "Jest, GitHub Actions, Helm",
-      "ElasticSearch, DynamoDB, GraphQL"
+      "ElasticSearch, DynamoDB, GraphQL",
     ],
-    "createdAt": "2025-10-06T09:44:17.217Z",
-    "updatedAt": "2025-10-06T09:44:17.217Z",
-    "__v": 0
+    createdAt: "2025-10-16T06:23:19.913Z",
+    updatedAt: "2025-10-16T06:23:19.913Z",
+    __v: 0,
   },
-  "certifications": [
+  certifications: [
     {
-      "_id": "68e38f7160782e175700efd8",
-      "name": "Technical Professional",
-      "issuer": "AWS",
-      "year": "2024",
-      "credentialId": "AWS-TP-2024",
-      "level": "Professional",
-      "icon": "Award",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.252Z",
-      "updatedAt": "2025-10-06T09:44:17.252Z"
+      _id: "68f08f570fbf5f6c0d02c86b",
+      name: "Technical Professional",
+      issuer: "AWS",
+      year: "2024",
+      credentialId: "AWS-TP-2024",
+      level: "Professional",
+      icon: "Award",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:19.950Z",
+      updatedAt: "2025-10-16T06:23:19.950Z",
     },
     {
-      "_id": "68e38f7160782e175700efd9",
-      "name": "Cutshort Certified Javascript - Basic",
-      "issuer": "Cutshort",
-      "year": "2024",
-      "credentialId": "CS-JS-2024",
-      "level": "Basic",
-      "icon": "Award",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.252Z",
-      "updatedAt": "2025-10-06T09:44:17.252Z"
+      _id: "68f08f570fbf5f6c0d02c86a",
+      name: "AWS Certified Solutions Architect - Associate",
+      issuer: "Amazon Web Services",
+      year: "2023",
+      credentialId: "AWS-ASA-2023",
+      level: "Associate",
+      icon: "Award",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:19.950Z",
+      updatedAt: "2025-10-16T06:23:19.950Z",
     },
     {
-      "_id": "68e38f7160782e175700efda",
-      "name": "AWS Community Builder (4x)",
-      "issuer": "Amazon Web Services",
-      "year": "2022-Present",
-      "credentialId": "AWS-CB-2022",
-      "level": "Community",
-      "icon": "Award",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.252Z",
-      "updatedAt": "2025-10-06T09:44:17.252Z"
+      _id: "68f08f570fbf5f6c0d02c86d",
+      name: "AWS Community Builder (4x)",
+      issuer: "Amazon Web Services",
+      year: "2022-Present",
+      credentialId: "AWS-CB-2022",
+      level: "Community",
+      icon: "Award",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:19.950Z",
+      updatedAt: "2025-10-16T06:23:19.950Z",
     },
     {
-      "_id": "68e38f7160782e175700efd6",
-      "name": "AWS Certified Developer - Associate",
-      "issuer": "Amazon Web Services",
-      "year": "2023",
-      "credentialId": "AWS-DVA-2023",
-      "level": "Associate",
-      "icon": "Award",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.251Z",
-      "updatedAt": "2025-10-06T09:44:17.251Z"
+      _id: "68f08f570fbf5f6c0d02c86c",
+      name: "Cutshort Certified Javascript - Basic",
+      issuer: "Cutshort",
+      year: "2024",
+      credentialId: "CS-JS-2024",
+      level: "Basic",
+      icon: "Award",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:19.950Z",
+      updatedAt: "2025-10-16T06:23:19.950Z",
     },
     {
-      "_id": "68e38f7160782e175700efd7",
-      "name": "AWS Certified Solutions Architect - Associate",
-      "issuer": "Amazon Web Services",
-      "year": "2023",
-      "credentialId": "AWS-ASA-2023",
-      "level": "Associate",
-      "icon": "Award",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.251Z",
-      "updatedAt": "2025-10-06T09:44:17.251Z"
-    }
+      _id: "68f08f570fbf5f6c0d02c869",
+      name: "AWS Certified Developer - Associate",
+      issuer: "Amazon Web Services",
+      year: "2023",
+      credentialId: "AWS-DVA-2023",
+      level: "Associate",
+      icon: "Award",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:19.949Z",
+      updatedAt: "2025-10-16T06:23:19.949Z",
+    },
   ],
-  "education": [
+  education: [
     {
-      "_id": "68e38f7160782e175700efdc",
-      "institution": "Indian Institute of Technology, Roorkee",
-      "degree": "PG Certificate in Agentic AI, GenAI & Machine Learning",
-      "duration": "May 2025 - February 2026",
-      "location": "Roorkee, India",
-      "gpa": "In Progress",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.317Z",
-      "updatedAt": "2025-10-06T09:44:17.317Z"
+      _id: "68f08f580fbf5f6c0d02c871",
+      institution: "Veer Narmad South Gujarat University",
+      degree: "Master of Science - MS, Information Technology",
+      duration: "2018 - 2020",
+      location: "Surat, Gujarat, India",
+      gpa: "8.7",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.001Z",
+      updatedAt: "2025-10-16T06:23:20.001Z",
     },
     {
-      "_id": "68e38f7160782e175700efdd",
-      "institution": "Veer Narmad South Gujarat University",
-      "degree": "Master of Science - MS, Information Technology",
-      "duration": "2018 - 2020",
-      "location": "Surat, Gujarat, India",
-      "gpa": "8.7",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.317Z",
-      "updatedAt": "2025-10-06T09:44:17.317Z"
+      _id: "68f08f580fbf5f6c0d02c872",
+      institution: "Veer Narmad South Gujarat University",
+      degree: "Bachelor of Science - BS, Information Technology",
+      duration: "2016 - 2018",
+      location: "Surat, Gujarat, India",
+      gpa: "7.4",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.001Z",
+      updatedAt: "2025-10-16T06:23:20.001Z",
     },
     {
-      "_id": "68e38f7160782e175700efde",
-      "institution": "Veer Narmad South Gujarat University",
-      "degree": "Bachelor of Science - BS, Information Technology",
-      "duration": "2016 - 2018",
-      "location": "Surat, Gujarat, India",
-      "gpa": "7.4",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.317Z",
-      "updatedAt": "2025-10-06T09:44:17.317Z"
-    }
+      _id: "68f08f580fbf5f6c0d02c870",
+      institution: "Indian Institute of Technology, Roorkee",
+      degree: "PG Certificate in Agentic AI, GenAI & Machine Learning",
+      duration: "May 2025 - February 2026",
+      location: "Roorkee, India",
+      gpa: "In Progress",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.001Z",
+      updatedAt: "2025-10-16T06:23:20.001Z",
+    },
   ],
-  "services": [
+  services: [
     {
-      "_id": "68e38f7160782e175700efe3",
-      "name": "DevOps Automation & CI/CD",
-      "description": "Implementation of automated deployment pipelines, infrastructure as code, and monitoring solutions to improve development velocity.",
-      "duration": "3-8 weeks",
-      "deliverables": [
+      _id: "68f08f580fbf5f6c0d02c876",
+      name: "DevOps Automation & CI/CD",
+      description:
+        "Implementation of automated deployment pipelines, infrastructure as code, and monitoring solutions to improve development velocity.",
+      duration: "3-8 weeks",
+      deliverables: [
         "CI/CD pipelines",
         "Infrastructure as code",
         "Monitoring dashboards",
-        "Documentation"
+        "Documentation",
       ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.373Z",
-      "updatedAt": "2025-10-06T09:44:17.373Z"
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.045Z",
+      updatedAt: "2025-10-16T06:23:20.045Z",
     },
     {
-      "_id": "68e38f7160782e175700efe4",
-      "name": "Cloud Migration Consulting",
-      "description": "Strategic planning and execution of cloud migration projects with minimal downtime and optimized costs.",
-      "duration": "6-16 weeks",
-      "deliverables": [
-        "Migration strategy",
-        "Risk assessment",
-        "Implementation plan",
-        "Post-migration optimization"
-      ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.373Z",
-      "updatedAt": "2025-10-06T09:44:17.373Z"
-    },
-    {
-      "_id": "68e38f7160782e175700efe5",
-      "name": "Technical Mentorship",
-      "description": "One-on-one mentorship for developers and engineers looking to advance their cloud and DevOps skills.",
-      "duration": "Ongoing",
-      "deliverables": [
-        "Personalized learning plan",
-        "Code reviews",
-        "Career guidance",
-        "Technical interviews prep"
-      ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.373Z",
-      "updatedAt": "2025-10-06T09:44:17.373Z"
-    },
-    {
-      "_id": "68e38f7160782e175700efe1",
-      "name": "AWS Cloud Architecture Review",
-      "description": "Comprehensive assessment of your AWS infrastructure with cost optimization recommendations and security best practices implementation.",
-      "duration": "2-4 weeks",
-      "deliverables": [
+      _id: "68f08f580fbf5f6c0d02c874",
+      name: "AWS Cloud Architecture Review",
+      description:
+        "Comprehensive assessment of your AWS infrastructure with cost optimization recommendations and security best practices implementation.",
+      duration: "2-4 weeks",
+      deliverables: [
         "Architecture assessment report",
         "Cost optimization plan",
         "Security recommendations",
-        "Migration roadmap"
+        "Migration roadmap",
       ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.372Z",
-      "updatedAt": "2025-10-06T09:44:17.372Z"
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.045Z",
+      updatedAt: "2025-10-16T06:23:20.045Z",
     },
     {
-      "_id": "68e38f7160782e175700efe2",
-      "name": "Serverless Application Development",
-      "description": "End-to-end serverless application development using AWS Lambda, API Gateway, and DynamoDB with CI/CD pipeline setup.",
-      "duration": "4-12 weeks",
-      "deliverables": [
+      _id: "68f08f580fbf5f6c0d02c877",
+      name: "Cloud Migration Consulting",
+      description:
+        "Strategic planning and execution of cloud migration projects with minimal downtime and optimized costs.",
+      duration: "6-16 weeks",
+      deliverables: [
+        "Migration strategy",
+        "Risk assessment",
+        "Implementation plan",
+        "Post-migration optimization",
+      ],
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.045Z",
+      updatedAt: "2025-10-16T06:23:20.045Z",
+    },
+    {
+      _id: "68f08f580fbf5f6c0d02c875",
+      name: "Serverless Application Development",
+      description:
+        "End-to-end serverless application development using AWS Lambda, API Gateway, and DynamoDB with CI/CD pipeline setup.",
+      duration: "4-12 weeks",
+      deliverables: [
         "Serverless application",
         "API documentation",
         "Monitoring setup",
-        "Deployment pipeline"
+        "Deployment pipeline",
       ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.372Z",
-      "updatedAt": "2025-10-06T09:44:17.372Z"
-    }
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.045Z",
+      updatedAt: "2025-10-16T06:23:20.045Z",
+    },
+    {
+      _id: "68f08f580fbf5f6c0d02c878",
+      name: "Technical Mentorship",
+      description:
+        "One-on-one mentorship for developers and engineers looking to advance their cloud and DevOps skills.",
+      duration: "Ongoing",
+      deliverables: [
+        "Personalized learning plan",
+        "Code reviews",
+        "Career guidance",
+        "Technical interviews prep",
+      ],
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.045Z",
+      updatedAt: "2025-10-16T06:23:20.045Z",
+    },
   ],
-  "workExperience": [
+  workExperience: [
     {
-      "_id": "68e38f7160782e175700efeb",
-      "company": "NTT",
-      "position": "Senior Software Engineer - Contract",
-      "duration": "Jan 2025 - Mar 2025",
-      "location": "Tokyo, Japan",
-      "description": "Contract engagement focusing on enterprise-grade software solutions and cloud infrastructure development.",
-      "technologies": [
-        "AWS",
-        "Node.js",
-        "Enterprise Systems",
-        "Cloud Infrastructure"
-      ],
-      "achievements": [
-        "Delivered enterprise-grade software solutions",
-        "Implemented scalable cloud infrastructure architectures"
-      ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.460Z",
-      "updatedAt": "2025-10-06T09:44:17.460Z"
-    },
-    {
-      "_id": "68e38f7160782e175700efec",
-      "company": "ProdigyBuild",
-      "position": "Lead Engineer",
-      "duration": "Jul 2023 - Mar 2025",
-      "location": "San Francisco Bay Area",
-      "description": "Designed AWS serverless platforms with AI integration for enhanced development velocity and cost optimization.",
-      "technologies": [
-        "AWS Serverless",
-        "Terraform",
-        "GitOps",
-        "AI Agents",
-        "IaC"
-      ],
-      "achievements": [
-        "Designed AWS serverless platform with 99.99% uptime & 40% cost savings",
-        "Integrated AI agents for code review, boosting dev velocity by 60%",
-        "Built Terraform IaC & GitOps pipelines, reducing release times by 70%"
-      ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.460Z",
-      "updatedAt": "2025-10-06T09:44:17.460Z"
-    },
-    {
-      "_id": "68e38f7160782e175700efed",
-      "company": "ProtectOnce",
-      "position": "SDE-II",
-      "duration": "May 2022 - Aug 2024",
-      "location": "San Francisco Bay Area",
-      "description": "Developed serverless security solutions protecting large user bases with focus on automation and incident reduction.",
-      "technologies": [
-        "Node.js",
-        "AWS Serverless",
-        "Security Automation",
-        "Vulnerability Scanning"
-      ],
-      "achievements": [
-        "Developed serverless security solution in Node.js protecting 100K+ users",
-        "Maintained <1% false-positive rate",
-        "Automated vulnerability scanning & patching, reducing incidents by 80%"
-      ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.460Z",
-      "updatedAt": "2025-10-06T09:44:17.460Z"
-    },
-    {
-      "_id": "68e38f7160782e175700efee",
-      "company": "NDS Global",
-      "position": "Senior Software Developer",
-      "duration": "Aug 2021 - May 2022",
-      "location": "India",
-      "description": "Architected enterprise chatbots and integrated AI solutions with high accuracy rates and significant operational improvements.",
-      "technologies": [
+      _id: "68f08f580fbf5f6c0d02c881",
+      company: "NDS Global",
+      position: "Senior Software Developer",
+      duration: "Aug 2021 - May 2022",
+      location: "India",
+      description:
+        "Architected enterprise chatbots and integrated AI solutions with high accuracy rates and significant operational improvements.",
+      technologies: [
         "AWS Lex",
         "Azure Bot Service",
         "CRM Integration",
-        "AI/ML"
+        "AI/ML",
       ],
-      "achievements": [
+      achievements: [
         "Architected enterprise chatbots using AWS Lex & Azure Bot Service",
         "Achieved 95%+ intent recognition accuracy",
-        "Integrated chatbots into CRM, reducing support workload by 50%"
+        "Integrated chatbots into CRM, reducing support workload by 50%",
       ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.460Z",
-      "updatedAt": "2025-10-06T09:44:17.460Z"
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.095Z",
+      updatedAt: "2025-10-16T06:23:20.095Z",
     },
     {
-      "_id": "68e38f7160782e175700efef",
-      "company": "AppGambit",
-      "position": "Full-Stack Cloud Developer",
-      "duration": "Jan 2020 - Jul 2021",
-      "location": "Surat, India",
-      "description": "Built high-volume real-time systems and communication solutions handling massive daily traffic.",
-      "technologies": [
-        "Node.js",
-        "AWS",
-        "Real-time Systems",
-        "IVR Solutions"
-      ],
-      "achievements": [
-        "Built real-time audit logging system processing 1M+ events/day",
-        "Developed IVR solution handling 100K+ calls/month"
-      ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.460Z",
-      "updatedAt": "2025-10-06T09:44:17.460Z"
-    },
-    {
-      "_id": "68e38f7160782e175700eff0",
-      "company": "Bynebits",
-      "position": "Software Developer",
-      "duration": "Dec 2017 - Jul 2019",
-      "location": "Indore, India",
-      "description": "Developed investment analytics platforms with focus on performance optimization and sub-second query capabilities.",
-      "technologies": [
-        "Node.js",
-        "AWS",
-        "Analytics Platform",
-        "Performance Optimization"
-      ],
-      "achievements": [
-        "Developed RenagatePartner investment analytics platform on Node.js & AWS",
-        "Optimized pipelines for sub-second query performance"
-      ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.460Z",
-      "updatedAt": "2025-10-06T09:44:17.460Z"
-    },
-    {
-      "_id": "68e38f7160782e175700eff1",
-      "company": "Creative Infotech",
-      "position": "Full-Stack Developer",
-      "duration": "Apr 2016 - Sep 2017",
-      "location": "Surat, India",
-      "description": "Built e-commerce applications with real-time features and performance optimization through caching strategies.",
-      "technologies": [
-        "PHP",
-        "CodeIgniter",
-        "E-commerce",
-        "Performance Optimization"
-      ],
-      "achievements": [
-        "Built PHP/CodeIgniter e-commerce app with real-time cart management",
-        "Optimized performance with caching & indexing"
-      ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.460Z",
-      "updatedAt": "2025-10-06T09:44:17.460Z"
-    },
-    {
-      "_id": "68e38f7160782e175700efe7",
-      "company": "ASTM International",
-      "position": "Senior AWS Solution Architect",
-      "duration": "Sep 2025 - Present",
-      "location": "Pennsylvania, United States",
-      "description": "Leading AWS solution architecture for international standards organization, focusing on cloud-native transformations and enterprise-grade infrastructure.",
-      "technologies": [
-        "AWS",
-        "Solutions Architecture",
-        "Cloud Migration",
-        "Enterprise Systems"
-      ],
-      "achievements": [
-        "Architecting enterprise-grade AWS solutions for global standards organization",
-        "Leading cloud transformation initiatives for mission-critical systems"
-      ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.459Z",
-      "updatedAt": "2025-10-06T09:44:17.459Z"
-    },
-    {
-      "_id": "68e38f7160782e175700efe8",
-      "company": "Turing",
-      "position": "LLM Trainer - DevOps | Amazon IAC RLHF Project",
-      "duration": "Jul 2025 - Present",
-      "location": "Remote",
-      "description": "Design, implement, and manage scalable, secure AWS environments using AWS CDK with TypeScript. Translate complex requirements into reusable, testable CDK constructs.",
-      "technologies": [
+      _id: "68f08f580fbf5f6c0d02c87b",
+      company: "Turing",
+      position: "LLM Trainer - DevOps | Amazon IAC RLHF Project",
+      duration: "Jul 2025 - Present",
+      location: "Remote",
+      description:
+        "Design, implement, and manage scalable, secure AWS environments using AWS CDK with TypeScript. Translate complex requirements into reusable, testable CDK constructs.",
+      technologies: [
         "AWS CDK",
         "TypeScript",
         "CloudFormation",
         "Jest",
         "CI/CD",
-        "Infrastructure as Code"
+        "Infrastructure as Code",
       ],
-      "achievements": [
+      achievements: [
         "Designed and deployed AWS infrastructure-as-code solutions with AWS CDK + TypeScript",
         "Migrated legacy/on-prem systems to AWS with secure VPCs and networking",
         "Developed reusable TypeScript constructs with interfaces, classes, and generics",
         "Automated deployments using CDK CLI and integrated with CI/CD pipelines",
-        "Wrote and maintained Jest unit tests ensuring code quality and reliability"
+        "Wrote and maintained Jest unit tests ensuring code quality and reliability",
       ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.459Z",
-      "updatedAt": "2025-10-06T09:44:17.459Z"
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.095Z",
+      updatedAt: "2025-10-16T06:23:20.095Z",
     },
     {
-      "_id": "68e38f7160782e175700efe9",
-      "company": "Freelance | Self-Employed",
-      "position": "Cloud Consultant",
-      "duration": "Mar 2025 - Present",
-      "location": "Surat, Gujarat, India",
-      "description": "AWS Certified Full-Stack JavaScript & Cloud Engineer providing independent consulting for contract engagements and freelance projects. Specialized in serverless architecture and cloud optimization.",
-      "technologies": [
+      _id: "68f08f580fbf5f6c0d02c882",
+      company: "AppGambit",
+      position: "Full-Stack Cloud Developer",
+      duration: "Jan 2020 - Jul 2021",
+      location: "Surat, India",
+      description:
+        "Built high-volume real-time systems and communication solutions handling massive daily traffic.",
+      technologies: ["Node.js", "AWS", "Real-time Systems", "IVR Solutions"],
+      achievements: [
+        "Built real-time audit logging system processing 1M+ events/day",
+        "Developed IVR solution handling 100K+ calls/month",
+      ],
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.095Z",
+      updatedAt: "2025-10-16T06:23:20.095Z",
+    },
+    {
+      _id: "68f08f580fbf5f6c0d02c87c",
+      company: "Freelance | Self-Employed",
+      position: "Cloud Consultant",
+      duration: "Mar 2025 - Present",
+      location: "Surat, Gujarat, India",
+      description:
+        "AWS Certified Full-Stack JavaScript & Cloud Engineer providing independent consulting for contract engagements and freelance projects. Specialized in serverless architecture and cloud optimization.",
+      technologies: [
         "AWS Lambda",
         "Serverless Framework",
         "Node.js",
         "React",
         "DevOps",
-        "Infrastructure as Code"
+        "Infrastructure as Code",
       ],
-      "achievements": [
+      achievements: [
         "Cut client costs by $100K+ annually through serverless architecture",
         "Achieved 99.99% uptime across multiple client systems",
         "Freed 100+ engineering hours per month through automation",
-        "Delivered cloud architecture and full-stack solutions globally"
+        "Delivered cloud architecture and full-stack solutions globally",
       ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.459Z",
-      "updatedAt": "2025-10-06T09:44:17.459Z"
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.095Z",
+      updatedAt: "2025-10-16T06:23:20.095Z",
     },
     {
-      "_id": "68e38f7160782e175700efea",
-      "company": "Topmate.io",
-      "position": "Cloud Coach & Consultant (1:1 AWS | DevOps | Career)",
-      "duration": "Nov 2024 - Present",
-      "location": "Surat, Gujarat, India",
-      "description": "Verified cloud mentor delivering personalized 1:1 coaching across AWS Architecture, Cost Optimization, Certification Roadmapping, and Career Guidance.",
-      "technologies": [
+      _id: "68f08f580fbf5f6c0d02c87d",
+      company: "Topmate.io",
+      position: "Cloud Coach & Consultant (1:1 AWS | DevOps | Career)",
+      duration: "Nov 2024 - Present",
+      location: "Surat, Gujarat, India",
+      description:
+        "Verified cloud mentor delivering personalized 1:1 coaching across AWS Architecture, Cost Optimization, Certification Roadmapping, and Career Guidance.",
+      technologies: [
         "AWS Architecture",
         "Cost Optimization",
         "Serverless",
         "Lambda/API/IAM/Terraform",
-        "Career Mentoring"
+        "Career Mentoring",
       ],
-      "achievements": [
+      achievements: [
         "Helped startups save ₹50L+ annually through AWS cost optimization",
         "Guided professionals to ace AWS exams with custom strategies",
         "Resolved real-world serverless debugging issues live",
-        "Provided cloud career guidance to professionals across India, US, and SEA"
+        "Provided cloud career guidance to professionals across India, US, and SEA",
       ],
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.459Z",
-      "updatedAt": "2025-10-06T09:44:17.459Z"
-    }
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.095Z",
+      updatedAt: "2025-10-16T06:23:20.095Z",
+    },
+    {
+      _id: "68f08f580fbf5f6c0d02c880",
+      company: "ProtectOnce",
+      position: "SDE-II",
+      duration: "May 2022 - Aug 2024",
+      location: "San Francisco Bay Area",
+      description:
+        "Developed serverless security solutions protecting large user bases with focus on automation and incident reduction.",
+      technologies: [
+        "Node.js",
+        "AWS Serverless",
+        "Security Automation",
+        "Vulnerability Scanning",
+      ],
+      achievements: [
+        "Developed serverless security solution in Node.js protecting 100K+ users",
+        "Maintained <1% false-positive rate",
+        "Automated vulnerability scanning & patching, reducing incidents by 80%",
+      ],
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.095Z",
+      updatedAt: "2025-10-16T06:23:20.095Z",
+    },
+    {
+      _id: "68f08f580fbf5f6c0d02c883",
+      company: "Bynebits",
+      position: "Software Developer",
+      duration: "Dec 2017 - Jul 2019",
+      location: "Indore, India",
+      description:
+        "Developed investment analytics platforms with focus on performance optimization and sub-second query capabilities.",
+      technologies: [
+        "Node.js",
+        "AWS",
+        "Analytics Platform",
+        "Performance Optimization",
+      ],
+      achievements: [
+        "Developed RenagatePartner investment analytics platform on Node.js & AWS",
+        "Optimized pipelines for sub-second query performance",
+      ],
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.095Z",
+      updatedAt: "2025-10-16T06:23:20.095Z",
+    },
+    {
+      _id: "68f08f580fbf5f6c0d02c87e",
+      company: "NTT",
+      position: "Senior Software Engineer - Contract",
+      duration: "Jan 2025 - Mar 2025",
+      location: "Tokyo, Japan",
+      description:
+        "Contract engagement focusing on enterprise-grade software solutions and cloud infrastructure development.",
+      technologies: [
+        "AWS",
+        "Node.js",
+        "Enterprise Systems",
+        "Cloud Infrastructure",
+      ],
+      achievements: [
+        "Delivered enterprise-grade software solutions",
+        "Implemented scalable cloud infrastructure architectures",
+      ],
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.095Z",
+      updatedAt: "2025-10-16T06:23:20.095Z",
+    },
+    {
+      _id: "68f08f580fbf5f6c0d02c87f",
+      company: "ProdigyBuild",
+      position: "Lead Engineer",
+      duration: "Jul 2023 - Mar 2025",
+      location: "San Francisco Bay Area",
+      description:
+        "Designed AWS serverless platforms with AI integration for enhanced development velocity and cost optimization.",
+      technologies: [
+        "AWS Serverless",
+        "Terraform",
+        "GitOps",
+        "AI Agents",
+        "IaC",
+      ],
+      achievements: [
+        "Designed AWS serverless platform with 99.99% uptime & 40% cost savings",
+        "Integrated AI agents for code review, boosting dev velocity by 60%",
+        "Built Terraform IaC & GitOps pipelines, reducing release times by 70%",
+      ],
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.095Z",
+      updatedAt: "2025-10-16T06:23:20.095Z",
+    },
+    {
+      _id: "68f08f580fbf5f6c0d02c884",
+      company: "Creative Infotech",
+      position: "Full-Stack Developer",
+      duration: "Apr 2016 - Sep 2017",
+      location: "Surat, India",
+      description:
+        "Built e-commerce applications with real-time features and performance optimization through caching strategies.",
+      technologies: [
+        "PHP",
+        "CodeIgniter",
+        "E-commerce",
+        "Performance Optimization",
+      ],
+      achievements: [
+        "Built PHP/CodeIgniter e-commerce app with real-time cart management",
+        "Optimized performance with caching & indexing",
+      ],
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.095Z",
+      updatedAt: "2025-10-16T06:23:20.095Z",
+    },
+    {
+      _id: "68f08f580fbf5f6c0d02c87a",
+      company: "ASTM International",
+      position: "Senior AWS Solution Architect",
+      duration: "Sep 2025 - Present",
+      location: "Pennsylvania, United States",
+      description:
+        "Leading AWS solution architecture for international standards organization, focusing on cloud-native transformations and enterprise-grade infrastructure.",
+      technologies: [
+        "AWS",
+        "Solutions Architecture",
+        "Cloud Migration",
+        "Enterprise Systems",
+      ],
+      achievements: [
+        "Architecting enterprise-grade AWS solutions for global standards organization",
+        "Leading cloud transformation initiatives for mission-critical systems",
+      ],
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.094Z",
+      updatedAt: "2025-10-16T06:23:20.094Z",
+    },
   ],
-  "testimonials": [
+  testimonials: [
     {
-      "_id": "68e38f7160782e175700eff3",
-      "name": "Sarah Chen",
-      "position": "CTO",
-      "company": "TechFlow Solutions",
-      "testimonial": "Rahul's expertise in serverless architecture helped us reduce our infrastructure costs by 60% while improving system reliability. His deep understanding of AWS services and cost optimization strategies is exceptional.",
-      "image": "/assets/images/testimonial-sarah.jpg",
-      "linkedin": "https://linkedin.com/in/sarahchen-cto",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.528Z",
-      "updatedAt": "2025-10-06T09:44:17.528Z"
+      _id: "68f08f580fbf5f6c0d02c887",
+      name: "Michael Rodriguez",
+      position: "VP Engineering",
+      company: "DataCorp Industries",
+      testimonial:
+        "Working with Rahul on our cloud migration project was outstanding. He delivered a comprehensive solution that not only met our technical requirements but also provided significant cost savings. His attention to detail and proactive communication made the entire process smooth.",
+      image: "/assets/images/testimonial-michael.jpg",
+      linkedin: "https://linkedin.com/in/michael-rodriguez-vp",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.153Z",
+      updatedAt: "2025-10-16T06:23:20.153Z",
     },
     {
-      "_id": "68e38f7160782e175700eff4",
-      "name": "Michael Rodriguez",
-      "position": "VP Engineering",
-      "company": "DataCorp Industries",
-      "testimonial": "Working with Rahul on our cloud migration project was outstanding. He delivered a comprehensive solution that not only met our technical requirements but also provided significant cost savings. His attention to detail and proactive communication made the entire process smooth.",
-      "image": "/assets/images/testimonial-michael.jpg",
-      "linkedin": "https://linkedin.com/in/michael-rodriguez-vp",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.528Z",
-      "updatedAt": "2025-10-06T09:44:17.528Z"
+      _id: "68f08f580fbf5f6c0d02c888",
+      name: "Priya Sharma",
+      position: "Senior DevOps Engineer",
+      company: "CloudTech Innovations",
+      testimonial:
+        "Rahul is one of the most skilled cloud engineers I've worked with. His ability to design scalable, cost-effective solutions while maintaining high performance standards is remarkable. He's also an excellent mentor who helped our team level up their AWS skills.",
+      image: "/assets/images/testimonial-priya.jpg",
+      linkedin: "https://linkedin.com/in/priya-sharma-devops",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.153Z",
+      updatedAt: "2025-10-16T06:23:20.153Z",
     },
     {
-      "_id": "68e38f7160782e175700eff5",
-      "name": "Priya Sharma",
-      "position": "Senior DevOps Engineer",
-      "company": "CloudTech Innovations",
-      "testimonial": "Rahul is one of the most skilled cloud engineers I've worked with. His ability to design scalable, cost-effective solutions while maintaining high performance standards is remarkable. He's also an excellent mentor who helped our team level up their AWS skills.",
-      "image": "/assets/images/testimonial-priya.jpg",
-      "linkedin": "https://linkedin.com/in/priya-sharma-devops",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.528Z",
-      "updatedAt": "2025-10-06T09:44:17.528Z"
+      _id: "68f08f580fbf5f6c0d02c889",
+      name: "James Wilson",
+      position: "Founder & CEO",
+      company: "StartupHub Technologies",
+      testimonial:
+        "Rahul played a crucial role in scaling our platform from startup to enterprise level. His serverless solutions and automation expertise helped us handle 10x traffic growth without proportional infrastructure costs. Highly recommended for any cloud transformation project.",
+      image: "/assets/images/testimonial-james.jpg",
+      linkedin: "https://linkedin.com/in/james-wilson-ceo",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.153Z",
+      updatedAt: "2025-10-16T06:23:20.153Z",
     },
     {
-      "_id": "68e38f7160782e175700eff6",
-      "name": "James Wilson",
-      "position": "Founder & CEO",
-      "company": "StartupHub Technologies",
-      "testimonial": "Rahul played a crucial role in scaling our platform from startup to enterprise level. His serverless solutions and automation expertise helped us handle 10x traffic growth without proportional infrastructure costs. Highly recommended for any cloud transformation project.",
-      "image": "/assets/images/testimonial-james.jpg",
-      "linkedin": "https://linkedin.com/in/james-wilson-ceo",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.528Z",
-      "updatedAt": "2025-10-06T09:44:17.528Z"
-    }
+      _id: "68f08f580fbf5f6c0d02c886",
+      name: "Sarah Chen",
+      position: "CTO",
+      company: "TechFlow Solutions",
+      testimonial:
+        "Rahul's expertise in serverless architecture helped us reduce our infrastructure costs by 60% while improving system reliability. His deep understanding of AWS services and cost optimization strategies is exceptional.",
+      image: "/assets/images/testimonial-sarah.jpg",
+      linkedin: "https://linkedin.com/in/sarahchen-cto",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.152Z",
+      updatedAt: "2025-10-16T06:23:20.152Z",
+    },
   ],
-  "caseStudies": [
+  caseStudies: [
     {
-      "metrics": {
-        "costReduction": "67%",
-        "scalability": "10x capacity",
-        "deploymentSpeed": "90% faster",
-        "maintenance": "80% less"
+      metrics: {
+        costReduction: "67%",
+        scalability: "10x capacity",
+        deploymentSpeed: "90% faster",
+        maintenance: "80% less",
       },
-      "beforeStats": {
-        "monthlySpend": "₹3.2L",
-        "deploymentTime": "2 hours",
-        "scaling": "Manual",
-        "maintenance": "40 hrs/week"
+      beforeStats: {
+        monthlySpend: "₹3.2L",
+        deploymentTime: "2 hours",
+        scaling: "Manual",
+        maintenance: "40 hrs/week",
       },
-      "afterStats": {
-        "monthlySpend": "₹1.1L",
-        "deploymentTime": "12 minutes",
-        "scaling": "Automatic",
-        "maintenance": "8 hrs/week"
+      afterStats: {
+        monthlySpend: "₹1.1L",
+        deploymentTime: "12 minutes",
+        scaling: "Automatic",
+        maintenance: "8 hrs/week",
       },
-      "_id": "68e38f7160782e175700effa",
-      "id": 3,
-      "title": "Startup Serverless Migration",
-      "company": "InnovateTech Solutions",
-      "industry": "SaaS Platform",
-      "challenge": "Scaling efficiently with limited engineering resources",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-      "timeline": "4 weeks",
-      "teamSize": "8 engineers",
-      "solution": "Migrated monolithic application to serverless architecture using Lambda, API Gateway, and DynamoDB. Implemented CI/CD pipeline with automated testing and deployment. Set up monitoring and logging for complete observability.",
-      "results": [
+      _id: "68f08f580fbf5f6c0d02c88d",
+      id: 3,
+      title: "Startup Serverless Migration",
+      company: "InnovateTech Solutions",
+      industry: "SaaS Platform",
+      challenge: "Scaling efficiently with limited engineering resources",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      timeline: "4 weeks",
+      teamSize: "8 engineers",
+      solution:
+        "Migrated monolithic application to serverless architecture using Lambda, API Gateway, and DynamoDB. Implemented CI/CD pipeline with automated testing and deployment. Set up monitoring and logging for complete observability.",
+      results: [
         "Reduced infrastructure costs by 67% through serverless adoption",
         "Achieved 10x scaling capacity with zero manual intervention",
         "Improved deployment speed by 90% with automated CI/CD",
         "Reduced maintenance overhead by 80%",
-        "Enhanced application reliability and performance"
+        "Enhanced application reliability and performance",
       ],
-      "technologies": [
+      technologies: [
         "Lambda",
         "API Gateway",
         "DynamoDB",
         "CloudFormation",
-        "CodePipeline"
+        "CodePipeline",
       ],
-      "clientQuote": "The serverless migration transformed our business. We can now focus on features instead of infrastructure management.",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.583Z",
-      "updatedAt": "2025-10-06T09:44:17.583Z"
+      clientQuote:
+        "The serverless migration transformed our business. We can now focus on features instead of infrastructure management.",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.204Z",
+      updatedAt: "2025-10-16T06:23:20.204Z",
     },
     {
-      "metrics": {
-        "costReduction": "52%",
-        "monthlySaving": "₹4.2L",
-        "performanceGain": "35%",
-        "uptimeImprovement": "99.9%"
+      metrics: {
+        costReduction: "52%",
+        monthlySaving: "₹4.2L",
+        performanceGain: "35%",
+        uptimeImprovement: "99.9%",
       },
-      "beforeStats": {
-        "monthlySpend": "₹8.1L",
-        "avgResponseTime": "2.3s",
-        "uptime": "97.2%",
-        "scalingIssues": "Manual scaling"
+      beforeStats: {
+        monthlySpend: "₹8.1L",
+        avgResponseTime: "2.3s",
+        uptime: "97.2%",
+        scalingIssues: "Manual scaling",
       },
-      "afterStats": {
-        "monthlySpend": "₹3.9L",
-        "avgResponseTime": "1.5s",
-        "uptime": "99.9%",
-        "scalingIssues": "Auto-scaling"
+      afterStats: {
+        monthlySpend: "₹3.9L",
+        avgResponseTime: "1.5s",
+        uptime: "99.9%",
+        scalingIssues: "Auto-scaling",
       },
-      "_id": "68e38f7160782e175700eff8",
-      "id": 1,
-      "title": "E-commerce Platform Cost Optimization",
-      "company": "ShopEasy India",
-      "industry": "E-commerce",
-      "challenge": "Rapidly growing AWS costs eating into profit margins",
-      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      "timeline": "6 weeks",
-      "teamSize": "15 engineers",
-      "solution": "Implemented comprehensive AWS cost optimization strategy including right-sizing EC2 instances, migrating to Spot instances for non-critical workloads, setting up auto-scaling groups, and optimizing RDS configurations. Introduced CloudWatch monitoring and cost alerts to prevent future overspend.",
-      "results": [
+      _id: "68f08f580fbf5f6c0d02c88b",
+      id: 1,
+      title: "E-commerce Platform Cost Optimization",
+      company: "ShopEasy India",
+      industry: "E-commerce",
+      challenge: "Rapidly growing AWS costs eating into profit margins",
+      image:
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+      timeline: "6 weeks",
+      teamSize: "15 engineers",
+      solution:
+        "Implemented comprehensive AWS cost optimization strategy including right-sizing EC2 instances, migrating to Spot instances for non-critical workloads, setting up auto-scaling groups, and optimizing RDS configurations. Introduced CloudWatch monitoring and cost alerts to prevent future overspend.",
+      results: [
         "Reduced monthly AWS costs from ₹8.1L to ₹3.9L (52% reduction)",
         "Improved average response time by 35% through performance optimization",
         "Achieved 99.9% uptime with automated failover mechanisms",
         "Implemented auto-scaling to handle traffic spikes efficiently",
-        "Set up comprehensive monitoring and alerting system"
+        "Set up comprehensive monitoring and alerting system",
       ],
-      "technologies": [
+      technologies: [
         "EC2",
         "RDS",
         "CloudWatch",
         "Auto Scaling",
-        "Load Balancer"
+        "Load Balancer",
       ],
-      "clientQuote": "Rahul's optimization saved us over ₹50L annually while making our platform more reliable and faster. The ROI was immediate and substantial.",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.582Z",
-      "updatedAt": "2025-10-06T09:44:17.582Z"
+      clientQuote:
+        "Rahul's optimization saved us over ₹50L annually while making our platform more reliable and faster. The ROI was immediate and substantial.",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.203Z",
+      updatedAt: "2025-10-16T06:23:20.203Z",
     },
     {
-      "metrics": {
-        "performanceGain": "28%",
-        "securityScore": "95%",
-        "complianceAchieved": "100%",
-        "costOptimization": "31%"
+      metrics: {
+        performanceGain: "28%",
+        securityScore: "95%",
+        complianceAchieved: "100%",
+        costOptimization: "31%",
       },
-      "beforeStats": {
-        "securityScore": "62%",
-        "compliance": "Partial",
-        "auditTime": "3 weeks",
-        "incidents": "5/month"
+      beforeStats: {
+        securityScore: "62%",
+        compliance: "Partial",
+        auditTime: "3 weeks",
+        incidents: "5/month",
       },
-      "afterStats": {
-        "securityScore": "95%",
-        "compliance": "Full SOC2",
-        "auditTime": "3 days",
-        "incidents": "0/month"
+      afterStats: {
+        securityScore: "95%",
+        compliance: "Full SOC2",
+        auditTime: "3 days",
+        incidents: "0/month",
       },
-      "_id": "68e38f7160782e175700eff9",
-      "id": 2,
-      "title": "FinTech Security & Compliance Overhaul",
-      "company": "SecureFinance Pro",
-      "industry": "Financial Technology",
-      "challenge": "Meeting regulatory compliance while maintaining performance",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      "timeline": "8 weeks",
-      "teamSize": "12 engineers",
-      "solution": "Designed and implemented comprehensive security architecture including VPC isolation, WAF configuration, encryption at rest and in transit, IAM role optimization, and automated compliance monitoring. Set up centralized logging and real-time threat detection.",
-      "results": [
+      _id: "68f08f580fbf5f6c0d02c88c",
+      id: 2,
+      title: "FinTech Security & Compliance Overhaul",
+      company: "SecureFinance Pro",
+      industry: "Financial Technology",
+      challenge: "Meeting regulatory compliance while maintaining performance",
+      image:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      timeline: "8 weeks",
+      teamSize: "12 engineers",
+      solution:
+        "Designed and implemented comprehensive security architecture including VPC isolation, WAF configuration, encryption at rest and in transit, IAM role optimization, and automated compliance monitoring. Set up centralized logging and real-time threat detection.",
+      results: [
         "Achieved 100% SOC2 compliance certification",
         "Improved security score from 62% to 95%",
         "Reduced security incidents to zero",
         "Automated compliance reporting and monitoring",
-        "Optimized costs by 31% through efficient resource allocation"
+        "Optimized costs by 31% through efficient resource allocation",
       ],
-      "technologies": [
-        "VPC",
-        "WAF",
-        "IAM",
-        "CloudTrail",
-        "GuardDuty",
-        "KMS"
-      ],
-      "clientQuote": "The security transformation was flawless. We passed our SOC2 audit with flying colors and our customers trust us more than ever.",
-      "__v": 0,
-      "createdAt": "2025-10-06T09:44:17.582Z",
-      "updatedAt": "2025-10-06T09:44:17.582Z"
-    }
-  ],
-  "problemSection": {
-    "title": "Are These AWS Challenges Costing You Money?",
-    "subtitle": "Most startups and engineering teams face these critical cloud challenges that drain resources and limit growth potential.",
-    "costCalculator": {
-      "title": "Calculate Your Potential AWS Savings",
-      "subtitle": "See how much you could save with proper optimization",
-      "defaultSpend": 10000,
-      "savingsPercentage": 0.4,
-      "minSpend": 5000,
-      "maxSpend": 500000,
-      "step": 5000,
-      "currency": "₹"
+      technologies: ["VPC", "WAF", "IAM", "CloudTrail", "GuardDuty", "KMS"],
+      clientQuote:
+        "The security transformation was flawless. We passed our SOC2 audit with flying colors and our customers trust us more than ever.",
+      __v: 0,
+      createdAt: "2025-10-16T06:23:20.203Z",
+      updatedAt: "2025-10-16T06:23:20.203Z",
     },
-    "problems": [
+  ],
+  problemSection: {
+    title: "Are These AWS Challenges Costing You Money?",
+    subtitle:
+      "Most startups and engineering teams face these critical cloud challenges that drain resources and limit growth potential.",
+    costCalculator: {
+      title: "Calculate Your Potential AWS Savings",
+      subtitle: "See how much you could save with proper optimization",
+      defaultSpend: 10000,
+      savingsPercentage: 0.4,
+      minSpend: 5000,
+      maxSpend: 500000,
+      step: 5000,
+      currency: "₹",
+    },
+    problems: [
       {
-        "icon": "TrendingUp",
-        "title": "Skyrocketing AWS Bills",
-        "description": "Your cloud costs are growing faster than your revenue, eating into profits and making scaling financially unsustainable.",
-        "impact": "₹2-10L+ monthly overspend"
+        icon: "TrendingUp",
+        title: "Skyrocketing AWS Bills",
+        description:
+          "Your cloud costs are growing faster than your revenue, eating into profits and making scaling financially unsustainable.",
+        impact: "₹2-10L+ monthly overspend",
       },
       {
-        "icon": "AlertTriangle",
-        "title": "Complex Architecture Decisions",
-        "description": "Choosing the right AWS services feels overwhelming, leading to over-provisioning and inefficient resource allocation.",
-        "impact": "40-60% resource waste"
+        icon: "AlertTriangle",
+        title: "Complex Architecture Decisions",
+        description:
+          "Choosing the right AWS services feels overwhelming, leading to over-provisioning and inefficient resource allocation.",
+        impact: "40-60% resource waste",
       },
       {
-        "icon": "Users",
-        "title": "Team Knowledge Gaps",
-        "description": "Your engineers lack deep AWS expertise, causing security vulnerabilities and performance bottlenecks.",
-        "impact": "Delayed product launches"
+        icon: "Users",
+        title: "Team Knowledge Gaps",
+        description:
+          "Your engineers lack deep AWS expertise, causing security vulnerabilities and performance bottlenecks.",
+        impact: "Delayed product launches",
       },
       {
-        "icon": "Clock",
-        "title": "Career Stagnation",
-        "description": "Mid-level engineers struggle to advance without hands-on cloud experience and mentorship from industry experts.",
-        "impact": "Limited growth opportunities"
-      }
+        icon: "Clock",
+        title: "Career Stagnation",
+        description:
+          "Mid-level engineers struggle to advance without hands-on cloud experience and mentorship from industry experts.",
+        impact: "Limited growth opportunities",
+      },
     ],
-    "cta": {
-      "title": "Stop Losing Money on Inefficient AWS Usage",
-      "subtitle": "Get a free architecture review and discover exactly where you're overspending",
-      "buttonText": "Get Free Cost Analysis",
-      "buttonIcon": "Calculator"
-    }
+    cta: {
+      title: "Stop Losing Money on Inefficient AWS Usage",
+      subtitle:
+        "Get a free architecture review and discover exactly where you're overspending",
+      buttonText: "Get Free Cost Analysis",
+      buttonIcon: "Calculator",
+    },
   },
-  "solutionSection": {
-    "title": "Three Pillars of AWS Success",
-    "subtitle": "Proven methodologies that have helped 100+ startups and engineers achieve measurable results in cloud optimization and career growth.",
-    "solutions": [
+  solutionSection: {
+    title: "Three Pillars of AWS Success",
+    subtitle:
+      "Proven methodologies that have helped 100+ startups and engineers achieve measurable results in cloud optimization and career growth.",
+    solutions: [
       {
-        "icon": "Search",
-        "title": "Architecture Review",
-        "subtitle": "Comprehensive AWS Infrastructure Audit",
-        "description": "Deep-dive analysis of your current AWS setup to identify cost optimization opportunities, security vulnerabilities, and performance bottlenecks.",
-        "deliverables": [
+        icon: "Search",
+        title: "Architecture Review",
+        subtitle: "Comprehensive AWS Infrastructure Audit",
+        description:
+          "Deep-dive analysis of your current AWS setup to identify cost optimization opportunities, security vulnerabilities, and performance bottlenecks.",
+        deliverables: [
           "Complete infrastructure assessment report",
           "Cost optimization recommendations with ROI projections",
           "Security audit and compliance checklist",
           "Performance optimization roadmap",
-          "Best practices implementation guide"
+          "Best practices implementation guide",
         ],
-        "timeline": "2-3 weeks",
-        "outcome": "30-50% cost reduction typically achieved",
-        "color": "blue"
+        timeline: "2-3 weeks",
+        outcome: "30-50% cost reduction typically achieved",
+        color: "blue",
       },
       {
-        "icon": "DollarSign",
-        "title": "Cost Optimization",
-        "subtitle": "Immediate AWS Spend Reduction",
-        "description": "Hands-on implementation of cost-saving strategies including right-sizing, reserved instances, and automated scaling configurations.",
-        "deliverables": [
+        icon: "DollarSign",
+        title: "Cost Optimization",
+        subtitle: "Immediate AWS Spend Reduction",
+        description:
+          "Hands-on implementation of cost-saving strategies including right-sizing, reserved instances, and automated scaling configurations.",
+        deliverables: [
           "Resource right-sizing implementation",
           "Reserved instance strategy and purchase",
           "Auto-scaling configuration optimization",
           "Unused resource identification and cleanup",
-          "Cost monitoring and alerting setup"
+          "Cost monitoring and alerting setup",
         ],
-        "timeline": "1-2 weeks",
-        "outcome": "₹50K-5L+ monthly savings guaranteed",
-        "color": "green"
+        timeline: "1-2 weeks",
+        outcome: "₹50K-5L+ monthly savings guaranteed",
+        color: "green",
       },
       {
-        "icon": "Users",
-        "title": "Career Mentorship",
-        "subtitle": "Accelerate Your AWS Career Growth",
-        "description": "Personalized 1-on-1 mentorship program designed to fast-track your AWS expertise and advance your cloud engineering career.",
-        "deliverables": [
+        icon: "Users",
+        title: "Career Mentorship",
+        subtitle: "Accelerate Your AWS Career Growth",
+        description:
+          "Personalized 1-on-1 mentorship program designed to fast-track your AWS expertise and advance your cloud engineering career.",
+        deliverables: [
           "Personalized learning roadmap creation",
           "Weekly 1-on-1 mentorship sessions",
           "Hands-on project guidance and code reviews",
           "Interview preparation and resume optimization",
-          "Industry networking and job referrals"
+          "Industry networking and job referrals",
         ],
-        "timeline": "3-6 months",
-        "outcome": "40-60% salary increase on average",
-        "color": "purple"
-      }
+        timeline: "3-6 months",
+        outcome: "40-60% salary increase on average",
+        color: "purple",
+      },
     ],
-    "process": {
-      "title": "How We Work Together",
-      "steps": [
+    process: {
+      title: "How We Work Together",
+      steps: [
         {
-          "step": "1",
-          "title": "Discovery Call",
-          "description": "Free 30-min consultation to understand your challenges"
+          step: "1",
+          title: "Discovery Call",
+          description: "Free 30-min consultation to understand your challenges",
         },
         {
-          "step": "2",
-          "title": "Custom Proposal",
-          "description": "Tailored solution with clear deliverables and timeline"
+          step: "2",
+          title: "Custom Proposal",
+          description: "Tailored solution with clear deliverables and timeline",
         },
         {
-          "step": "3",
-          "title": "Implementation",
-          "description": "Hands-on execution with regular progress updates"
+          step: "3",
+          title: "Implementation",
+          description: "Hands-on execution with regular progress updates",
         },
         {
-          "step": "4",
-          "title": "Results & Support",
-          "description": "Measurable outcomes with ongoing support included"
-        }
-      ]
-    }
-  },
-  "credentialsSection": {
-    "title": "Proven AWS Expertise & Recognition",
-    "subtitle": "7+ years of hands-on AWS experience backed by industry certifications, community recognition, AI-powered solutions, and measurable client results.",
-    "achievements": [
-      {
-        "title": "AWS Community Builder",
-        "description": "Official recognition from AWS for community contributions",
-        "icon": "Users",
-        "color": "#FF9900"
-      },
-      {
-        "title": "Speaking Engagements",
-        "description": "Featured speaker at tech conferences and AWS meetups",
-        "icon": "Mic",
-        "color": "#1B365D"
-      },
-      {
-        "title": "Open Source Contributor",
-        "description": "Active contributor to AWS-related projects",
-        "icon": "Github",
-        "color": "#38A169"
-      },
-      {
-        "title": "Technical Writer & Content Creator",
-        "description": "Published 50+ articles on AWS, AI integration, and cloud architecture with 100K+ combined views",
-        "icon": "PenTool",
-        "color": "#7C3AED"
-      }
-    ],
-    "communityMetrics": {
-      "followers": 6000,
-      "articleViewsTarget": 100000,
-      "animationSpeed": {
-        "followers": 100,
-        "views": 50
-      }
+          step: "4",
+          title: "Results & Support",
+          description: "Measurable outcomes with ongoing support included",
+        },
+      ],
     },
-    "cta": {
-      "title": "Work with a Proven AWS Expert",
-      "subtitle": "Get the same expertise that's helped projects and companies succeed",
-      "buttonText": "Schedule Your Consultation",
-      "buttonIcon": "Calendar"
-    }
   },
-  "servicesSection": {
-    "title": "Choose Your AWS Success Path",
-    "subtitle": "Flexible engagement models designed to meet your specific needs and budget, with guaranteed results and transparent pricing.",
-    "services": [
+  credentialsSection: {
+    title: "Proven AWS Expertise & Recognition",
+    subtitle:
+      "7+ years of hands-on AWS experience backed by industry certifications, community recognition, AI-powered solutions, and measurable client results.",
+    achievements: [
       {
-        "name": "Discovery Consultation",
-        "subtitle": "Perfect for initial assessment",
-        "price": {
-          "INR": 5000,
-          "USD": 60
+        title: "AWS Community Builder",
+        description:
+          "Official recognition from AWS for community contributions",
+        icon: "Users",
+        color: "#FF9900",
+      },
+      {
+        title: "Speaking Engagements",
+        description: "Featured speaker at tech conferences and AWS meetups",
+        icon: "Mic",
+        color: "#1B365D",
+      },
+      {
+        title: "Open Source Contributor",
+        description: "Active contributor to AWS-related projects",
+        icon: "Github",
+        color: "#38A169",
+      },
+      {
+        title: "Technical Writer & Content Creator",
+        description:
+          "Published 50+ articles on AWS, AI integration, and cloud architecture with 100K+ combined views",
+        icon: "PenTool",
+        color: "#7C3AED",
+      },
+    ],
+    communityMetrics: {
+      followers: 6000,
+      articleViewsTarget: 100000,
+      animationSpeed: {
+        followers: 100,
+        views: 50,
+      },
+    },
+    cta: {
+      title: "Work with a Proven AWS Expert",
+      subtitle:
+        "Get the same expertise that's helped projects and companies succeed",
+      buttonText: "Schedule Your Consultation",
+      buttonIcon: "Calendar",
+    },
+  },
+  servicesSection: {
+    title: "Choose Your AWS Success Path",
+    subtitle:
+      "Flexible engagement models designed to meet your specific needs and budget, with guaranteed results and transparent pricing.",
+    services: [
+      {
+        name: "Discovery Consultation",
+        subtitle: "Perfect for initial assessment",
+        price: {
+          INR: 5000,
+          USD: 60,
         },
-        "originalPrice": {
-          "INR": 8000,
-          "USD": 95
+        originalPrice: {
+          INR: 8000,
+          USD: 95,
         },
-        "duration": "one-time",
-        "popular": false,
-        "features": [
+        duration: "one-time",
+        popular: false,
+        features: [
           "30-minute free discovery call",
           "Comprehensive AWS architecture review",
           "Cost optimization quick wins identification",
           "Security assessment checklist",
           "Detailed recommendations report",
-          "Follow-up email support for 1 week"
+          "Follow-up email support for 1 week",
         ],
-        "deliverables": [
+        deliverables: [
           "Architecture assessment report",
           "Cost optimization roadmap",
           "Security recommendations",
-          "Implementation priority matrix"
+          "Implementation priority matrix",
         ],
-        "idealFor": "Startups wanting quick wins",
-        "color": "blue",
-        "buttonText": "Book Free Call"
+        idealFor: "Startups wanting quick wins",
+        color: "blue",
+        buttonText: "Book Free Call",
       },
       {
-        "name": "Monthly Mentorship",
-        "subtitle": "Accelerate your AWS career",
-        "price": {
-          "INR": 8000,
-          "USD": 95
+        name: "Monthly Mentorship",
+        subtitle: "Accelerate your AWS career",
+        price: {
+          INR: 8000,
+          USD: 95,
         },
-        "originalPrice": {
-          "INR": 12000,
-          "USD": 145
+        originalPrice: {
+          INR: 12000,
+          USD: 145,
         },
-        "duration": "monthly",
-        "popular": true,
-        "features": [
+        duration: "monthly",
+        popular: true,
+        features: [
           "4 weekly 1-on-1 mentorship sessions (1 hour each)",
           "Personalized learning roadmap creation",
           "Hands-on project guidance and code reviews",
           "Resume optimization and interview preparation",
           "Industry networking and job referral support",
           "24/7 Slack/WhatsApp support for quick questions",
-          "Monthly progress tracking and goal setting"
+          "Monthly progress tracking and goal setting",
         ],
-        "deliverables": [
+        deliverables: [
           "Custom learning path",
           "Weekly session recordings",
           "Project portfolio development",
-          "Interview preparation materials"
+          "Interview preparation materials",
         ],
-        "idealFor": "Engineers seeking career growth",
-        "color": "purple",
-        "buttonText": "Start Mentorship"
+        idealFor: "Engineers seeking career growth",
+        color: "purple",
+        buttonText: "Start Mentorship",
       },
       {
-        "name": "Enterprise Consulting",
-        "subtitle": "Complete AWS transformation",
-        "price": {
-          "INR": 50000,
-          "USD": 600
+        name: "Enterprise Consulting",
+        subtitle: "Complete AWS transformation",
+        price: {
+          INR: 50000,
+          USD: 600,
         },
-        "originalPrice": null,
-        "duration": "project-based",
-        "popular": false,
-        "features": [
+        originalPrice: null,
+        duration: "project-based",
+        popular: false,
+        features: [
           "Complete AWS infrastructure audit and redesign",
           "Cost optimization implementation (guaranteed 30%+ savings)",
           "Security hardening and compliance setup",
           "CI/CD pipeline design and implementation",
           "Team training and knowledge transfer sessions",
           "3 months of post-implementation support",
-          "Monthly performance and cost review meetings"
+          "Monthly performance and cost review meetings",
         ],
-        "deliverables": [
+        deliverables: [
           "Complete infrastructure redesign",
           "Automated deployment pipelines",
           "Security compliance documentation",
-          "Team training materials"
+          "Team training materials",
         ],
-        "idealFor": "Growing companies & enterprises",
-        "color": "green",
-        "buttonText": "Get Custom Quote",
-        "guarantee": "30%+ cost savings guaranteed"
-      }
+        idealFor: "Growing companies & enterprises",
+        color: "green",
+        buttonText: "Get Custom Quote",
+        guarantee: "30%+ cost savings guaranteed",
+      },
     ],
-    "comparison": {
-      "title": "Detailed Service Comparison",
-      "features": [
+    comparison: {
+      title: "Detailed Service Comparison",
+      features: [
         {
-          "feature": "Initial Assessment",
-          "consultation": true,
-          "mentorship": true,
-          "enterprise": true
+          feature: "Initial Assessment",
+          consultation: true,
+          mentorship: true,
+          enterprise: true,
         },
         {
-          "feature": "1-on-1 Sessions",
-          "consultation": "1 session",
-          "mentorship": "4/month",
-          "enterprise": "Unlimited"
+          feature: "1-on-1 Sessions",
+          consultation: "1 session",
+          mentorship: "4/month",
+          enterprise: "Unlimited",
         },
         {
-          "feature": "Code Reviews",
-          "consultation": false,
-          "mentorship": true,
-          "enterprise": true
+          feature: "Code Reviews",
+          consultation: false,
+          mentorship: true,
+          enterprise: true,
         },
         {
-          "feature": "Implementation Support",
-          "consultation": false,
-          "mentorship": "Guidance",
-          "enterprise": "Full"
+          feature: "Implementation Support",
+          consultation: false,
+          mentorship: "Guidance",
+          enterprise: "Full",
         },
         {
-          "feature": "Team Training",
-          "consultation": false,
-          "mentorship": false,
-          "enterprise": true
+          feature: "Team Training",
+          consultation: false,
+          mentorship: false,
+          enterprise: true,
         },
         {
-          "feature": "Ongoing Support",
-          "consultation": "1 week",
-          "mentorship": "24/7",
-          "enterprise": "3 months"
-        }
-      ]
+          feature: "Ongoing Support",
+          consultation: "1 week",
+          mentorship: "24/7",
+          enterprise: "3 months",
+        },
+      ],
     },
-    "guarantee": {
-      "title": "100% Satisfaction Guarantee",
-      "description": "If you're not completely satisfied with the results within the first 30 days, I'll refund your investment completely. No questions asked."
-    }
+    guarantee: {
+      title: "100% Satisfaction Guarantee",
+      description:
+        "If you're not completely satisfied with the results within the first 30 days, I'll refund your investment completely. No questions asked.",
+    },
   },
-  "testimonialsSection": {
-    "title": "Real Results from Real Clients",
-    "subtitle": "Don't just take my word for it. Here's what clients say about the measurable impact of our AWS optimization and mentorship programs.",
-    "socialProof": {
-      "title": "Trusted by 100+ Professionals",
-      "stats": [
+  testimonialsSection: {
+    title: "Real Results from Real Clients",
+    subtitle:
+      "Don't just take my word for it. Here's what clients say about the measurable impact of our AWS optimization and mentorship programs.",
+    socialProof: {
+      title: "Trusted by 100+ Professionals",
+      stats: [
         {
-          "value": "₹50Cr+",
-          "label": "Total Cost Savings"
+          value: "₹50Cr+",
+          label: "Total Cost Savings",
         },
         {
-          "value": "127",
-          "label": "Engineers Mentored"
+          value: "127",
+          label: "Engineers Mentored",
         },
         {
-          "value": "45%",
-          "label": "Average Cost Reduction"
+          value: "45%",
+          label: "Average Cost Reduction",
         },
         {
-          "value": "98%",
-          "label": "Client Satisfaction"
-        }
-      ]
+          value: "98%",
+          label: "Client Satisfaction",
+        },
+      ],
     },
-    "defaultResults": {
-      "impact": "60% Cost Reduction",
-      "timeline": "30 days",
-      "satisfaction": "Excellent"
+    defaultResults: {
+      impact: "60% Cost Reduction",
+      timeline: "30 days",
+      satisfaction: "Excellent",
     },
-    "defaultBeforeAfter": {
-      "before": "High AWS costs, manual processes",
-      "after": "Optimized architecture, automated workflows"
+    defaultBeforeAfter: {
+      before: "High AWS costs, manual processes",
+      after: "Optimized architecture, automated workflows",
     },
-    "testimonials": [
+    testimonials: [
       {
-        "name": "Sarah Chen",
-        "position": "CTO",
-        "company": "TechFlow Solutions",
-        "testimonial": "Rahul's expertise in serverless architecture helped us reduce our infrastructure costs by 60% while improving system reliability. His deep understanding of AWS services and cost optimization strategies is exceptional.",
-        "image": "/assets/images/testimonial-sarah.jpg",
-        "linkedin": "https://linkedin.com/in/sarahchen-cto"
+        name: "Sarah Chen",
+        position: "CTO",
+        company: "TechFlow Solutions",
+        testimonial:
+          "Rahul's expertise in serverless architecture helped us reduce our infrastructure costs by 60% while improving system reliability. His deep understanding of AWS services and cost optimization strategies is exceptional.",
+        image: "/assets/images/testimonial-sarah.jpg",
+        linkedin: "https://linkedin.com/in/sarahchen-cto",
       },
       {
-        "name": "Michael Rodriguez",
-        "position": "VP Engineering",
-        "company": "DataCorp Industries",
-        "testimonial": "Working with Rahul on our cloud migration project was outstanding. He delivered a comprehensive solution that not only met our technical requirements but also provided significant cost savings. His attention to detail and proactive communication made the entire process smooth.",
-        "image": "/assets/images/testimonial-michael.jpg",
-        "linkedin": "https://linkedin.com/in/michael-rodriguez-vp"
+        name: "Michael Rodriguez",
+        position: "VP Engineering",
+        company: "DataCorp Industries",
+        testimonial:
+          "Working with Rahul on our cloud migration project was outstanding. He delivered a comprehensive solution that not only met our technical requirements but also provided significant cost savings. His attention to detail and proactive communication made the entire process smooth.",
+        image: "/assets/images/testimonial-michael.jpg",
+        linkedin: "https://linkedin.com/in/michael-rodriguez-vp",
       },
       {
-        "name": "Priya Sharma",
-        "position": "Senior DevOps Engineer",
-        "company": "CloudTech Innovations",
-        "testimonial": "Rahul is one of the most skilled cloud engineers I've worked with. His ability to design scalable, cost-effective solutions while maintaining high performance standards is remarkable. He's also an excellent mentor who helped our team level up their AWS skills.",
-        "image": "/assets/images/testimonial-priya.jpg",
-        "linkedin": "https://linkedin.com/in/priya-sharma-devops"
+        name: "Priya Sharma",
+        position: "Senior DevOps Engineer",
+        company: "CloudTech Innovations",
+        testimonial:
+          "Rahul is one of the most skilled cloud engineers I've worked with. His ability to design scalable, cost-effective solutions while maintaining high performance standards is remarkable. He's also an excellent mentor who helped our team level up their AWS skills.",
+        image: "/assets/images/testimonial-priya.jpg",
+        linkedin: "https://linkedin.com/in/priya-sharma-devops",
       },
       {
-        "name": "James Wilson",
-        "position": "Founder & CEO",
-        "company": "StartupHub Technologies",
-        "testimonial": "Rahul played a crucial role in scaling our platform from startup to enterprise level. His serverless solutions and automation expertise helped us handle 10x traffic growth without proportional infrastructure costs. Highly recommended for any cloud transformation project.",
-        "image": "/assets/images/testimonial-james.jpg",
-        "linkedin": "https://linkedin.com/in/james-wilson-ceo"
-      }
-    ]
+        name: "James Wilson",
+        position: "Founder & CEO",
+        company: "StartupHub Technologies",
+        testimonial:
+          "Rahul played a crucial role in scaling our platform from startup to enterprise level. His serverless solutions and automation expertise helped us handle 10x traffic growth without proportional infrastructure costs. Highly recommended for any cloud transformation project.",
+        image: "/assets/images/testimonial-james.jpg",
+        linkedin: "https://linkedin.com/in/james-wilson-ceo",
+      },
+    ],
   },
-  "caseStudiesSection": {
-    "title": "Success Stories with Measurable Impact",
-    "subtitle": "Deep-dive into real client transformations with detailed metrics, timelines, and quantified business outcomes.",
-    "caseStudies": [
+  caseStudiesSection: {
+    title: "Success Stories with Measurable Impact",
+    subtitle:
+      "Deep-dive into real client transformations with detailed metrics, timelines, and quantified business outcomes.",
+    caseStudies: [
       {
-        "id": 1,
-        "title": "E-commerce Platform Cost Optimization",
-        "company": "ShopEasy India",
-        "industry": "E-commerce",
-        "challenge": "Rapidly growing AWS costs eating into profit margins",
-        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-        "timeline": "6 weeks",
-        "teamSize": "15 engineers",
-        "metrics": {
-          "costReduction": "52%",
-          "monthlySaving": "₹4.2L",
-          "performanceGain": "35%",
-          "uptimeImprovement": "99.9%"
+        id: 1,
+        title: "E-commerce Platform Cost Optimization",
+        company: "ShopEasy India",
+        industry: "E-commerce",
+        challenge: "Rapidly growing AWS costs eating into profit margins",
+        image:
+          "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+        timeline: "6 weeks",
+        teamSize: "15 engineers",
+        metrics: {
+          costReduction: "52%",
+          monthlySaving: "₹4.2L",
+          performanceGain: "35%",
+          uptimeImprovement: "99.9%",
         },
-        "beforeStats": {
-          "monthlySpend": "₹8.1L",
-          "avgResponseTime": "2.3s",
-          "uptime": "97.2%",
-          "scalingIssues": "Manual scaling"
+        beforeStats: {
+          monthlySpend: "₹8.1L",
+          avgResponseTime: "2.3s",
+          uptime: "97.2%",
+          scalingIssues: "Manual scaling",
         },
-        "afterStats": {
-          "monthlySpend": "₹3.9L",
-          "avgResponseTime": "1.5s",
-          "uptime": "99.9%",
-          "scalingIssues": "Auto-scaling"
+        afterStats: {
+          monthlySpend: "₹3.9L",
+          avgResponseTime: "1.5s",
+          uptime: "99.9%",
+          scalingIssues: "Auto-scaling",
         },
-        "solution": "Implemented comprehensive AWS cost optimization strategy including right-sizing EC2 instances, migrating to Spot instances for non-critical workloads, setting up auto-scaling groups, and optimizing RDS configurations. Introduced CloudWatch monitoring and cost alerts to prevent future overspend.",
-        "results": [
+        solution:
+          "Implemented comprehensive AWS cost optimization strategy including right-sizing EC2 instances, migrating to Spot instances for non-critical workloads, setting up auto-scaling groups, and optimizing RDS configurations. Introduced CloudWatch monitoring and cost alerts to prevent future overspend.",
+        results: [
           "Reduced monthly AWS costs from ₹8.1L to ₹3.9L (52% reduction)",
           "Improved average response time by 35% through performance optimization",
           "Achieved 99.9% uptime with automated failover mechanisms",
           "Implemented auto-scaling to handle traffic spikes efficiently",
-          "Set up comprehensive monitoring and alerting system"
+          "Set up comprehensive monitoring and alerting system",
         ],
-        "technologies": [
+        technologies: [
           "EC2",
           "RDS",
           "CloudWatch",
           "Auto Scaling",
-          "Load Balancer"
+          "Load Balancer",
         ],
-        "clientQuote": "Rahul's optimization saved us over ₹50L annually while making our platform more reliable and faster. The ROI was immediate and substantial."
+        clientQuote:
+          "Rahul's optimization saved us over ₹50L annually while making our platform more reliable and faster. The ROI was immediate and substantial.",
       },
       {
-        "id": 2,
-        "title": "FinTech Security & Compliance Overhaul",
-        "company": "SecureFinance Pro",
-        "industry": "Financial Technology",
-        "challenge": "Meeting regulatory compliance while maintaining performance",
-        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-        "timeline": "8 weeks",
-        "teamSize": "12 engineers",
-        "metrics": {
-          "securityScore": "95%",
-          "complianceAchieved": "100%",
-          "performanceGain": "28%",
-          "costOptimization": "31%"
+        id: 2,
+        title: "FinTech Security & Compliance Overhaul",
+        company: "SecureFinance Pro",
+        industry: "Financial Technology",
+        challenge:
+          "Meeting regulatory compliance while maintaining performance",
+        image:
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+        timeline: "8 weeks",
+        teamSize: "12 engineers",
+        metrics: {
+          securityScore: "95%",
+          complianceAchieved: "100%",
+          performanceGain: "28%",
+          costOptimization: "31%",
         },
-        "beforeStats": {
-          "securityScore": "62%",
-          "compliance": "Partial",
-          "auditTime": "3 weeks",
-          "incidents": "5/month"
+        beforeStats: {
+          securityScore: "62%",
+          compliance: "Partial",
+          auditTime: "3 weeks",
+          incidents: "5/month",
         },
-        "afterStats": {
-          "securityScore": "95%",
-          "compliance": "Full SOC2",
-          "auditTime": "3 days",
-          "incidents": "0/month"
+        afterStats: {
+          securityScore: "95%",
+          compliance: "Full SOC2",
+          auditTime: "3 days",
+          incidents: "0/month",
         },
-        "solution": "Designed and implemented comprehensive security architecture including VPC isolation, WAF configuration, encryption at rest and in transit, IAM role optimization, and automated compliance monitoring. Set up centralized logging and real-time threat detection.",
-        "results": [
+        solution:
+          "Designed and implemented comprehensive security architecture including VPC isolation, WAF configuration, encryption at rest and in transit, IAM role optimization, and automated compliance monitoring. Set up centralized logging and real-time threat detection.",
+        results: [
           "Achieved 100% SOC2 compliance certification",
           "Improved security score from 62% to 95%",
           "Reduced security incidents to zero",
           "Automated compliance reporting and monitoring",
-          "Optimized costs by 31% through efficient resource allocation"
+          "Optimized costs by 31% through efficient resource allocation",
         ],
-        "technologies": [
-          "VPC",
-          "WAF",
-          "IAM",
-          "CloudTrail",
-          "GuardDuty",
-          "KMS"
-        ],
-        "clientQuote": "The security transformation was flawless. We passed our SOC2 audit with flying colors and our customers trust us more than ever."
+        technologies: ["VPC", "WAF", "IAM", "CloudTrail", "GuardDuty", "KMS"],
+        clientQuote:
+          "The security transformation was flawless. We passed our SOC2 audit with flying colors and our customers trust us more than ever.",
       },
       {
-        "id": 3,
-        "title": "Startup Serverless Migration",
-        "company": "InnovateTech Solutions",
-        "industry": "SaaS Platform",
-        "challenge": "Scaling efficiently with limited engineering resources",
-        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-        "timeline": "4 weeks",
-        "teamSize": "8 engineers",
-        "metrics": {
-          "costReduction": "67%",
-          "scalability": "10x capacity",
-          "deploymentSpeed": "90% faster",
-          "maintenance": "80% less"
+        id: 3,
+        title: "Startup Serverless Migration",
+        company: "InnovateTech Solutions",
+        industry: "SaaS Platform",
+        challenge: "Scaling efficiently with limited engineering resources",
+        image:
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+        timeline: "4 weeks",
+        teamSize: "8 engineers",
+        metrics: {
+          costReduction: "67%",
+          scalability: "10x capacity",
+          deploymentSpeed: "90% faster",
+          maintenance: "80% less",
         },
-        "beforeStats": {
-          "monthlySpend": "₹3.2L",
-          "deploymentTime": "2 hours",
-          "scaling": "Manual",
-          "maintenance": "40 hrs/week"
+        beforeStats: {
+          monthlySpend: "₹3.2L",
+          deploymentTime: "2 hours",
+          scaling: "Manual",
+          maintenance: "40 hrs/week",
         },
-        "afterStats": {
-          "monthlySpend": "₹1.1L",
-          "deploymentTime": "12 minutes",
-          "scaling": "Automatic",
-          "maintenance": "8 hrs/week"
+        afterStats: {
+          monthlySpend: "₹1.1L",
+          deploymentTime: "12 minutes",
+          scaling: "Automatic",
+          maintenance: "8 hrs/week",
         },
-        "solution": "Migrated monolithic application to serverless architecture using Lambda, API Gateway, and DynamoDB. Implemented CI/CD pipeline with automated testing and deployment. Set up monitoring and logging for complete observability.",
-        "results": [
+        solution:
+          "Migrated monolithic application to serverless architecture using Lambda, API Gateway, and DynamoDB. Implemented CI/CD pipeline with automated testing and deployment. Set up monitoring and logging for complete observability.",
+        results: [
           "Reduced infrastructure costs by 67% through serverless adoption",
           "Achieved 10x scaling capacity with zero manual intervention",
           "Improved deployment speed by 90% with automated CI/CD",
           "Reduced maintenance overhead by 80%",
-          "Enhanced application reliability and performance"
+          "Enhanced application reliability and performance",
         ],
-        "technologies": [
+        technologies: [
           "Lambda",
           "API Gateway",
           "DynamoDB",
           "CloudFormation",
-          "CodePipeline"
+          "CodePipeline",
         ],
-        "clientQuote": "The serverless migration transformed our business. We can now focus on features instead of infrastructure management."
-      }
-    ],
-    "cta": {
-      "title": "Ready for Similar Results?",
-      "subtitle": "Every client's situation is unique, but the methodology for success remains consistent. Let's discuss how we can achieve similar outcomes for your organization.",
-      "primaryButton": {
-        "text": "Schedule Strategy Call",
-        "icon": "Calendar"
+        clientQuote:
+          "The serverless migration transformed our business. We can now focus on features instead of infrastructure management.",
       },
-      "secondaryButton": {
-        "text": "View More Success Stories",
-        "icon": "Users"
-      }
-    }
+    ],
+    cta: {
+      title: "Ready for Similar Results?",
+      subtitle:
+        "Every client's situation is unique, but the methodology for success remains consistent. Let's discuss how we can achieve similar outcomes for your organization.",
+      primaryButton: {
+        text: "Schedule Strategy Call",
+        icon: "Calendar",
+      },
+      secondaryButton: {
+        text: "View More Success Stories",
+        icon: "Users",
+      },
+    },
   },
-  "aboutSection": {
-    "title": "Meet Your AWS Success Partner",
-    "subtitle": "Learn about the experience, methodology, and values that drive consistent results for clients across industries.",
-    "tabs": [
+  aboutSection: {
+    title: "Meet Your AWS Success Partner",
+    subtitle:
+      "Learn about the experience, methodology, and values that drive consistent results for clients across industries.",
+    tabs: [
       {
-        "id": "journey",
-        "label": "My Journey",
-        "icon": "MapPin"
+        id: "journey",
+        label: "My Journey",
+        icon: "MapPin",
       },
       {
-        "id": "expertise",
-        "label": "Expertise",
-        "icon": "Award"
+        id: "expertise",
+        label: "Expertise",
+        icon: "Award",
       },
       {
-        "id": "approach",
-        "label": "My Approach",
-        "icon": "Target"
+        id: "approach",
+        label: "My Approach",
+        icon: "Target",
       },
       {
-        "id": "values",
-        "label": "Values",
-        "icon": "Heart"
-      }
+        id: "values",
+        label: "Values",
+        icon: "Heart",
+      },
     ],
-    "expertiseAreas": [
+    expertiseAreas: [
       {
-        "category": "Cloud Architecture",
-        "level": 95,
-        "color": "#1B365D",
-        "skills": [
-          "AWS Lambda",
-          "EC2",
-          "S3",
-          "CloudFormation"
-        ]
+        category: "Cloud Architecture",
+        level: 95,
+        color: "#1B365D",
+        skills: ["AWS Lambda", "EC2", "S3", "CloudFormation"],
       },
       {
-        "category": "Cost Optimization",
-        "level": 98,
-        "color": "#38A169",
-        "skills": [
+        category: "Cost Optimization",
+        level: 98,
+        color: "#38A169",
+        skills: [
           "Right-sizing",
           "Reserved Instances",
           "Spot Instances",
-          "Resource Tagging"
-        ]
+          "Resource Tagging",
+        ],
       },
       {
-        "category": "Security & Compliance",
-        "level": 92,
-        "color": "#E53E3E",
-        "skills": [
-          "IAM Policies",
-          "VPC Design",
-          "Encryption",
-          "SOC2 Compliance"
-        ]
+        category: "Security & Compliance",
+        level: 92,
+        color: "#E53E3E",
+        skills: ["IAM Policies", "VPC Design", "Encryption", "SOC2 Compliance"],
       },
       {
-        "category": "DevOps & Automation",
-        "level": 90,
-        "color": "#7C3AED",
-        "skills": [
+        category: "DevOps & Automation",
+        level: 90,
+        color: "#7C3AED",
+        skills: [
           "CI/CD Pipelines",
           "Infrastructure as Code",
           "Monitoring",
-          "Auto-scaling"
-        ]
-      }
+          "Auto-scaling",
+        ],
+      },
     ],
-    "approachSteps": [
+    approachSteps: [
       {
-        "step": "1",
-        "title": "Deep Discovery",
-        "description": "I start by understanding your unique challenges, current architecture, and business goals through detailed assessment.",
-        "icon": "Search"
+        step: "1",
+        title: "Deep Discovery",
+        description:
+          "I start by understanding your unique challenges, current architecture, and business goals through detailed assessment.",
+        icon: "Search",
       },
       {
-        "step": "2",
-        "title": "Strategic Planning",
-        "description": "Create a customized roadmap with clear priorities, timelines, and expected outcomes based on your specific needs.",
-        "icon": "Map"
+        step: "2",
+        title: "Strategic Planning",
+        description:
+          "Create a customized roadmap with clear priorities, timelines, and expected outcomes based on your specific needs.",
+        icon: "Map",
       },
       {
-        "step": "3",
-        "title": "Hands-on Implementation",
-        "description": "Work alongside your team to implement solutions, ensuring knowledge transfer and sustainable practices.",
-        "icon": "Tool"
+        step: "3",
+        title: "Hands-on Implementation",
+        description:
+          "Work alongside your team to implement solutions, ensuring knowledge transfer and sustainable practices.",
+        icon: "Tool",
       },
       {
-        "step": "4",
-        "title": "Continuous Optimization",
-        "description": "Monitor results, fine-tune performance, and provide ongoing support to maximize long-term value.",
-        "icon": "TrendingUp"
-      }
+        step: "4",
+        title: "Continuous Optimization",
+        description:
+          "Monitor results, fine-tune performance, and provide ongoing support to maximize long-term value.",
+        icon: "TrendingUp",
+      },
     ],
-    "coreValues": [
+    coreValues: [
       {
-        "title": "Transparency",
-        "description": "Clear communication about what's possible, realistic timelines, and honest assessments of your current state.",
-        "icon": "Eye",
-        "color": "#1B365D"
+        title: "Transparency",
+        description:
+          "Clear communication about what's possible, realistic timelines, and honest assessments of your current state.",
+        icon: "Eye",
+        color: "#1B365D",
       },
       {
-        "title": "Results-Driven",
-        "description": "Every recommendation comes with measurable outcomes and clear ROI projections based on real-world experience.",
-        "icon": "Target",
-        "color": "#38A169"
+        title: "Results-Driven",
+        description:
+          "Every recommendation comes with measurable outcomes and clear ROI projections based on real-world experience.",
+        icon: "Target",
+        color: "#38A169",
       },
       {
-        "title": "Knowledge Sharing",
-        "description": "I believe in empowering your team with knowledge, not creating dependency. You'll learn while we work together.",
-        "icon": "BookOpen",
-        "color": "#FF9900"
+        title: "Knowledge Sharing",
+        description:
+          "I believe in empowering your team with knowledge, not creating dependency. You'll learn while we work together.",
+        icon: "BookOpen",
+        color: "#FF9900",
       },
       {
-        "title": "Long-term Partnership",
-        "description": "Building lasting relationships focused on your continued success, not just completing projects.",
-        "icon": "Handshake",
-        "color": "#7C3AED"
-      }
+        title: "Long-term Partnership",
+        description:
+          "Building lasting relationships focused on your continued success, not just completing projects.",
+        icon: "Handshake",
+        color: "#7C3AED",
+      },
     ],
-    "cta": {
-      "title": "Ready to Transform Your AWS Journey?",
-      "subtitle": "Let's discuss how my experience and methodology can help you achieve your cloud goals.",
-      "buttonText": "Schedule Your Free Consultation",
-      "buttonIcon": "Calendar"
-    }
+    cta: {
+      title: "Ready to Transform Your AWS Journey?",
+      subtitle:
+        "Let's discuss how my experience and methodology can help you achieve your cloud goals.",
+      buttonText: "Schedule Your Free Consultation",
+      buttonIcon: "Calendar",
+    },
   },
-  "additionalInfo": {
-    "_id": "68e38f7160782e175700f00a",
-    "speakingEngagements": [
+  additionalInfo: {
+    _id: "68f08f580fbf5f6c0d02c89d",
+    speakingEngagements: [
       {
-        "event": "AWS User Group Surat",
-        "topic": "Serverless Cost Optimization Strategies",
-        "date": "2023",
-        "audience": "150+ developers and architects",
-        "_id": "68e38f7160782e175700f00b"
+        event: "AWS User Group Surat",
+        topic: "Serverless Cost Optimization Strategies",
+        date: "2023",
+        audience: "150+ developers and architects",
+        _id: "68f08f580fbf5f6c0d02c89e",
       },
       {
-        "event": "DevOps India Conference",
-        "topic": "Building Resilient Cloud Infrastructure",
-        "date": "2023",
-        "audience": "300+ DevOps professionals",
-        "_id": "68e38f7160782e175700f00c"
+        event: "DevOps India Conference",
+        topic: "Building Resilient Cloud Infrastructure",
+        date: "2023",
+        audience: "300+ DevOps professionals",
+        _id: "68f08f580fbf5f6c0d02c89f",
       },
       {
-        "event": "Cloud Computing Summit",
-        "topic": "Microservices to Serverless Migration",
-        "date": "2022",
-        "audience": "200+ cloud engineers",
-        "_id": "68e38f7160782e175700f00d"
-      }
+        event: "Cloud Computing Summit",
+        topic: "Microservices to Serverless Migration",
+        date: "2022",
+        audience: "200+ cloud engineers",
+        _id: "68f08f580fbf5f6c0d02c8a0",
+      },
     ],
-    "publications": [
+    publications: [
       {
-        "title": "AWS in 2025: Latest Updates and Best Practices for Developers",
-        "platform": "Dev.to",
-        "date": "2025",
-        "url": "https://dev.to/rahulladumor/aws-in-2025-latest-updates-and-best-practices-for-developers-56ah",
-        "views": "5K+",
-        "_id": "68e38f7160782e175700f00e"
+        title: "AWS in 2025: Latest Updates and Best Practices for Developers",
+        platform: "Dev.to",
+        date: "2025",
+        url: "https://dev.to/rahulladumor/aws-in-2025-latest-updates-and-best-practices-for-developers-56ah",
+        views: "5K+",
+        _id: "68f08f580fbf5f6c0d02c8a1",
       },
       {
-        "title": "DeepSeek R1 AI: Game-Changer or Regionally Limited? 2025 Analysis",
-        "platform": "Dev.to",
-        "date": "2025",
-        "url": "https://dev.to/rahulladumor/deepseek-r1-a-game-changer-or-a-regionally-constrained-ai-3iaj",
-        "views": "3K+",
-        "_id": "68e38f7160782e175700f00f"
+        title:
+          "DeepSeek R1 AI: Game-Changer or Regionally Limited? 2025 Analysis",
+        platform: "Dev.to",
+        date: "2025",
+        url: "https://dev.to/rahulladumor/deepseek-r1-a-game-changer-or-a-regionally-constrained-ai-3iaj",
+        views: "3K+",
+        _id: "68f08f580fbf5f6c0d02c8a2",
       },
       {
-        "title": "Mastering AWS Lambda Performance: Advanced Optimization Strategies for 2025",
-        "platform": "Dev.to",
-        "date": "2025",
-        "url": "https://dev.to/rahulladumor/mastering-aws-lambda-performance-advanced-optimization-strategies-for-2025-3bfe",
-        "views": "8K+",
-        "_id": "68e38f7160782e175700f010"
+        title:
+          "Mastering AWS Lambda Performance: Advanced Optimization Strategies for 2025",
+        platform: "Dev.to",
+        date: "2025",
+        url: "https://dev.to/rahulladumor/mastering-aws-lambda-performance-advanced-optimization-strategies-for-2025-3bfe",
+        views: "8K+",
+        _id: "68f08f580fbf5f6c0d02c8a3",
       },
       {
-        "title": "Working with Amazon OpenSearch Service Direct Queries with Amazon S3",
-        "platform": "Dev.to",
-        "date": "2024",
-        "url": "https://dev.to/rahulladumor/working-with-amazon-opensearch-service-direct-queries-with-amazon-s3-the-first-ever-detailed-guide-4m2a",
-        "views": "25K+",
-        "_id": "68e38f7160782e175700f011"
+        title:
+          "Working with Amazon OpenSearch Service Direct Queries with Amazon S3",
+        platform: "Dev.to",
+        date: "2024",
+        url: "https://dev.to/rahulladumor/working-with-amazon-opensearch-service-direct-queries-with-amazon-s3-the-first-ever-detailed-guide-4m2a",
+        views: "25K+",
+        _id: "68f08f580fbf5f6c0d02c8a4",
       },
       {
-        "title": "Serverless Cost Optimization Nightmares: A 2025 Survival Guide",
-        "platform": "Dev.to",
-        "date": "2025",
-        "url": "https://dev.to/rahulladumor/serverless-horror-stories-real-world-nightmares-and-how-to-avoid-them-5eoi",
-        "views": "12K+",
-        "_id": "68e38f7160782e175700f012"
+        title: "Serverless Cost Optimization Nightmares: A 2025 Survival Guide",
+        platform: "Dev.to",
+        date: "2025",
+        url: "https://dev.to/rahulladumor/serverless-horror-stories-real-world-nightmares-and-how-to-avoid-them-5eoi",
+        views: "12K+",
+        _id: "68f08f580fbf5f6c0d02c8a5",
       },
       {
-        "title": "Understanding Passkeys: The Behind-the-Scenes Magic",
-        "platform": "Dev.to",
-        "date": "2025",
-        "url": "https://dev.to/rahulladumor/understanding-passkeys-the-behind-the-scenes-magic-of-passwordless-authentication-7i",
-        "views": "6K+",
-        "_id": "68e38f7160782e175700f013"
+        title: "Understanding Passkeys: The Behind-the-Scenes Magic",
+        platform: "Dev.to",
+        date: "2025",
+        url: "https://dev.to/rahulladumor/understanding-passkeys-the-behind-the-scenes-magic-of-passwordless-authentication-7i",
+        views: "6K+",
+        _id: "68f08f580fbf5f6c0d02c8a6",
       },
       {
-        "title": "10 Trending Node.js Libraries and Frameworks to Boost Your Web Development",
-        "platform": "Dev.to",
-        "date": "2024",
-        "url": "https://dev.to/rahulladumor/10-trending-nodejs-libraries-and-frameworks-to-boost-your-web-development-3aa5",
-        "views": "15K+",
-        "_id": "68e38f7160782e175700f014"
+        title:
+          "10 Trending Node.js Libraries and Frameworks to Boost Your Web Development",
+        platform: "Dev.to",
+        date: "2024",
+        url: "https://dev.to/rahulladumor/10-trending-nodejs-libraries-and-frameworks-to-boost-your-web-development-3aa5",
+        views: "15K+",
+        _id: "68f08f580fbf5f6c0d02c8a7",
       },
       {
-        "title": "A Deep Dive into .then() Method in JavaScript: How to Use it Like a Pro",
-        "platform": "Dev.to",
-        "date": "2024",
-        "url": "https://dev.to/thetechguruworld/the-power-of-then-in-javascript-8ma",
-        "views": "12K+",
-        "_id": "68e38f7160782e175700f015"
+        title:
+          "A Deep Dive into .then() Method in JavaScript: How to Use it Like a Pro",
+        platform: "Dev.to",
+        date: "2024",
+        url: "https://dev.to/thetechguruworld/the-power-of-then-in-javascript-8ma",
+        views: "12K+",
+        _id: "68f08f580fbf5f6c0d02c8a8",
       },
       {
-        "title": "Understanding Netflix's Backend Architecture: A Deep Dive",
-        "platform": "Dev.to",
-        "date": "2023",
-        "url": "https://dev.to/rahulladumor/understanding-netflixs-backend-architecture-a-deep-dive-1f2c",
-        "views": "20K+",
-        "_id": "68e38f7160782e175700f016"
-      }
+        title: "Understanding Netflix's Backend Architecture: A Deep Dive",
+        platform: "Dev.to",
+        date: "2023",
+        url: "https://dev.to/rahulladumor/understanding-netflixs-backend-architecture-a-deep-dive-1f2c",
+        views: "20K+",
+        _id: "68f08f580fbf5f6c0d02c8a9",
+      },
     ],
-    "communityInvolvement": [
+    communityInvolvement: [
       {
-        "organization": "AWS Community Builder",
-        "role": "Community Builder",
-        "duration": "2022 - Present",
-        "activities": [
+        organization: "AWS Community Builder",
+        role: "Community Builder",
+        duration: "2022 - Present",
+        activities: [
           "Technical content creation",
           "Community mentoring",
-          "Event speaking"
+          "Event speaking",
         ],
-        "_id": "68e38f7160782e175700f017"
+        _id: "68f08f580fbf5f6c0d02c8aa",
       },
       {
-        "organization": "Topmate.io",
-        "role": "Technical Mentor",
-        "duration": "2021 - Present",
-        "activities": [
+        organization: "Topmate.io",
+        role: "Technical Mentor",
+        duration: "2021 - Present",
+        activities: [
           "1-on-1 mentoring sessions",
           "Career guidance",
-          "Technical interview preparation"
+          "Technical interview preparation",
         ],
-        "_id": "68e38f7160782e175700f018"
+        _id: "68f08f580fbf5f6c0d02c8ab",
       },
       {
-        "organization": "Open Source Contributor",
-        "role": "Contributor",
-        "duration": "2019 - Present",
-        "activities": [
+        organization: "Open Source Contributor",
+        role: "Contributor",
+        duration: "2019 - Present",
+        activities: [
           "AWS tools development",
           "Documentation improvements",
-          "Bug fixes and features"
+          "Bug fixes and features",
         ],
-        "_id": "68e38f7160782e175700f019"
-      }
+        _id: "68f08f580fbf5f6c0d02c8ac",
+      },
     ],
-    "awards": [
+    awards: [
       {
-        "title": "Distinguished Alumni Recognition - 60th Anniversary",
-        "issuer": "Veer Narmad South Gujarat University",
-        "year": "2024",
-        "description": "Recognized for outstanding professional achievements and contributions",
-        "_id": "68e38f7160782e175700f01a"
+        title: "Distinguished Alumni Recognition - 60th Anniversary",
+        issuer: "Veer Narmad South Gujarat University",
+        year: "2024",
+        description:
+          "Recognized for outstanding professional achievements and contributions",
+        _id: "68f08f580fbf5f6c0d02c8ad",
       },
       {
-        "title": "Best Technical Innovation",
-        "issuer": "TechCorp Solutions",
-        "year": "2023",
-        "description": "For developing cost-saving serverless architecture solutions",
-        "_id": "68e38f7160782e175700f01b"
+        title: "Best Technical Innovation",
+        issuer: "TechCorp Solutions",
+        year: "2023",
+        description:
+          "For developing cost-saving serverless architecture solutions",
+        _id: "68f08f580fbf5f6c0d02c8ae",
       },
       {
-        "title": "Excellence in Cloud Engineering",
-        "issuer": "CloudTech Innovations",
-        "year": "2022",
-        "description": "For exceptional performance in cloud infrastructure projects",
-        "_id": "68e38f7160782e175700f01c"
-      }
+        title: "Excellence in Cloud Engineering",
+        issuer: "CloudTech Innovations",
+        year: "2022",
+        description:
+          "For exceptional performance in cloud infrastructure projects",
+        _id: "68f08f580fbf5f6c0d02c8af",
+      },
     ],
-    "subjectOptions": [
+    subjectOptions: [
       {
-        "value": "aws-consulting",
-        "label": "AWS Consulting Services",
-        "_id": "68e38f7160782e175700f01d"
+        value: "aws-consulting",
+        label: "AWS Consulting Services",
+        _id: "68f08f580fbf5f6c0d02c8b0",
       },
       {
-        "value": "cost-optimization",
-        "label": "AWS Cost Optimization Inquiry",
-        "_id": "68e38f7160782e175700f01e"
+        value: "cost-optimization",
+        label: "AWS Cost Optimization Inquiry",
+        _id: "68f08f580fbf5f6c0d02c8b1",
       },
       {
-        "value": "mentorship",
-        "label": "Career Mentorship Interest",
-        "_id": "68e38f7160782e175700f01f"
+        value: "mentorship",
+        label: "Career Mentorship Interest",
+        _id: "68f08f580fbf5f6c0d02c8b2",
       },
       {
-        "value": "enterprise-consulting",
-        "label": "Enterprise Consulting",
-        "_id": "68e38f7160782e175700f020"
+        value: "enterprise-consulting",
+        label: "Enterprise Consulting",
+        _id: "68f08f580fbf5f6c0d02c8b3",
       },
       {
-        "value": "speaking-engagement",
-        "label": "Speaking Engagement",
-        "_id": "68e38f7160782e175700f021"
+        value: "speaking-engagement",
+        label: "Speaking Engagement",
+        _id: "68f08f580fbf5f6c0d02c8b4",
       },
       {
-        "value": "partnership",
-        "label": "Partnership Opportunity",
-        "_id": "68e38f7160782e175700f022"
+        value: "partnership",
+        label: "Partnership Opportunity",
+        _id: "68f08f580fbf5f6c0d02c8b5",
       },
       {
-        "value": "other",
-        "label": "Other",
-        "_id": "68e38f7160782e175700f023"
-      }
+        value: "other",
+        label: "Other",
+        _id: "68f08f580fbf5f6c0d02c8b6",
+      },
     ],
-    "createdAt": "2025-10-06T09:44:17.961Z",
-    "updatedAt": "2025-10-06T09:44:17.961Z",
-    "__v": 0
-  }
+    createdAt: "2025-10-16T06:23:20.567Z",
+    updatedAt: "2025-10-16T06:23:20.567Z",
+    __v: 0,
+  },
 };
+
 // Company/Work Information - REPLACE WITH YOUR ACTUAL WORK HISTORY
 export const workExperience = [
   {
@@ -1925,11 +1973,14 @@ export const projects = [
 ];
 
 export const seo = {
-  "title": "Rahul Ladumor | 4x AWS Community Builder | 60% Cost Reduction Specialist",
-  "description": "4x AWS Community Builder delivering 60% average cost reduction through serverless architecture (Lambda, EventBridge), LLM/AI integration (Bedrock, LangChain), and DevOps automation. $2M+ saved for clients. Currently at ASTM International & Turing. Book a free discovery call.",
-  "author": "Rahul Ladumor",
-  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-  "keywords": [
+  title:
+    "Rahul Ladumor | 4x AWS Community Builder | 60% Cost Reduction Specialist",
+  description:
+    "4x AWS Community Builder delivering 60% average cost reduction through serverless architecture (Lambda, EventBridge), LLM/AI integration (Bedrock, LangChain), and DevOps automation. $2M+ saved for clients. Currently at ASTM International & Turing. Book a free discovery call.",
+  author: "Rahul Ladumor",
+  robots:
+    "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  keywords: [
     "AWS Solutions Architect",
     "AWS Community Builder",
     "Serverless Architecture",
@@ -1965,170 +2016,197 @@ export const seo = {
     "Serverless Framework",
     "AWS Certification",
     "Cloud Cost Management",
-    "Performance Optimization"
+    "Performance Optimization",
   ],
-  "canonicalUrl": "https://www.rahulladumor.in/",
-  "geo": {
-    "region": "IN-GJ",
-    "placename": "Ahmedabad, Gujarat, India",
-    "position": "23.0225;72.5714"
+  canonicalUrl: "https://www.rahulladumor.in/",
+  geo: {
+    region: "IN-GJ",
+    placename: "Ahmedabad, Gujarat, India",
+    position: "23.0225;72.5714",
   },
-  "twitter": {
-    "handle": "@Rahul__ladumor",
-    "cardType": "summary_large_image"
+  twitter: {
+    handle: "@Rahul__ladumor",
+    cardType: "summary_large_image",
   },
-  "openGraph": {
-    "url": "https://www.rahulladumor.in/",
-    "title": "Rahul Ladumor | 4x AWS Community Builder | 60% Cost Reduction Specialist",
-    "description": "4x AWS Community Builder delivering 60% average cost reduction through serverless architecture, LLM/AI integration, and DevOps automation. $2M+ saved for clients. Currently at ASTM International & Turing.",
-    "images": [
-      { 
-        "url": "https://www.rahulladumor.in/assets/images/profile.avif", 
-        "width": 1200, 
-        "height": 630, 
-        "alt": "Rahul Ladumor - AWS Solutions Architect & 4x Community Builder"
-      }
+  openGraph: {
+    url: "https://www.rahulladumor.in/",
+    title:
+      "Rahul Ladumor | 4x AWS Community Builder | 60% Cost Reduction Specialist",
+    description:
+      "4x AWS Community Builder delivering 60% average cost reduction through serverless architecture, LLM/AI integration, and DevOps automation. $2M+ saved for clients. Currently at ASTM International & Turing.",
+    images: [
+      {
+        url: "https://www.rahulladumor.in/assets/images/profile.avif",
+        width: 1200,
+        height: 630,
+        alt: "Rahul Ladumor - AWS Solutions Architect & 4x Community Builder",
+      },
     ],
-    "type": "website"
+    type: "website",
   },
-  "structuredData": {
+  structuredData: {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Rahul Ladumor",
-    "givenName": "Rahul",
-    "familyName": "Ladumor",
-    "jobTitle": "4x AWS Community Builder | 60% Cost Reduction Specialist | Senior AWS Solutions Architect",
-    "description": "Expert AWS Solutions Architect specializing in serverless architecture, cost optimization, and AI/ML integration. Proven track record of 60% average cost reduction and $2M+ savings for clients.",
-    "url": "https://www.rahulladumor.in/",
-    "image": "https://www.rahulladumor.in/assets/images/profile.avif",
-    "email": "contact@rahulladumor.in",
-    "telephone": "+91-9876543210",
-    "address": {
+    name: "Rahul Ladumor",
+    givenName: "Rahul",
+    familyName: "Ladumor",
+    jobTitle:
+      "4x AWS Community Builder | 60% Cost Reduction Specialist | Senior AWS Solutions Architect",
+    description:
+      "Expert AWS Solutions Architect specializing in serverless architecture, cost optimization, and AI/ML integration. Proven track record of 60% average cost reduction and $2M+ savings for clients.",
+    url: "https://www.rahulladumor.in/",
+    image: "https://www.rahulladumor.in/assets/images/profile.avif",
+    email: "contact@rahulladumor.in",
+    telephone: "+91-9876543210",
+    address: {
       "@type": "PostalAddress",
-      "addressLocality": "Ahmedabad",
-      "addressRegion": "Gujarat",
-      "addressCountry": "IN"
+      addressLocality: "Ahmedabad",
+      addressRegion: "Gujarat",
+      addressCountry: "IN",
     },
-    "sameAs": [
+    sameAs: [
       "https://linkedin.com/in/rahulladumor",
       "https://github.com/rahulladumor",
       "https://twitter.com/Rahul__ladumor",
       "https://dev.to/rahulladumor",
-      "https://medium.com/@rahulladumor"
+      "https://medium.com/@rahulladumor",
     ],
-    "knowsAbout": [
-      "AWS Lambda", "Amazon EventBridge", "API Gateway", "DynamoDB", "Serverless Architecture", 
-      "LLM Integration", "AI/ML Solutions", "LangChain", "Amazon Bedrock", "Cost Optimization", 
-      "DevOps Automation", "Terraform", "CI/CD Pipelines", "Kubernetes", "Amazon ECS", "Amazon EKS", 
-      "CloudWatch", "AWS Security", "Infrastructure as Code", "Microservices Architecture"
+    knowsAbout: [
+      "AWS Lambda",
+      "Amazon EventBridge",
+      "API Gateway",
+      "DynamoDB",
+      "Serverless Architecture",
+      "LLM Integration",
+      "AI/ML Solutions",
+      "LangChain",
+      "Amazon Bedrock",
+      "Cost Optimization",
+      "DevOps Automation",
+      "Terraform",
+      "CI/CD Pipelines",
+      "Kubernetes",
+      "Amazon ECS",
+      "Amazon EKS",
+      "CloudWatch",
+      "AWS Security",
+      "Infrastructure as Code",
+      "Microservices Architecture",
     ],
-    "hasCredential": [
+    hasCredential: [
       {
         "@type": "EducationalOccupationalCredential",
-        "name": "AWS Community Builder",
-        "credentialCategory": "Community Recognition",
-        "recognizedBy": {
+        name: "AWS Community Builder",
+        credentialCategory: "Community Recognition",
+        recognizedBy: {
           "@type": "Organization",
-          "name": "Amazon Web Services"
-        }
-      }
+          name: "Amazon Web Services",
+        },
+      },
     ],
-    "worksFor": [
+    worksFor: [
       {
         "@type": "Organization",
-        "name": "ASTM International"
+        name: "ASTM International",
       },
       {
-        "@type": "Organization", 
-        "name": "Turing"
-      }
+        "@type": "Organization",
+        name: "Turing",
+      },
     ],
-    "alumniOf": {
+    alumniOf: {
       "@type": "CollegeOrUniversity",
-      "name": "Gujarat Technological University"
-    }
+      name: "Gujarat Technological University",
+    },
   },
-  "additionalStructuredData": {
+  additionalStructuredData: {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Rahul Ladumor AWS Consulting Services",
-    "description": "Professional AWS consulting services specializing in cost optimization, serverless architecture, and AI/ML integration",
-    "provider": {
+    name: "Rahul Ladumor AWS Consulting Services",
+    description:
+      "Professional AWS consulting services specializing in cost optimization, serverless architecture, and AI/ML integration",
+    provider: {
       "@type": "Person",
-      "name": "Rahul Ladumor"
+      name: "Rahul Ladumor",
     },
-    "areaServed": "Worldwide",
-    "serviceType": [
+    areaServed: "Worldwide",
+    serviceType: [
       "AWS Cost Optimization",
-      "Serverless Architecture Design", 
+      "Serverless Architecture Design",
       "AI/ML Integration",
       "DevOps Automation",
       "Cloud Migration",
-      "AWS Mentorship"
+      "AWS Mentorship",
     ],
-    "offers": [
+    offers: [
       {
         "@type": "Offer",
-        "name": "AWS Cost Optimization Consultation",
-        "description": "Comprehensive AWS cost analysis and optimization strategy",
-        "price": "Free Discovery Call",
-        "priceCurrency": "USD"
-      },
-      {
-        "@type": "Offer", 
-        "name": "Serverless Architecture Design",
-        "description": "Custom serverless solutions using AWS Lambda, EventBridge, and other AWS services"
+        name: "AWS Cost Optimization Consultation",
+        description:
+          "Comprehensive AWS cost analysis and optimization strategy",
+        price: "Free Discovery Call",
+        priceCurrency: "USD",
       },
       {
         "@type": "Offer",
-        "name": "AI/ML Integration Services", 
-        "description": "LLM and AI/ML integration using Amazon Bedrock, LangChain, and custom solutions"
-      }
+        name: "Serverless Architecture Design",
+        description:
+          "Custom serverless solutions using AWS Lambda, EventBridge, and other AWS services",
+      },
+      {
+        "@type": "Offer",
+        name: "AI/ML Integration Services",
+        description:
+          "LLM and AI/ML integration using Amazon Bedrock, LangChain, and custom solutions",
+      },
     ],
-    "hasOfferCatalog": {
+    hasOfferCatalog: {
       "@type": "OfferCatalog",
-      "name": "AWS Consulting Services",
-      "itemListElement": [
+      name: "AWS Consulting Services",
+      itemListElement: [
         {
           "@type": "Offer",
-          "itemOffered": {
+          itemOffered: {
             "@type": "Service",
-            "name": "AWS Architecture Review",
-            "description": "Comprehensive review of existing AWS infrastructure with optimization recommendations"
-          }
+            name: "AWS Architecture Review",
+            description:
+              "Comprehensive review of existing AWS infrastructure with optimization recommendations",
+          },
         },
         {
-          "@type": "Offer", 
-          "itemOffered": {
+          "@type": "Offer",
+          itemOffered: {
             "@type": "Service",
-            "name": "Serverless Migration",
-            "description": "Migration from traditional infrastructure to serverless architecture"
-          }
-        }
-      ]
+            name: "Serverless Migration",
+            description:
+              "Migration from traditional infrastructure to serverless architecture",
+          },
+        },
+      ],
     },
-    "aggregateRating": {
+    aggregateRating: {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "50+",
-      "bestRating": "5"
+      ratingValue: "4.9",
+      reviewCount: "50+",
+      bestRating: "5",
     },
-    "review": [
+    review: [
       {
         "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating", 
-          "ratingValue": "5"
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
         },
-        "author": {
+        author: {
           "@type": "Person",
-          "name": "Tech Startup CEO"
+          name: "Tech Startup CEO",
         },
-        "reviewBody": "Rahul's optimization saved us over $50K annually while making our platform more reliable and faster. The ROI was immediate and substantial."
-      }
-    ]
-  }
-}
+        reviewBody:
+          "Rahul's optimization saved us over $50K annually while making our platform more reliable and faster. The ROI was immediate and substantial.",
+      },
+    ],
+  },
+};
 
 // Testimonials - REPLACE WITH ACTUAL TESTIMONIALS (WITH PERMISSION)
 export const testimonials = [
