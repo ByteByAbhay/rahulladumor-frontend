@@ -1,4 +1,5 @@
 import Head from "next/head";
+import StructuredData from "./StructuredData";
 
 function MetaHead({
   seo,
@@ -6,6 +7,8 @@ function MetaHead({
   titleSuffix = "",
   article = null,
   breadcrumbs = null,
+  includeStructuredData = true,
+  structuredDataType = "all",
 }) {
   const s = seo || {};
   const fullTitle =
@@ -267,6 +270,19 @@ function MetaHead({
       )}
       {s.pinterestVerification && (
         <meta name="p:domain_verify" content={s.pinterestVerification} />
+      )}
+
+      {/* Structured Data / Schema Markup */}
+      {includeStructuredData && (
+        <StructuredData
+          type={structuredDataType}
+          pageData={{
+            url: canonical,
+            title: fullTitle,
+            description: desc,
+            breadcrumbs: breadcrumbs,
+          }}
+        />
       )}
     </Head>
   );

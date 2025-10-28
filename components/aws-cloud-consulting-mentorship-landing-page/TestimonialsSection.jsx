@@ -3,8 +3,9 @@ import Icon from "components/AppIcon";
 import Image from "components/AppImage";
 import { extendedTestimonials } from "../../config/personalInfo";
 
-const TestimonialsSection = ({ profileData }) => {
+const TestimonialsSection = ({ profileData, isMainHeading = false }) => {
   const personalInfo = profileData || {};
+  const HeadingTag = isMainHeading ? 'h1' : 'h2';
 
   // Get testimonials section data from personalInfo with fallbacks
   const testimonialsData = personalInfo.testimonialsSection || {};
@@ -73,11 +74,11 @@ const TestimonialsSection = ({ profileData }) => {
     <section id="testimonials" className="py-20 bg-surface">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+        <div className="text-center mb-8 md:mb-12 lg:mb-16">
+          <HeadingTag className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 md:mb-6 px-4">
             {testimonialsData.title || "Real Results from Real Clients"}
-          </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+          </HeadingTag>
+          <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl mx-auto px-4 mb-6 md:mb-8">
             {testimonialsData.subtitle ||
               "Don't just take my word for it. Here's what clients say about the measurable impact of our AWS optimization and mentorship programs."}
           </p>

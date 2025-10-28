@@ -13,7 +13,7 @@ export default function ReviewsPage({ profileData }) {
   return (
     <MainLayout profileData={profileData}>
       <MetaHead seo={seo} />
-      <TestimonialsSection profileData={profileData} />
+      <TestimonialsSection profileData={profileData} isMainHeading={true} />
       <ExperienceEducation profileData={profileData} />
       <CaseStudiesSection profileData={profileData} />
     </MainLayout>

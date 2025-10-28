@@ -104,13 +104,13 @@ const ServicesSection = ({ profileData }) => {
   };
 
   return (
-    <section className="py-12 md:py-16 lg:py-20 bg-background overflow-x-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-20 bg-surface">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-8 md:mb-12 lg:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 md:mb-6 px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 md:mb-6 px-4">
             {servicesData.title || "Choose Your AWS Success Path"}
-          </h2>
+          </h1>
           <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl mx-auto px-4">
             {servicesData.subtitle ||
               "Flexible engagement models designed to meet your specific needs and budget, with guaranteed results and transparent pricing."}
@@ -171,24 +171,24 @@ const ServicesSection = ({ profileData }) => {
                   </div>
                 )}
 
-                <div className="p-8">
+                <div className="p-6 sm:p-8">
                   {/* Header */}
-                  <div className="text-center mb-6">
-                    <h3 className="text-2xl font-bold text-primary mb-2">
+                  <div className="text-center mb-4 sm:mb-6">
+                    <h3 className="text-xl sm:text-2xl font-bold text-primary mb-2">
                       {service.name || "Service"}
                     </h3>
-                    <p className="text-text-secondary mb-4">
+                    <p className="text-sm sm:text-base text-text-secondary mb-3 sm:mb-4">
                       {service.subtitle || "Service description"}
                     </p>
 
                     {/* Pricing */}
-                    <div className="mb-6">
+                    <div className="mb-4 sm:mb-6">
                       <div className="flex items-baseline space-x-2 mb-2">
-                        <span className="text-3xl font-bold text-primary">
+                        <span className="text-2xl sm:text-3xl font-bold text-primary">
                           {formatPrice(service.price, selectedCurrency)}
                         </span>
                         {service.originalPrice && (
-                          <span className="text-lg text-text-secondary line-through">
+                          <span className="text-base sm:text-lg text-text-secondary line-through">
                             {formatPrice(
                               service.originalPrice,
                               selectedCurrency
@@ -211,7 +211,7 @@ const ServicesSection = ({ profileData }) => {
 
                     {/* Ideal For */}
                     <div
-                      className={`${colorClasses.bg} ${colorClasses.border} border rounded-lg p-3 mb-6`}
+                      className={`${colorClasses.bg} ${colorClasses.border} border rounded-lg p-2 sm:p-3 mb-4 sm:mb-6`}
                     >
                       <div className="flex items-center justify-center space-x-2">
                         <Icon
@@ -227,12 +227,12 @@ const ServicesSection = ({ profileData }) => {
                   </div>
 
                   {/* Features */}
-                  <div className="mb-8">
-                    <h4 className="font-semibold text-primary mb-4 flex items-center space-x-2">
+                  <div className="mb-6 sm:mb-8">
+                    <h4 className="text-sm sm:text-base font-semibold text-primary mb-3 sm:mb-4 flex items-center space-x-2">
                       <Icon name="CheckCircle" size={18} color="#1B365D" />
                       <span>What's Included</span>
                     </h4>
-                    <ul className="space-y-3 mb-8">
+                    <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
                       {(service.features || []).map((feature, idx) => (
                         <li key={idx} className="flex items-start space-x-3">
                           <Icon
@@ -241,15 +241,15 @@ const ServicesSection = ({ profileData }) => {
                             color="#38A169"
                             className="mt-1 flex-shrink-0"
                           />
-                          <span className="text-text-secondary">{feature}</span>
+                          <span className="text-sm sm:text-base text-text-secondary">{feature}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
                   {/* Deliverables */}
-                  <div className="mb-8">
-                    <h4 className="font-semibold text-primary mb-4 flex items-center space-x-2">
+                  <div className="mb-6 sm:mb-8">
+                    <h4 className="text-sm sm:text-base font-semibold text-primary mb-3 sm:mb-4 flex items-center space-x-2">
                       <Icon name="Package" size={18} color="#1B365D" />
                       <span>Deliverables</span>
                     </h4>
@@ -262,7 +262,7 @@ const ServicesSection = ({ profileData }) => {
                             color="#FF9900"
                             className="mt-1 flex-shrink-0"
                           />
-                          <span className="text-text-secondary">
+                          <span className="text-sm sm:text-base text-text-secondary">
                             {deliverable}
                           </span>
                         </li>
@@ -273,14 +273,14 @@ const ServicesSection = ({ profileData }) => {
                   {/* CTA Button */}
                   <button
                     onClick={() => handleBookingClick(service.name)}
-                    className={`w-full text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 ${colorClasses.button}`}
+                    className={`w-full text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold transition-colors duration-200 ${colorClasses.button}`}
                   >
                     {service.buttonText || "Get Started"}
                   </button>
 
                   {/* Guarantee */}
                   {service.guarantee && (
-                    <div className="mt-4 text-center">
+                    <div className="mt-3 sm:mt-4 text-center">
                       <div className="flex items-center justify-center space-x-2 text-sm text-green-600">
                         <Icon name="Shield" size={16} color="#38A169" />
                         <span className="font-medium">{service.guarantee}</span>
