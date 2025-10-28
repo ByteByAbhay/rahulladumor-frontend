@@ -1,27 +1,27 @@
-import React from 'react';
-import Image from '../AppImage';
-import Icon from '../AppIcon';
-import { personalInfo } from '../../config/personalInfo';
+import React from "react";
+import Link from "next/link";
+import Image from "../AppImage";
+import Icon from "../AppIcon";
+import { personalInfo } from "../../config/personalInfo";
 
 /**
  * AuthorBox Component
- * 
+ *
  * Displays visible author information for E-E-A-T signals.
  * Google prefers visible author info, not just structured data.
- * 
+ *
  * Usage:
  * <AuthorBox /> - Default author box
  * <AuthorBox variant="compact" /> - Compact version
  * <AuthorBox showBio={false} /> - Without bio
  */
-const AuthorBox = ({ 
-  variant = 'default', // 'default', 'compact', 'inline'
+const AuthorBox = ({
+  variant = "default", // 'default', 'compact', 'inline'
   showBio = true,
   showSocial = true,
   showCredentials = true,
-  className = ''
+  className = "",
 }) => {
-  
   const author = {
     name: personalInfo.name || "Rahul Ladumor",
     image: personalInfo.image || "/assets/images/profile.avif",
@@ -31,14 +31,17 @@ const AuthorBox = ({
     experience: "8+ years of experience",
     mentored: "200+ engineers mentored",
     social: {
-      linkedin: personalInfo.social?.linkedin || "https://www.linkedin.com/in/rahulladumor",
+      linkedin:
+        personalInfo.social?.linkedin ||
+        "https://www.linkedin.com/in/rahulladumor",
       github: personalInfo.social?.github || "https://github.com/Rahulladumor",
-      twitter: personalInfo.social?.twitter || "https://twitter.com/Rahul__ladumor"
-    }
+      twitter:
+        personalInfo.social?.twitter || "https://twitter.com/Rahul__ladumor",
+    },
   };
 
   // Compact variant (for article headers)
-  if (variant === 'compact') {
+  if (variant === "compact") {
     return (
       <div className={`flex items-center space-x-3 ${className}`}>
         <Image
@@ -50,13 +53,13 @@ const AuthorBox = ({
         />
         <div>
           <div className="flex items-center space-x-2">
-            <a 
-              href="/about" 
+            <Link
+              href="/about"
               className="font-semibold text-primary hover:text-accent transition-colors"
               rel="author"
             >
               {author.name}
-            </a>
+            </Link>
             {showCredentials && (
               <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800">
                 <Icon name="Award" size={12} className="mr-1" />
@@ -71,17 +74,17 @@ const AuthorBox = ({
   }
 
   // Inline variant (for bylines)
-  if (variant === 'inline') {
+  if (variant === "inline") {
     return (
       <div className={`flex items-center space-x-2 text-sm ${className}`}>
         <span className="text-text-secondary">By</span>
-        <a 
-          href="/about" 
+        <Link
+          href="/about"
           className="font-medium text-primary hover:text-accent transition-colors"
           rel="author"
         >
           {author.name}
-        </a>
+        </Link>
         {showCredentials && (
           <>
             <span className="text-text-secondary">•</span>
@@ -94,7 +97,9 @@ const AuthorBox = ({
 
   // Default variant (full author box)
   return (
-    <div className={`bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-6 border border-border ${className}`}>
+    <div
+      className={`bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-6 border border-border ${className}`}
+    >
       <div className="flex flex-col sm:flex-row gap-6">
         {/* Author Image */}
         <div className="flex-shrink-0">
@@ -113,14 +118,14 @@ const AuthorBox = ({
           <div className="mb-3">
             <div className="flex items-center space-x-2 mb-1">
               <h3 className="text-xl font-bold text-primary">
-                Written by{' '}
-                <a 
-                  href="/about" 
+                Written by{" "}
+                <Link
+                  href="/about"
                   className="hover:text-accent transition-colors"
                   rel="author"
                 >
                   {author.name}
-                </a>
+                </Link>
               </h3>
             </div>
             <p className="text-text-secondary font-medium">{author.title}</p>
@@ -184,13 +189,13 @@ const AuthorBox = ({
                 <Icon name="Twitter" size={18} />
                 <span className="hidden sm:inline">Twitter</span>
               </a>
-              <a
+              <Link
                 href="/about"
                 className="flex items-center space-x-2 text-sm font-medium text-accent hover:text-orange-600 transition-colors"
               >
                 <span>View Full Profile</span>
                 <Icon name="ArrowRight" size={16} />
-              </a>
+              </Link>
             </div>
           )}
         </div>
