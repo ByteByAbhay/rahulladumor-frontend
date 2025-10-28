@@ -100,31 +100,31 @@ const AboutSection = ({ profileData }) => {
       case "journey":
         return (
           <div className="space-y-8">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-primary mb-4">
+            <div className="text-center mb-6 md:mb-8">
+              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4 px-4">
                 My AWS Journey
               </h3>
-              <p className="text-text-secondary max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base text-text-secondary max-w-2xl mx-auto px-4">
                 From curious beginner to AWS expert, here's how I built the
                 expertise that now helps others succeed in the cloud.
               </p>
             </div>
 
             <div className="relative">
-              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border"></div>
-              <div className="space-y-8">
+              <div className="absolute left-4 sm:left-6 md:left-8 top-0 bottom-0 w-0.5 bg-border"></div>
+              <div className="space-y-6 md:space-y-8">
                 {journeyMilestones.map((milestone, index) => (
                   <div
                     key={index}
-                    className="relative flex items-start space-x-6"
+                    className="relative flex items-start space-x-3 sm:space-x-4 md:space-x-6"
                   >
                     <div
-                      className="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center relative z-10"
+                      className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center relative z-10"
                       style={{ backgroundColor: milestone.color }}
                     >
-                      <Icon name={milestone.icon} size={24} color="white" />
+                      <Icon name={milestone.icon} size={20} className="sm:w-6 sm:h-6" color="white" />
                     </div>
-                    <div className="flex-1 bg-white rounded-xl p-6 shadow-lg border border-border hover:shadow-xl transition-all duration-300 cursor-pointer">
+                    <div className="flex-1 bg-white rounded-xl p-4 sm:p-5 md:p-6 shadow-lg border border-border hover:shadow-xl transition-all duration-300 cursor-pointer">
                       {/* Header Section - Always Visible */}
                       <div
                         className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4"
@@ -133,7 +133,7 @@ const AboutSection = ({ profileData }) => {
                         <div className="flex-1">
                           <div className="flex items-start justify-between mb-2">
                             <span
-                              className="text-white px-3 py-1 rounded-full text-sm font-semibold flex-shrink-0"
+                              className="text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-semibold flex-shrink-0"
                               style={{ backgroundColor: milestone.color }}
                             >
                               {milestone.duration}
@@ -159,16 +159,16 @@ const AboutSection = ({ profileData }) => {
                               </div>
                             </div>
                           </div>
-                          <h4 className="text-xl font-bold text-primary leading-tight mb-1">
+                          <h4 className="text-base sm:text-lg md:text-xl font-bold text-primary leading-tight mb-1">
                             {milestone.position}
                           </h4>
-                          <div className="flex items-center space-x-2 text-accent font-semibold">
-                            <Icon name="Building" size={16} color="#FF6B35" />
+                          <div className="flex items-center space-x-2 text-accent font-semibold text-sm sm:text-base">
+                            <Icon name="Building" size={14} className="sm:w-4 sm:h-4" color="#FF6B35" />
                             <span>{milestone.company}</span>
                           </div>
                           {milestone.location && (
-                            <div className="flex items-center space-x-2 text-text-secondary text-sm mt-1">
-                              <Icon name="MapPin" size={14} color="#6B7280" />
+                            <div className="flex items-center space-x-2 text-text-secondary text-xs sm:text-sm mt-1">
+                              <Icon name="MapPin" size={12} className="sm:w-3.5 sm:h-3.5" color="#6B7280" />
                               <span>{milestone.location}</span>
                             </div>
                           )}
@@ -409,18 +409,19 @@ const AboutSection = ({ profileData }) => {
     <section id="about" className="py-20 bg-surface">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            {aboutData.title || "Meet Your AWS Success Partner"}
-          </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+        <div className="text-center mb-8 md:mb-12 lg:mb-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 md:mb-6 px-4">
+            {aboutData.title || "About Me"}
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl mx-auto px-4">
             {aboutData.subtitle ||
-              "Learn about the experience, methodology, and values that drive consistent results for clients across industries."}
+              "Learn more about my journey, expertise, and approach to cloud solutions."}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
-          {/* Profile Section */}
+        {/* Hero Section with Profile */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12 lg:mb-16">
+          {/* Profile Card */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-2xl shadow-lg border border-border p-8 sticky top-24">
               <div className="text-center mb-6">
@@ -439,17 +440,17 @@ const AboutSection = ({ profileData }) => {
                 <h3 className="text-2xl font-bold text-primary mb-2">
                   {aboutInfo.name}
                 </h3>
-                <p className="text-accent font-semibold mb-4">
+                <p className="text-accent font-semibold text-lg mb-4">
                   {aboutInfo.title}
                 </p>
 
-                <div className="space-y-2 text-sm text-text-secondary">
+                <div className="space-y-2 text-sm text-text-secondary mb-6">
                   <div className="flex items-center justify-center space-x-2">
-                    <Icon name="MapPin" size={16} color="#4A5568" />
+                    <Icon name="MapPin" size={18} color="#4A5568" />
                     <span>{aboutInfo.location}</span>
                   </div>
                   <div className="flex items-center justify-center space-x-2">
-                    <Icon name="Clock" size={16} color="#4A5568" />
+                    <Icon name="Clock" size={18} color="#4A5568" />
                     <span>{aboutInfo.experience} Experience</span>
                   </div>
                 </div>
@@ -501,9 +502,9 @@ const AboutSection = ({ profileData }) => {
           {/* Content Section */}
           <div className="lg:col-span-2">
             {/* Biography */}
-            <div className="bg-white rounded-2xl shadow-lg border border-border p-8 mb-8">
-              <h3 className="text-2xl font-bold text-primary mb-6">About Me</h3>
-              <div className="prose prose-lg max-w-none text-text-secondary mb-6">
+            <div className="bg-white rounded-xl md:rounded-2xl shadow-lg border border-border p-4 sm:p-6 md:p-8 mb-6 md:mb-8">
+              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4 md:mb-6">About Me</h3>
+              <div className="prose prose-sm sm:prose-base md:prose-lg max-w-none text-text-secondary mb-4 md:mb-6">
                 <div
                   dangerouslySetInnerHTML={{ __html: aboutInfo.biography }}
                 />
@@ -512,8 +513,8 @@ const AboutSection = ({ profileData }) => {
 
             {/* Education */}
             {Array.isArray(education) && education.length > 0 && (
-              <div className="bg-white rounded-2xl shadow-lg border border-border p-8 mb-8">
-                <h3 className="text-2xl font-bold text-primary mb-6">
+              <div className="bg-white rounded-xl md:rounded-2xl shadow-lg border border-border p-4 sm:p-6 md:p-8 mb-6 md:mb-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4 md:mb-6">
                   Education
                 </h3>
                 <div className="space-y-4">
@@ -541,38 +542,38 @@ const AboutSection = ({ profileData }) => {
             )}
 
             {/* Tab Navigation */}
-            <div className="bg-white rounded-2xl shadow-lg border border-border overflow-hidden">
+            <div className="bg-white rounded-xl md:rounded-2xl shadow-lg border border-border overflow-hidden">
               <div className="border-b border-border">
-                <div className="flex overflow-x-auto">
+                <div className="flex overflow-x-auto scrollbar-hide">
                   {(tabs || []).map((tab) => (
                     <button
                       key={tab.id || tab.label}
                       onClick={() => setActiveTab(tab.id || tab.label)}
-                      className={`flex items-center space-x-2 px-6 py-4 font-medium transition-all duration-200 whitespace-nowrap ${
+                      className={`flex items-center space-x-1.5 sm:space-x-2 px-3 sm:px-4 md:px-6 py-3 md:py-4 text-sm md:text-base font-medium transition-all duration-200 whitespace-nowrap ${
                         activeTab === (tab.id || tab.label)
                           ? "text-primary border-b-2 border-accent bg-surface"
                           : "text-text-secondary hover:text-primary hover:bg-surface"
                       }`}
                     >
-                      <Icon name={tab.icon || "Info"} size={20} />
+                      <Icon name={tab.icon || "Info"} size={16} className="sm:w-5 sm:h-5" />
                       <span>{tab.label || "Tab"}</span>
                     </button>
                   ))}
                 </div>
               </div>
 
-              <div className="p-8">{renderTabContent()}</div>
+              <div className="p-4 sm:p-6 md:p-8">{renderTabContent()}</div>
             </div>
           </div>
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-primary rounded-2xl p-8 text-white">
-            <h3 className="text-3xl font-bold mb-4">
+        <div className="text-center mt-8 md:mt-12 lg:mt-16">
+          <div className="bg-primary rounded-xl md:rounded-2xl p-6 sm:p-8 text-white">
+            <h3 className="text-2xl sm:text-3xl font-bold mb-3 md:mb-4">
               {ctaData.title || "Ready to Transform Your AWS Journey?"}
             </h3>
-            <p className="text-xl mb-6 opacity-90">
+            <p className="text-base sm:text-lg md:text-xl mb-4 md:mb-6 opacity-90">
               {ctaData.subtitle ||
                 "Let's discuss how my experience and methodology can help you achieve your cloud goals."}
             </p>
@@ -580,7 +581,7 @@ const AboutSection = ({ profileData }) => {
               onClick={() => {
                 router.push("/booking");
               }}
-              className="bg-accent hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 cta-shadow flex items-center space-x-2 mx-auto"
+              className="bg-accent hover:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-200 cta-shadow flex items-center space-x-2 mx-auto"
             >
               <Icon
                 name={ctaData.buttonIcon || "Calendar"}

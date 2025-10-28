@@ -14,10 +14,11 @@ import CredentialsSection from "../components/aws-cloud-consulting-mentorship-la
 import TrustedBySection from "../components/aws-cloud-consulting-mentorship-landing-page/TrustedBySection";
 import { fetchProfileData, fetchBlogs } from "../services/profileService";
 import MetaHead from "../components/MetaHead";
-import { personalInfo as localPersonalInfo, seo as localSeo } from "../config/personalInfo";
+import { personalInfo as localPersonalInfo, seo as localSeo, pageSEO } from "../config/personalInfo";
 
 export default function HomePage({ profileData, blogs = [] }) {
-  const seo = profileData?.seo || localSeo;
+  // Use page-specific SEO for unique meta title
+  const seo = pageSEO.home;
   return (
     <MainLayout profileData={profileData}>
       <MetaHead seo={seo} titleSuffix="" />

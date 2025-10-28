@@ -45,14 +45,14 @@ const TrustedBySection = () => {
     <section className="py-16 bg-surface border-y border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-sm font-semibold text-text-secondary uppercase tracking-wider mb-3">
+        <div className="text-center mb-8 md:mb-12">
+          <p className="text-xs sm:text-sm font-semibold text-text-secondary uppercase tracking-wider mb-2 sm:mb-3">
             Trusted By
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4 px-4">
             Companies I've Worked With
           </h2>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-text-secondary max-w-2xl mx-auto px-4">
             Delivering measurable results for startups to Fortune 500 companies
           </p>
         </div>

@@ -3,16 +3,13 @@ import { useRouter } from "next/router";
 import MainLayout from "../components/ui/MainLayout";
 import MetaHead from "../components/MetaHead";
 import Icon from "../components/AppIcon";
-import { personalInfo as localPersonalInfo } from "../config/personalInfo";
+import { personalInfo as localPersonalInfo, pageSEO } from "../config/personalInfo";
 
 const NotFoundPage = ({ profileData }) => {
   const router = useRouter();
 
-  const seo = {
-    title: "Page Not Found - 404",
-    description: "The page you're looking for doesn't exist. Return to our homepage or explore our services.",
-    keywords: "404, page not found, error"
-  };
+  // Use page-specific SEO for unique meta title
+  const seo = pageSEO.notFound;
 
   const handleGoHome = () => {
     router.push("/");
@@ -85,10 +82,10 @@ const NotFoundPage = ({ profileData }) => {
 
             {/* Error Message */}
             <div className="mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6 px-4">
                 Oops! Page Not Found
               </h2>
-              <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto px-4">
                 The page you're looking for seems to have wandered off into the cloud. 
                 Don't worry, even the best AWS architectures have the occasional missing route!
               </p>
@@ -139,11 +136,11 @@ const NotFoundPage = ({ profileData }) => {
       {/* Quick Links Section */}
       <section className="py-16 bg-surface">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-primary mb-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h3 className="text-2xl sm:text-3xl font-bold text-primary mb-3 md:mb-4 px-4">
               Where would you like to go?
             </h3>
-            <p className="text-lg text-text-secondary">
+            <p className="text-base sm:text-lg text-text-secondary px-4">
               Here are some popular destinations to get you back on track
             </p>
           </div>
@@ -212,7 +209,7 @@ const NotFoundPage = ({ profileData }) => {
       {/* Fun Facts Section */}
       <section className="py-16 bg-surface">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold text-primary mb-8">
+          <h3 className="text-xl sm:text-2xl font-bold text-primary mb-6 md:mb-8 px-4">
             While you're here, did you know?
           </h3>
           

@@ -620,11 +620,11 @@ Every migration is unique, but my proven methodology ensures successful outcomes
     <section className="py-20 bg-surface">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+        <div className="text-center mb-8 md:mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 md:mb-6 px-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-text-secondary px-4 max-w-3xl mx-auto">
             Get answers to common questions about AWS optimization, mentorship
             programs, and working together.
           </p>

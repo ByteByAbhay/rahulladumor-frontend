@@ -5,7 +5,7 @@ import MetaHead from "../components/MetaHead";
 import Icon from "../components/AppIcon";
 import Image from "../components/AppImage";
 import api from "../utils/api/api";
-import { personalInfo as localPersonalInfo } from "../config/personalInfo";
+import { personalInfo as localPersonalInfo, pageSEO } from "../config/personalInfo";
 
 const BlogsPage = ({ profileData }) => {
   const router = useRouter();
@@ -74,25 +74,20 @@ const BlogsPage = ({ profileData }) => {
     fetchBlogs(1, selectedTag, searchQuery);
   };
 
-  const seo = {
-    title: "Tech Articles & Insights",
-    description:
-      "Explore the latest articles, tutorials, and insights from the tech community. Stay updated with trends in JavaScript, React, AWS, and more.",
-    keywords:
-      "tech articles, programming tutorials, javascript, react, aws, web development",
-  };
+  // Use page-specific SEO for unique meta title
+  const seo = pageSEO.blogs;
 
   return (
     <MainLayout profileData={profileData}>
-      <MetaHead seo={seo} titleSuffix=" - Tech Blog" />
+      <MetaHead seo={seo} />
 
       {/* Hero Section */}
       <section id="about" className="py-20 bg-surface">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+        <div className="text-center mb-8 md:mb-12 lg:mb-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 md:mb-6 px-4">
             Tech Articles & Insights
-          </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl mx-auto px-4">
             Discover the latest trends, tutorials, and insights from the tech
             community. Stay updated with trends in JavaScript, React, AWS, and
             more.

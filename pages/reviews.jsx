@@ -5,14 +5,15 @@ import CaseStudiesSection from "../components/aws-cloud-consulting-mentorship-la
 import { fetchProfileData } from "../services/profileService";
 import MetaHead from "../components/MetaHead";
 import ExperienceEducation from "../components/ui/ExperienceEducation";
-import { personalInfo as localPersonalInfo } from "../config/personalInfo";
+import { personalInfo as localPersonalInfo, pageSEO } from "../config/personalInfo";
 
 export default function ReviewsPage({ profileData }) {
-  const seo = profileData?.seo || localPersonalInfo?.seo;
+  // Use page-specific SEO for unique meta title
+  const seo = pageSEO.reviews;
   return (
     <MainLayout profileData={profileData}>
-      <MetaHead seo={seo} titleSuffix=" | Reviews" />
-      <TestimonialsSection profileData={profileData} />
+      <MetaHead seo={seo} />
+      <TestimonialsSection profileData={profileData} isMainHeading={true} />
       <ExperienceEducation profileData={profileData} />
       <CaseStudiesSection profileData={profileData} />
     </MainLayout>

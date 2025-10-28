@@ -195,11 +195,11 @@ const ContactSection = ({ profileData }) => {
     <section id="contact" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+        <div className="text-center mb-8 md:mb-12 lg:mb-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 md:mb-6 px-4">
             Let's Start the Conversation
-          </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl mx-auto px-4">
             Ready to optimize your AWS costs or accelerate your cloud career?
             Choose the best way to reach out and let's discuss your goals.
           </p>
@@ -339,7 +339,7 @@ const ContactSection = ({ profileData }) => {
                       onChange={(e) =>
                         handleInputChange("name", e.target.value)
                       }
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
+                      className="w-full px-4 py-3 bg-white border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200 autofill:bg-white"
                       placeholder="Enter your full name"
                       required
                     />
@@ -355,7 +355,7 @@ const ContactSection = ({ profileData }) => {
                       onChange={(e) =>
                         handleInputChange("email", e.target.value)
                       }
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
+                      className="w-full px-4 py-3 bg-white border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200 autofill:bg-white"
                       placeholder="your.email@company.com"
                       required
                     />
@@ -375,7 +375,7 @@ const ContactSection = ({ profileData }) => {
                         handleInputChange("customSubject", "");
                       }
                     }}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
+                    className="w-full px-4 py-3 bg-white border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
                     required
                   >
                     <option value="">Select a subject</option>
@@ -400,7 +400,7 @@ const ContactSection = ({ profileData }) => {
                         onChange={(e) =>
                           handleInputChange("customSubject", e.target.value)
                         }
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
+                        className="w-full px-4 py-3 bg-white border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200 autofill:bg-white"
                         placeholder="Please specify your subject"
                         required
                       />
@@ -418,7 +418,7 @@ const ContactSection = ({ profileData }) => {
                       handleInputChange("message", e.target.value)
                     }
                     rows={6}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
+                    className="w-full px-4 py-3 bg-white border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"
                     placeholder="Tell me about your AWS challenges, goals, or questions. The more details you provide, the better I can help you."
                     required
                   />

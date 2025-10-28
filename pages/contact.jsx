@@ -3,13 +3,14 @@ import MainLayout from '../components/ui/MainLayout';
 import ContactSection from '../components/aws-cloud-consulting-mentorship-landing-page/ContactSection';
 import { fetchProfileData } from '../services/profileService';
 import MetaHead from '../components/MetaHead';
-import { personalInfo as localPersonalInfo } from '../config/personalInfo';
+import { personalInfo as localPersonalInfo, pageSEO } from '../config/personalInfo';
 
 export default function ContactPage({ profileData }) {
-  const seo = profileData?.seo || localPersonalInfo?.seo;
+  // Use page-specific SEO for unique meta title
+  const seo = pageSEO.contact;
   return (
     <MainLayout profileData={profileData}>
-      <MetaHead seo={seo} titleSuffix=" | Contact" />
+      <MetaHead seo={seo} />
       <ContactSection profileData={profileData} />
     </MainLayout>
   );

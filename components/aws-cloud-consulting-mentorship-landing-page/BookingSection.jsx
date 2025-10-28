@@ -96,10 +96,10 @@ const BookingSection = ({
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 md:mb-6 px-4">
             Book Your Free Discovery Call
-          </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl text-text-secondary max-w-3xl mx-auto px-4 mb-6 md:mb-8">
             Let's discuss your AWS challenges and explore how we can work
             together to achieve your goals. No sales pitch, just valuable
             insights.
@@ -116,19 +116,19 @@ const BookingSection = ({
           </div> */}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
           {/* Calendly Section */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-2xl shadow-lg border border-border overflow-hidden">
+            <div className="bg-white rounded-xl md:rounded-2xl shadow-lg border border-border overflow-hidden">
               {/* Calendly Header */}
-              <div className="bg-gradient-to-r from-primary to-secondary p-6 text-white">
-                <div className="flex items-center space-x-3">
+              <div className="bg-gradient-to-r from-primary to-secondary p-4 sm:p-6 text-white">
+                <div className="flex items-center space-x-2 sm:space-x-3">
                   <Icon name="Calendar" size={24} color="white" />
                   <div>
-                    <h3 className="text-xl font-bold">
+                    <h3 className="text-lg sm:text-xl font-bold">
                       Select Your Preferred Time
                     </h3>
-                    <p className="text-blue-100">
+                    <p className="text-sm sm:text-base text-blue-100">
                       Choose a time that works best for you
                     </p>
                   </div>
@@ -136,7 +136,7 @@ const BookingSection = ({
               </div>
 
               {/* Calendly Widget Container */}
-              <div className="relative min-h-[600px] p-6">
+              <div className="relative min-h-[600px] p-4 sm:p-6">
                 {/* Loading Skeleton Overlay */}
                 {showLoadingSkeleton && (
                   <div className="absolute inset-6 z-20 bg-white rounded-lg">
@@ -177,13 +177,13 @@ const BookingSection = ({
 
           {/* Sidebar */}
           <div className="lg:col-span-1">
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {/* Call Details */}
               <div className="bg-white rounded-xl shadow-lg border border-border p-6">
                 <h3 className="text-xl font-bold text-primary mb-4">
                   What to Expect
                 </h3>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-start space-x-3">
                     <Icon
                       name="Clock"
@@ -192,7 +192,7 @@ const BookingSection = ({
                       className="mt-1"
                     />
                     <div>
-                      <h4 className="font-semibold text-primary">30 Minutes</h4>
+                      <h4 className="text-sm sm:text-base font-semibold text-primary">30 Minutes</h4>
                       <p className="text-sm text-text-secondary">
                         Focused discussion on your challenges
                       </p>
