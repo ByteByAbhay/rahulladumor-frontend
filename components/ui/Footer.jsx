@@ -1,4 +1,6 @@
 import Icon from "components/AppIcon";
+import Link from "next/link";
+import { getAllServices } from "../../config/serviceRegistry";
 
 export default function Footer({ profileData }) {
   const personalInfo =
@@ -7,7 +9,10 @@ export default function Footer({ profileData }) {
       ...profileData,
     } || {};
   const social = profileData?.social || {};
-  const services = profileData?.services || [];
+
+  // Get all services from service registry
+  const services = getAllServices();
+
   return (
     <footer className="bg-primary text-white py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -65,9 +70,16 @@ export default function Footer({ profileData }) {
 
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-sm opacity-80">
+            <ul className="space-y-2 text-sm">
               {services.map((service) => (
-                <li key={service.id}>{service.name}</li>
+                <li key={service.slug}>
+                  <Link
+                    href={service.path}
+                    className="opacity-80 hover:opacity-100 hover:text-accent cursor-pointer text-white transition-all duration-200 inline-block"
+                  >
+                    {service.title}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
