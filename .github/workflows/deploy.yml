@@ -44,34 +44,29 @@ jobs:
             cd ${{ secrets.DEPLOY_PATH }}/rahulladumor-frontend
 
             # Pull latest code
-            OLD_HASH=\$(git rev-parse HEAD)
+            echo "Fetching latest code from main branch..."
             git fetch origin
             git reset --hard origin/main
-            NEW_HASH=\$(git rev-parse HEAD)
 
-            if [ "\$OLD_HASH" != "\$NEW_HASH" ]; then
-              echo "Code updated. Installing dependencies..."
+            echo "Installing dependencies..."
+            # Create .env file BEFORE build
+            echo "Creating .env file..."
+            echo "NEXT_PUBLIC_BACKEND_API_URL=${{ secrets.FRONTEND_BACKEND_API_URL }}" > .env
+            echo "NEXT_PUBLIC_CALENDLY_URL=${{ secrets.FRONTEND_CALENDLY_URL }}" >> .env
+            echo "NEXT_PUBLIC_GA4_MEASUREMENT_ID=${{ secrets.NEXT_PUBLIC_GA4_MEASUREMENT_ID }}" >> .env
+            echo "✅ Environment file created"
 
-              # Create .env file BEFORE build
-              echo "Creating .env file..."
-              echo "NEXT_PUBLIC_BACKEND_API_URL=${{ secrets.FRONTEND_BACKEND_API_URL }}" > .env
-              echo "NEXT_PUBLIC_CALENDLY_URL=${{ secrets.FRONTEND_CALENDLY_URL }}" >> .env
-              echo "NEXT_PUBLIC_GA4_MEASUREMENT_ID=${{ secrets.NEXT_PUBLIC_GA4_MEASUREMENT_ID }}" >> .env
-              echo "✅ Environment file created"
+            # Install dependencies
+            npm install
 
-              # Install dependencies
-              npm install
+            # Build Next.js application
+            echo "Building Next.js application..."
+            npm run build
 
-              # Build Next.js application
-              echo "Building Next.js application..."
-              npm run build
+            # Restart PM2 process for frontend
+            echo "Restarting PM2 process..."
+            pm2 reload frontend --update-env || pm2 start npm --name frontend -- start
+            pm2 save
 
-              # Restart PM2 process for frontend
-              pm2 reload frontend --update-env || pm2 start npm --name frontend -- start
-              pm2 save
-
-              echo "✅ Frontend deployment completed successfully!"
-            else
-              echo "No changes detected. Skipping deployment."
-            fi
+            echo "✅ Frontend deployment completed successfully!"
           ENDSSH
