@@ -1,8 +1,10 @@
 import StickyNavigation from './StickyNavigation';
 import FloatingBookingCTA from './FloatingBookingCTA';
 import Footer from './Footer';
+import AIChat from '../AIChat';
 import { usePerformanceMonitoring } from '../../hooks/usePerformanceMonitoring';
-import SectionProgressIndicator from "./SectionProgressIndicator"
+import SectionProgressIndicator from "./SectionProgressIndicator";
+import { servicePages, pageSEO } from '../../config/personalInfo';
 
 export default function MainLayout({ children, profileData }) {
 
@@ -19,6 +21,11 @@ export default function MainLayout({ children, profileData }) {
             </main>
 
             <FloatingBookingCTA profileData={profileData} />
+            <AIChat 
+                profileData={profileData} 
+                servicesData={servicePages}
+                seoData={pageSEO}
+            />
             <Footer profileData={profileData} />
         </div>
     );

@@ -42,24 +42,22 @@ Disallow: /_next/webpack-hmr
 # ============================================
 # DISALLOW: Build Artifacts & Config Files
 # ============================================
-Disallow: /.env*
+Disallow: /.env
 Disallow: /config/
 Disallow: /build/
 Disallow: /node_modules/
 Disallow: /.next/
 Disallow: /.git/
-Disallow: /*.json$
-Disallow: /*.config.js$
 
 # ============================================
 # DISALLOW: Duplicate Content & Query Params
 # ============================================
-Disallow: /*?*utm_source=
-Disallow: /*?*utm_medium=
-Disallow: /*?*utm_campaign=
-Disallow: /*?*ref=
-Disallow: /*?*fbclid=
-Disallow: /*?*gclid=
+Disallow: /*?utm_source=
+Disallow: /*?utm_medium=
+Disallow: /*?utm_campaign=
+Disallow: /*?ref=
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
 
 # ============================================
 # Googlebot Specific Rules
@@ -108,8 +106,3 @@ Crawl-delay: 1
 # Sitemap Location
 # ============================================
 Sitemap: https://www.rahulladumor.in/sitemap.xml
-
-# ============================================
-# Host Preference (www version)
-# ============================================
-Host: https://www.rahulladumor.in
