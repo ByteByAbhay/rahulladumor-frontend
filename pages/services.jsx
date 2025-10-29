@@ -1,6 +1,7 @@
 import React from 'react';
 import MainLayout from '../components/ui/MainLayout';
 import ServicesSection from '../components/aws-cloud-consulting-mentorship-landing-page/ServicesSection';
+import ServicesOverview from '../components/services/ServicesOverview';
 import { fetchProfileData } from '../services/profileService';
 import MetaHead from '../components/MetaHead';
 import { personalInfo as localPersonalInfo, seo as localSeo, pageSEO } from '../config/personalInfo';
@@ -16,7 +17,12 @@ export default function ServicesPage({ profileData }) {
   return (
     <MainLayout profileData={profileData}>
       <MetaHead seo={seo} />
+      
+      {/* Pricing Services Section */}
       <ServicesSection profileData={profileData} />
+      
+      {/* Specialized Services Overview */}
+      <ServicesOverview />
     </MainLayout>
   );
 }

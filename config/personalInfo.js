@@ -2410,6 +2410,980 @@ export const extendedTestimonials = [
     achievement: "Cloud Development & Mentorship",
   },
 ];
+
+// Individual Service Pages Configuration
+export const servicePages = {
+  "cloud-migration-consulting": {
+    slug: "cloud-migration-consulting",
+    title: "Cloud Migration Consulting Services",
+    subtitle: "Seamlessly migrate your infrastructure to AWS, Azure, or Google Cloud with zero downtime and guaranteed cost savings",
+    icon: "CloudUpload",
+    stats: [
+      { value: "99.9%", label: "Uptime During Migration" },
+      { value: "40%", label: "Average Cost Reduction" },
+      { value: "60%", label: "Faster Deployment" },
+      { value: "100+", label: "Successful Migrations" }
+    ],
+    benefits: [
+      {
+        icon: "DollarSign",
+        title: "Cost Optimization",
+        description: "Reduce infrastructure costs by 30-60% with right-sized resources, reserved instances, and serverless architectures.",
+        metric: "30-60% cost savings"
+      },
+      {
+        icon: "Zap",
+        title: "Improved Performance",
+        description: "Leverage cloud-native services for faster load times, better scalability, and enhanced user experience.",
+        metric: "3x faster performance"
+      },
+      {
+        icon: "TrendingUp",
+        title: "Infinite Scalability",
+        description: "Auto-scale resources based on demand, handle traffic spikes effortlessly, and pay only for what you use.",
+        metric: "10x scalability"
+      },
+      {
+        icon: "Shield",
+        title: "Enhanced Security",
+        description: "Implement industry-leading security practices, compliance frameworks, and disaster recovery solutions.",
+        metric: "99.99% availability"
+      },
+      {
+        icon: "Settings",
+        title: "DevOps Automation",
+        description: "Automate deployments, CI/CD pipelines, and infrastructure management for faster time-to-market.",
+        metric: "80% faster deployments"
+      },
+      {
+        icon: "Globe",
+        title: "Global Reach",
+        description: "Deploy applications across multiple regions for low-latency access and improved user experience worldwide.",
+        metric: "50+ global regions"
+      }
+    ],
+    process: {
+      steps: [
+        {
+          title: "Assessment & Planning",
+          description: "Comprehensive analysis of your current infrastructure, applications, and business requirements. We identify dependencies, assess migration complexity, and create a detailed roadmap.",
+          deliverables: [
+            "Infrastructure audit report",
+            "Application dependency mapping",
+            "Migration strategy document",
+            "Cost-benefit analysis",
+            "Risk assessment and mitigation plan"
+          ],
+          duration: "1-2 weeks"
+        },
+        {
+          title: "Architecture Design",
+          description: "Design cloud-native architecture optimized for performance, security, and cost. We select the right services, design for high availability, and plan for scalability.",
+          deliverables: [
+            "Cloud architecture diagrams",
+            "Service selection and sizing",
+            "Network topology design",
+            "Security architecture",
+            "Disaster recovery plan"
+          ],
+          duration: "1-2 weeks"
+        },
+        {
+          title: "Migration Execution",
+          description: "Execute the migration with minimal downtime using proven strategies like lift-and-shift, re-platforming, or re-architecting based on your needs and timeline.",
+          deliverables: [
+            "Staged migration execution",
+            "Data migration and validation",
+            "Application deployment",
+            "Testing and quality assurance",
+            "Rollback procedures"
+          ],
+          duration: "2-8 weeks"
+        },
+        {
+          title: "Optimization & Training",
+          description: "Fine-tune your cloud infrastructure for optimal performance and cost efficiency. Train your team on cloud best practices and provide comprehensive documentation.",
+          deliverables: [
+            "Performance optimization",
+            "Cost optimization recommendations",
+            "Team training sessions",
+            "Documentation and runbooks",
+            "Ongoing support plan"
+          ],
+          duration: "1-2 weeks"
+        }
+      ]
+    },
+    tools: {
+      categories: [
+        {
+          name: "Cloud Platforms",
+          icon: "Cloud",
+          description: "Multi-cloud expertise across leading providers",
+          items: [
+            { name: "AWS", icon: "Cloud", description: "Amazon Web Services" },
+            { name: "Azure", icon: "Cloud", description: "Microsoft Azure" },
+            { name: "Google Cloud", icon: "Cloud", description: "GCP" },
+            { name: "DigitalOcean", icon: "Cloud", description: "Simple Cloud" }
+          ]
+        },
+        {
+          name: "Infrastructure as Code",
+          icon: "FileCode",
+          description: "Automate and version control your infrastructure",
+          items: [
+            { name: "Terraform", icon: "Box", description: "Multi-cloud IaC" },
+            { name: "CloudFormation", icon: "Layers", description: "AWS native" },
+            { name: "Pulumi", icon: "Code", description: "Modern IaC" },
+            { name: "Ansible", icon: "Settings", description: "Configuration mgmt" }
+          ]
+        },
+        {
+          name: "Container & Orchestration",
+          icon: "Package",
+          description: "Modern containerization and orchestration",
+          items: [
+            { name: "Kubernetes", icon: "Boxes", description: "K8s orchestration" },
+            { name: "Docker", icon: "Package", description: "Containerization" },
+            { name: "ECS/EKS", icon: "Layers", description: "AWS containers" },
+            { name: "Helm", icon: "Settings", description: "K8s package mgmt" }
+          ]
+        },
+        {
+          name: "CI/CD & DevOps",
+          icon: "GitBranch",
+          description: "Automated deployment pipelines",
+          items: [
+            { name: "GitHub Actions", icon: "Github", description: "CI/CD automation" },
+            { name: "GitLab CI", icon: "GitBranch", description: "DevOps platform" },
+            { name: "Jenkins", icon: "Settings", description: "Automation server" },
+            { name: "CodePipeline", icon: "Workflow", description: "AWS CI/CD" }
+          ]
+        },
+        {
+          name: "Monitoring & Observability",
+          icon: "Activity",
+          description: "Comprehensive monitoring and alerting",
+          items: [
+            { name: "CloudWatch", icon: "Activity", description: "AWS monitoring" },
+            { name: "Datadog", icon: "BarChart3", description: "APM & monitoring" },
+            { name: "Prometheus", icon: "TrendingUp", description: "Metrics collection" },
+            { name: "Grafana", icon: "PieChart", description: "Visualization" }
+          ]
+        },
+        {
+          name: "Database & Storage",
+          icon: "Database",
+          description: "Scalable data solutions",
+          items: [
+            { name: "RDS", icon: "Database", description: "Managed SQL" },
+            { name: "DynamoDB", icon: "Database", description: "NoSQL" },
+            { name: "S3", icon: "HardDrive", description: "Object storage" },
+            { name: "Redis", icon: "Zap", description: "In-memory cache" }
+          ]
+        }
+      ],
+      note: "We evaluate and recommend the best tools for your specific use case, considering factors like team expertise, budget, and long-term maintainability."
+    },
+    whyChooseUs: [
+      {
+        icon: "Award",
+        title: "Proven Expertise",
+        description: "4x AWS Community Builder with 100+ successful cloud migrations"
+      },
+      {
+        icon: "Shield",
+        title: "Zero Downtime",
+        description: "We guarantee 99.9% uptime during migration with proven rollback strategies"
+      },
+      {
+        icon: "DollarSign",
+        title: "Cost Guarantee",
+        description: "We ensure 30%+ cost savings or refund the difference"
+      }
+    ],
+    ctaTitle: "Ready to Migrate to the Cloud?",
+    ctaDescription: "Let's discuss your migration goals and create a customized roadmap for a seamless cloud transformation with guaranteed results.",
+    ctaIcon: "Rocket"
+  },
+  
+  "technical-mentorship": {
+    slug: "technical-mentorship",
+    title: "Technical Mentorship Services",
+    subtitle: "Accelerate your cloud engineering career with personalized 1-on-1 mentorship from AWS Community Builders and industry experts",
+    icon: "GraduationCap",
+    stats: [
+      { value: "200+", label: "Engineers Mentored" },
+      { value: "85%", label: "Career Advancement" },
+      { value: "6 Months", label: "Average Growth Period" },
+      { value: "4.9/5", label: "Satisfaction Rating" }
+    ],
+    benefits: [
+      {
+        icon: "TrendingUp",
+        title: "Accelerated Skill Development",
+        description: "Fast-track your learning with hands-on guidance from experts who've solved real-world challenges at scale. Skip years of trial and error.",
+        metric: "3x faster learning"
+      },
+      {
+        icon: "Target",
+        title: "Personalized Career Roadmap",
+        description: "Get a customized learning path aligned with your career goals, whether you're targeting senior engineer, architect, or leadership roles.",
+        metric: "Clear career progression"
+      },
+      {
+        icon: "Code",
+        title: "Real-World Project Guidance",
+        description: "Work on production-grade projects with expert feedback, code reviews, and architectural guidance to build portfolio-worthy solutions.",
+        metric: "Portfolio-ready projects"
+      },
+      {
+        icon: "Users",
+        title: "Industry Networking",
+        description: "Connect with AWS Community Builders, hiring managers, and tech leaders. Get referrals and insider insights into top companies.",
+        metric: "Job referrals & connections"
+      },
+      {
+        icon: "Award",
+        title: "Interview Preparation",
+        description: "Master technical interviews with mock sessions, system design practice, coding challenges, and behavioral question coaching.",
+        metric: "95% interview success"
+      },
+      {
+        icon: "Briefcase",
+        title: "Leadership Development",
+        description: "Learn to lead technical teams, make architectural decisions, and communicate effectively with stakeholders and executives.",
+        metric: "Leadership-ready skills"
+      }
+    ],
+    process: {
+      steps: [
+        {
+          title: "Discovery & Goal Setting",
+          description: "In our first session, we assess your current skills, career goals, and challenges. We'll create a personalized roadmap with clear milestones and success metrics.",
+          deliverables: [
+            "Skills assessment report",
+            "Personalized learning roadmap",
+            "3-6 month career plan",
+            "Success metrics and KPIs",
+            "Weekly session schedule"
+          ],
+          duration: "Week 1"
+        },
+        {
+          title: "Hands-On Learning Sprints",
+          description: "Weekly 1-hour sessions focused on practical skills. We work through real scenarios, review your code, discuss architecture decisions, and solve actual problems you're facing.",
+          deliverables: [
+            "Weekly mentorship sessions",
+            "Code review feedback",
+            "Architecture guidance",
+            "Best practices documentation",
+            "Project assignments"
+          ],
+          duration: "Weeks 2-20"
+        },
+        {
+          title: "Project Implementation",
+          description: "Build production-grade projects that demonstrate your skills. Get expert guidance on architecture, implementation, testing, deployment, and documentation.",
+          deliverables: [
+            "Production-ready projects",
+            "GitHub portfolio enhancement",
+            "Technical blog posts",
+            "Architecture documentation",
+            "Deployment guides"
+          ],
+          duration: "Weeks 8-24"
+        },
+        {
+          title: "Career Advancement",
+          description: "Prepare for interviews, optimize your resume and LinkedIn, practice system design, and get connected with hiring managers. Track progress and celebrate wins.",
+          deliverables: [
+            "Optimized resume & LinkedIn",
+            "Mock interview sessions",
+            "System design practice",
+            "Job referrals and introductions",
+            "Salary negotiation coaching"
+          ],
+          duration: "Ongoing"
+        }
+      ]
+    },
+    tools: {
+      categories: [
+        {
+          name: "Cloud Technologies",
+          icon: "Cloud",
+          description: "Master modern cloud platforms and services",
+          items: [
+            { name: "AWS", icon: "Cloud", description: "EC2, Lambda, S3, DynamoDB" },
+            { name: "Azure", icon: "Cloud", description: "VMs, Functions, Cosmos DB" },
+            { name: "Google Cloud", icon: "Cloud", description: "Compute, Cloud Run, Firestore" },
+            { name: "Serverless", icon: "Zap", description: "Event-driven architecture" }
+          ]
+        },
+        {
+          name: "DevOps & Infrastructure",
+          icon: "Settings",
+          description: "Automation and infrastructure as code",
+          items: [
+            { name: "Docker", icon: "Package", description: "Containerization" },
+            { name: "Kubernetes", icon: "Boxes", description: "Orchestration" },
+            { name: "Terraform", icon: "Box", description: "Infrastructure as Code" },
+            { name: "CI/CD", icon: "GitBranch", description: "GitHub Actions, Jenkins" }
+          ]
+        },
+        {
+          name: "Programming & Architecture",
+          icon: "Code",
+          description: "Software design and development",
+          items: [
+            { name: "Python", icon: "Code", description: "Backend development" },
+            { name: "Node.js", icon: "Code", description: "JavaScript/TypeScript" },
+            { name: "Go", icon: "Code", description: "Microservices" },
+            { name: "System Design", icon: "Workflow", description: "Scalable architectures" }
+          ]
+        },
+        {
+          name: "Databases & Caching",
+          icon: "Database",
+          description: "Data storage and optimization",
+          items: [
+            { name: "PostgreSQL", icon: "Database", description: "Relational databases" },
+            { name: "MongoDB", icon: "Database", description: "NoSQL" },
+            { name: "Redis", icon: "Zap", description: "Caching & queues" },
+            { name: "DynamoDB", icon: "Database", description: "Serverless database" }
+          ]
+        },
+        {
+          name: "Monitoring & Observability",
+          icon: "Activity",
+          description: "Performance tracking and debugging",
+          items: [
+            { name: "CloudWatch", icon: "Activity", description: "AWS monitoring" },
+            { name: "Datadog", icon: "BarChart3", description: "APM" },
+            { name: "Grafana", icon: "PieChart", description: "Dashboards" },
+            { name: "Logging", icon: "FileText", description: "ELK, CloudWatch Logs" }
+          ]
+        },
+        {
+          name: "AI/ML Integration",
+          icon: "Brain",
+          description: "Modern AI and machine learning",
+          items: [
+            { name: "OpenAI APIs", icon: "Sparkles", description: "GPT integration" },
+            { name: "LangChain", icon: "Link", description: "LLM applications" },
+            { name: "Vector DBs", icon: "Database", description: "Pinecone, Weaviate" },
+            { name: "AWS AI Services", icon: "Brain", description: "SageMaker, Bedrock" }
+          ]
+        }
+      ],
+      note: "Your mentorship focuses on technologies aligned with your career goals and current role. We adapt the curriculum based on your learning pace and industry trends."
+    },
+    whyChooseUs: [
+      {
+        icon: "Award",
+        title: "Battle-Tested Expertise",
+        description: "Learn from 4x AWS Community Builder with 8+ years scaling systems for Fortune 500 companies"
+      },
+      {
+        icon: "Users",
+        title: "Proven Track Record",
+        description: "200+ engineers mentored with 85% achieving promotions or landing dream jobs within 6 months"
+      },
+      {
+        icon: "Heart",
+        title: "Personalized Approach",
+        description: "Every mentorship is customized to your goals, learning style, and career aspirations"
+      }
+    ],
+    ctaTitle: "Ready to Level Up Your Career?",
+    ctaDescription: "Join 200+ engineers who've accelerated their careers with personalized mentorship. Let's create your roadmap to becoming a senior engineer, architect, or tech leader.",
+    ctaIcon: "GraduationCap"
+  },
+  
+  "aws-cloud-architecture-review": {
+    slug: "aws-cloud-architecture-review",
+    title: "AWS Cloud Architecture Review",
+    subtitle: "Comprehensive analysis and optimization of your AWS infrastructure for security, performance, cost efficiency, and scalability",
+    icon: "Search",
+    stats: [
+      { value: "40%", label: "Average Cost Reduction" },
+      { value: "99.99%", label: "Target Availability" },
+      { value: "3x", label: "Performance Improvement" },
+      { value: "100+", label: "Architectures Reviewed" }
+    ],
+    benefits: [
+      {
+        icon: "Shield",
+        title: "Enhanced Security Posture",
+        description: "Identify and fix security vulnerabilities, implement AWS best practices, and ensure compliance with industry standards (SOC2, HIPAA, GDPR).",
+        metric: "Zero critical vulnerabilities"
+      },
+      {
+        icon: "DollarSign",
+        title: "Significant Cost Savings",
+        description: "Eliminate waste, right-size resources, leverage reserved instances and savings plans. Typical savings of 30-60% on monthly AWS bills.",
+        metric: "40% average savings"
+      },
+      {
+        icon: "Zap",
+        title: "Improved Performance",
+        description: "Optimize database queries, implement caching strategies, reduce latency with CDN and edge locations. 3-5x faster response times.",
+        metric: "3x faster response"
+      },
+      {
+        icon: "TrendingUp",
+        title: "Better Scalability",
+        description: "Design for auto-scaling, implement load balancing, prepare for traffic spikes. Handle 10x traffic without performance degradation.",
+        metric: "10x scalability"
+      },
+      {
+        icon: "AlertTriangle",
+        title: "Reduced Downtime Risk",
+        description: "Identify single points of failure, implement disaster recovery, set up proper monitoring and alerting. Achieve 99.99% uptime SLA.",
+        metric: "99.99% uptime"
+      },
+      {
+        icon: "FileCheck",
+        title: "Compliance & Best Practices",
+        description: "Ensure adherence to AWS Well-Architected Framework, industry compliance requirements, and organizational policies.",
+        metric: "100% compliant"
+      }
+    ],
+    process: {
+      steps: [
+        {
+          title: "Discovery & Assessment",
+          description: "Deep dive into your current AWS infrastructure. We analyze your architecture diagrams, review configurations, examine cost reports, and understand your business requirements and pain points.",
+          deliverables: [
+            "Infrastructure inventory and mapping",
+            "Current architecture documentation",
+            "Cost analysis and spend breakdown",
+            "Security and compliance assessment",
+            "Performance baseline metrics"
+          ],
+          duration: "Week 1"
+        },
+        {
+          title: "Analysis & Recommendations",
+          description: "Comprehensive evaluation against AWS Well-Architected Framework's five pillars. We identify issues, risks, and opportunities across security, reliability, performance, cost, and operational excellence.",
+          deliverables: [
+            "Well-Architected Framework assessment",
+            "Security audit report with findings",
+            "Cost optimization opportunities",
+            "Performance bottleneck analysis",
+            "Prioritized recommendations list"
+          ],
+          duration: "Week 2"
+        },
+        {
+          title: "Optimization Planning",
+          description: "Create detailed implementation roadmap with quick wins and long-term improvements. We provide architecture diagrams, migration strategies, and cost-benefit analysis for each recommendation.",
+          deliverables: [
+            "Target architecture diagrams",
+            "Implementation roadmap",
+            "Cost-benefit analysis",
+            "Risk mitigation strategies",
+            "Resource allocation plan"
+          ],
+          duration: "Week 3"
+        },
+        {
+          title: "Implementation Support",
+          description: "Optional hands-on support to implement recommendations. We can execute changes, provide guidance to your team, or train your engineers on best practices and new architecture patterns.",
+          deliverables: [
+            "Implementation assistance",
+            "Infrastructure as Code templates",
+            "Documentation and runbooks",
+            "Team training sessions",
+            "Post-implementation review"
+          ],
+          duration: "Ongoing"
+        }
+      ]
+    },
+    tools: {
+      categories: [
+        {
+          name: "AWS Core Services",
+          icon: "Cloud",
+          description: "Comprehensive AWS service analysis",
+          items: [
+            { name: "EC2", icon: "Server", description: "Compute optimization" },
+            { name: "Lambda", icon: "Zap", description: "Serverless review" },
+            { name: "RDS", icon: "Database", description: "Database optimization" },
+            { name: "S3", icon: "HardDrive", description: "Storage analysis" }
+          ]
+        },
+        {
+          name: "Security & Compliance",
+          icon: "Shield",
+          description: "Security assessment tools",
+          items: [
+            { name: "AWS IAM", icon: "Lock", description: "Access control" },
+            { name: "GuardDuty", icon: "Shield", description: "Threat detection" },
+            { name: "Security Hub", icon: "AlertTriangle", description: "Security posture" },
+            { name: "AWS Config", icon: "FileCheck", description: "Compliance tracking" }
+          ]
+        },
+        {
+          name: "Cost Management",
+          icon: "DollarSign",
+          description: "Cost optimization analysis",
+          items: [
+            { name: "Cost Explorer", icon: "BarChart3", description: "Cost analysis" },
+            { name: "Trusted Advisor", icon: "Lightbulb", description: "Recommendations" },
+            { name: "Compute Optimizer", icon: "Cpu", description: "Right-sizing" },
+            { name: "Savings Plans", icon: "PiggyBank", description: "Cost reduction" }
+          ]
+        },
+        {
+          name: "Monitoring & Observability",
+          icon: "Activity",
+          description: "Performance monitoring tools",
+          items: [
+            { name: "CloudWatch", icon: "Activity", description: "Metrics & logs" },
+            { name: "X-Ray", icon: "Workflow", description: "Distributed tracing" },
+            { name: "CloudTrail", icon: "FileText", description: "Audit logs" },
+            { name: "Datadog", icon: "BarChart3", description: "APM integration" }
+          ]
+        },
+        {
+          name: "Infrastructure as Code",
+          icon: "FileCode",
+          description: "IaC best practices review",
+          items: [
+            { name: "Terraform", icon: "Box", description: "Multi-cloud IaC" },
+            { name: "CloudFormation", icon: "Layers", description: "AWS native" },
+            { name: "CDK", icon: "Code", description: "Infrastructure code" },
+            { name: "Pulumi", icon: "Code", description: "Modern IaC" }
+          ]
+        },
+        {
+          name: "Well-Architected Framework",
+          icon: "Award",
+          description: "AWS best practices assessment",
+          items: [
+            { name: "Security", icon: "Shield", description: "Pillar 1" },
+            { name: "Reliability", icon: "CheckCircle2", description: "Pillar 2" },
+            { name: "Performance", icon: "Zap", description: "Pillar 3" },
+            { name: "Cost Optimization", icon: "DollarSign", description: "Pillar 4" }
+          ]
+        }
+      ],
+      note: "We use AWS native tools combined with industry-leading third-party solutions to provide comprehensive architecture review and actionable recommendations."
+    },
+    whyChooseUs: [
+      {
+        icon: "Award",
+        title: "AWS Expertise",
+        description: "4x AWS Community Builder with deep expertise in all AWS services and architectures"
+      },
+      {
+        icon: "Target",
+        title: "Well-Architected Focus",
+        description: "Certified in AWS Well-Architected Framework with 100+ successful reviews completed"
+      },
+      {
+        icon: "TrendingUp",
+        title: "Proven Results",
+        description: "Average 40% cost reduction and 3x performance improvement across our clients"
+      }
+    ],
+    ctaTitle: "Ready to Optimize Your AWS Architecture?",
+    ctaDescription: "Get a comprehensive review of your AWS infrastructure and receive actionable recommendations to improve security, performance, and cost efficiency.",
+    ctaIcon: "Search"
+  },
+  
+  "serverless-application-development": {
+    slug: "serverless-application-development",
+    title: "Serverless Application Development",
+    subtitle: "Build scalable, cost-efficient applications with AWS Lambda, API Gateway, DynamoDB, and modern serverless architecture patterns",
+    icon: "Zap",
+    stats: [
+      { value: "70%", label: "Lower Infrastructure Costs" },
+      { value: "10x", label: "Faster Scaling" },
+      { value: "Zero", label: "Server Management" },
+      { value: "50+", label: "Apps Built" }
+    ],
+    benefits: [
+      {
+        icon: "DollarSign",
+        title: "Massive Cost Savings",
+        description: "Pay only for actual compute time, not idle servers. No upfront costs, no over-provisioning. Typical savings of 60-80% compared to traditional server-based applications.",
+        metric: "70% cost reduction"
+      },
+      {
+        icon: "TrendingUp",
+        title: "Infinite Auto-Scaling",
+        description: "Handle traffic spikes automatically without manual intervention. Scale from zero to millions of requests seamlessly. No capacity planning required.",
+        metric: "10x scalability"
+      },
+      {
+        icon: "Zap",
+        title: "Faster Time to Market",
+        description: "Focus on business logic, not infrastructure management. Deploy new features in minutes, not days. Rapid iteration and continuous deployment.",
+        metric: "80% faster deployment"
+      },
+      {
+        icon: "Shield",
+        title: "Built-in High Availability",
+        description: "AWS manages redundancy and failover automatically. Multi-AZ deployment by default. 99.99% uptime SLA without extra configuration.",
+        metric: "99.99% availability"
+      },
+      {
+        icon: "Activity",
+        title: "Operational Excellence",
+        description: "Zero server patching or maintenance. Automatic scaling and healing. Built-in monitoring and logging with CloudWatch and X-Ray.",
+        metric: "Zero maintenance"
+      },
+      {
+        icon: "Globe",
+        title: "Global Performance",
+        description: "Deploy to multiple AWS regions with ease. Use Lambda@Edge for ultra-low latency. Serve users worldwide with millisecond response times.",
+        metric: "<100ms response"
+      }
+    ],
+    process: {
+      steps: [
+        {
+          title: "Requirements & Architecture Design",
+          description: "Understand your application requirements, user flows, and business logic. Design serverless architecture with appropriate AWS services, data flow, and integration patterns.",
+          deliverables: [
+            "Requirements documentation",
+            "Serverless architecture diagram",
+            "Service selection and sizing",
+            "API design and specifications",
+            "Cost estimation and projections"
+          ],
+          duration: "Week 1-2"
+        },
+        {
+          title: "Development & Implementation",
+          description: "Build serverless functions with AWS Lambda, create APIs with API Gateway, set up data storage with DynamoDB or Aurora Serverless. Implement authentication, authorization, and business logic.",
+          deliverables: [
+            "Lambda functions (Node.js, Python, or Go)",
+            "API Gateway REST or HTTP APIs",
+            "DynamoDB table design and setup",
+            "Authentication with Cognito",
+            "Infrastructure as Code (Terraform/SAM)"
+          ],
+          duration: "Week 3-6"
+        },
+        {
+          title: "Integration & Testing",
+          description: "Integrate with third-party services, implement event-driven workflows, set up CI/CD pipelines. Comprehensive testing including unit tests, integration tests, and load testing.",
+          deliverables: [
+            "EventBridge rules and integrations",
+            "Step Functions workflows",
+            "SQS/SNS messaging setup",
+            "Automated test suites",
+            "CI/CD pipeline configuration"
+          ],
+          duration: "Week 7-8"
+        },
+        {
+          title: "Deployment & Optimization",
+          description: "Deploy to production with zero downtime. Set up monitoring, alerting, and logging. Optimize for performance and cost. Provide documentation and team training.",
+          deliverables: [
+            "Production deployment",
+            "CloudWatch dashboards and alarms",
+            "X-Ray tracing setup",
+            "Cost optimization implementation",
+            "Documentation and training"
+          ],
+          duration: "Week 9-10"
+        }
+      ]
+    },
+    tools: {
+      categories: [
+        {
+          name: "Compute & Functions",
+          icon: "Zap",
+          description: "Serverless compute services",
+          items: [
+            { name: "AWS Lambda", icon: "Zap", description: "Function execution" },
+            { name: "Lambda Layers", icon: "Layers", description: "Code sharing" },
+            { name: "Lambda@Edge", icon: "Globe", description: "Edge compute" },
+            { name: "Fargate", icon: "Package", description: "Serverless containers" }
+          ]
+        },
+        {
+          name: "API & Integration",
+          icon: "Workflow",
+          description: "API management and integration",
+          items: [
+            { name: "API Gateway", icon: "Workflow", description: "REST & HTTP APIs" },
+            { name: "AppSync", icon: "Link", description: "GraphQL APIs" },
+            { name: "EventBridge", icon: "Zap", description: "Event bus" },
+            { name: "Step Functions", icon: "GitBranch", description: "Workflows" }
+          ]
+        },
+        {
+          name: "Data Storage",
+          icon: "Database",
+          description: "Serverless databases and storage",
+          items: [
+            { name: "DynamoDB", icon: "Database", description: "NoSQL database" },
+            { name: "Aurora Serverless", icon: "Database", description: "SQL database" },
+            { name: "S3", icon: "HardDrive", description: "Object storage" },
+            { name: "ElastiCache", icon: "Zap", description: "Serverless cache" }
+          ]
+        },
+        {
+          name: "Authentication & Security",
+          icon: "Lock",
+          description: "Serverless security services",
+          items: [
+            { name: "Cognito", icon: "Users", description: "User management" },
+            { name: "IAM", icon: "Lock", description: "Access control" },
+            { name: "Secrets Manager", icon: "Key", description: "Secrets storage" },
+            { name: "WAF", icon: "Shield", description: "Web firewall" }
+          ]
+        },
+        {
+          name: "Messaging & Queues",
+          icon: "MessageSquare",
+          description: "Asynchronous messaging",
+          items: [
+            { name: "SQS", icon: "List", description: "Message queues" },
+            { name: "SNS", icon: "Bell", description: "Pub/Sub messaging" },
+            { name: "Kinesis", icon: "Activity", description: "Data streaming" },
+            { name: "EventBridge", icon: "Zap", description: "Event routing" }
+          ]
+        },
+        {
+          name: "Development Tools",
+          icon: "Code",
+          description: "Serverless development frameworks",
+          items: [
+            { name: "SAM", icon: "Box", description: "AWS SAM CLI" },
+            { name: "Serverless Framework", icon: "Package", description: "Multi-cloud" },
+            { name: "Terraform", icon: "FileCode", description: "Infrastructure" },
+            { name: "AWS CDK", icon: "Code", description: "Cloud Development Kit" }
+          ]
+        }
+      ],
+      note: "We use modern serverless frameworks and Infrastructure as Code to ensure your application is maintainable, testable, and follows best practices."
+    },
+    whyChooseUs: [
+      {
+        icon: "Award",
+        title: "Serverless Specialists",
+        description: "Built 50+ production serverless applications processing millions of events daily"
+      },
+      {
+        icon: "DollarSign",
+        title: "Cost Optimization Experts",
+        description: "Average 70% cost reduction compared to traditional server-based architectures"
+      },
+      {
+        icon: "Zap",
+        title: "Performance Focused",
+        description: "Optimized Lambda functions with <100ms cold start and sub-second response times"
+      }
+    ],
+    ctaTitle: "Ready to Go Serverless?",
+    ctaDescription: "Build scalable, cost-efficient applications that grow with your business. Let's architect and develop your next serverless application together.",
+    ctaIcon: "Zap"
+  },
+  
+  "devops-automation-ci-cd": {
+    slug: "devops-automation-ci-cd",
+    title: "DevOps Automation & CI/CD",
+    subtitle: "Streamline deployments with automated CI/CD pipelines, Infrastructure as Code, and modern DevOps practices for faster, safer releases",
+    icon: "GitBranch",
+    stats: [
+      { value: "80%", label: "Faster Deployments" },
+      { value: "95%", label: "Deployment Success" },
+      { value: "10x", label: "More Frequent Releases" },
+      { value: "60%", label: "Time Saved" }
+    ],
+    benefits: [
+      {
+        icon: "Zap",
+        title: "Accelerated Deployment Speed",
+        description: "Deploy code changes in minutes instead of hours or days. Automate build, test, and deployment processes. Release features to production multiple times per day.",
+        metric: "80% faster deployments"
+      },
+      {
+        icon: "CheckCircle2",
+        title: "Increased Reliability",
+        description: "Automated testing catches bugs before production. Consistent deployment processes eliminate human error. Rollback capabilities ensure quick recovery from issues.",
+        metric: "95% success rate"
+      },
+      {
+        icon: "TrendingUp",
+        title: "Higher Development Velocity",
+        description: "Developers spend more time coding, less time deploying. Parallel pipelines enable simultaneous feature development. Faster feedback loops accelerate iteration.",
+        metric: "10x more releases"
+      },
+      {
+        icon: "Shield",
+        title: "Enhanced Security",
+        description: "Automated security scanning in pipelines. Infrastructure as Code enables security review before deployment. Audit trails for all changes and deployments.",
+        metric: "Zero security gaps"
+      },
+      {
+        icon: "DollarSign",
+        title: "Reduced Operational Costs",
+        description: "Eliminate manual deployment overhead. Reduce downtime and incident response time. Optimize resource utilization with auto-scaling and right-sizing.",
+        metric: "60% time saved"
+      },
+      {
+        icon: "Users",
+        title: "Better Collaboration",
+        description: "Shared deployment pipelines for entire team. Visibility into build and deployment status. Consistent environments from dev to production.",
+        metric: "Team-wide efficiency"
+      }
+    ],
+    process: {
+      steps: [
+        {
+          title: "Current State Assessment",
+          description: "Analyze your existing deployment processes, infrastructure setup, and pain points. Identify bottlenecks, manual steps, and areas for improvement. Define goals and success metrics.",
+          deliverables: [
+            "Current process documentation",
+            "Bottleneck and pain point analysis",
+            "Infrastructure inventory",
+            "Team workflow assessment",
+            "Improvement opportunities list"
+          ],
+          duration: "Week 1"
+        },
+        {
+          title: "Pipeline Design & Architecture",
+          description: "Design comprehensive CI/CD architecture tailored to your needs. Select appropriate tools, define branching strategy, plan testing stages, and design deployment workflows.",
+          deliverables: [
+            "CI/CD architecture diagram",
+            "Tool selection and justification",
+            "Branching and release strategy",
+            "Testing strategy and stages",
+            "Deployment workflow design"
+          ],
+          duration: "Week 2"
+        },
+        {
+          title: "Implementation & Configuration",
+          description: "Build automated pipelines, implement Infrastructure as Code, set up testing frameworks, configure monitoring and alerting. Migrate from manual to automated processes progressively.",
+          deliverables: [
+            "GitHub Actions / GitLab CI / Jenkins pipelines",
+            "Infrastructure as Code (Terraform/CloudFormation)",
+            "Automated testing suites",
+            "Container orchestration (Docker/Kubernetes)",
+            "Monitoring and alerting setup"
+          ],
+          duration: "Week 3-6"
+        },
+        {
+          title: "Training & Optimization",
+          description: "Train your team on new workflows and tools. Document processes and best practices. Optimize pipeline performance. Implement continuous improvement practices.",
+          deliverables: [
+            "Team training sessions",
+            "Documentation and runbooks",
+            "Pipeline optimization",
+            "Best practices guide",
+            "Ongoing support plan"
+          ],
+          duration: "Week 7-8"
+        }
+      ]
+    },
+    tools: {
+      categories: [
+        {
+          name: "CI/CD Platforms",
+          icon: "GitBranch",
+          description: "Continuous integration and deployment",
+          items: [
+            { name: "GitHub Actions", icon: "Github", description: "Native CI/CD" },
+            { name: "GitLab CI", icon: "GitBranch", description: "GitLab pipelines" },
+            { name: "Jenkins", icon: "Settings", description: "Self-hosted" },
+            { name: "AWS CodePipeline", icon: "Workflow", description: "AWS native" }
+          ]
+        },
+        {
+          name: "Infrastructure as Code",
+          icon: "FileCode",
+          description: "Automated infrastructure management",
+          items: [
+            { name: "Terraform", icon: "Box", description: "Multi-cloud IaC" },
+            { name: "CloudFormation", icon: "Layers", description: "AWS native" },
+            { name: "Ansible", icon: "Settings", description: "Configuration mgmt" },
+            { name: "Pulumi", icon: "Code", description: "Modern IaC" }
+          ]
+        },
+        {
+          name: "Containerization",
+          icon: "Package",
+          description: "Container and orchestration tools",
+          items: [
+            { name: "Docker", icon: "Package", description: "Containerization" },
+            { name: "Kubernetes", icon: "Boxes", description: "Orchestration" },
+            { name: "ECS", icon: "Layers", description: "AWS containers" },
+            { name: "Helm", icon: "Package", description: "K8s packages" }
+          ]
+        },
+        {
+          name: "Testing & Quality",
+          icon: "CheckCircle2",
+          description: "Automated testing frameworks",
+          items: [
+            { name: "Jest", icon: "CheckCircle2", description: "Unit testing" },
+            { name: "Cypress", icon: "Activity", description: "E2E testing" },
+            { name: "SonarQube", icon: "FileCheck", description: "Code quality" },
+            { name: "Snyk", icon: "Shield", description: "Security scanning" }
+          ]
+        },
+        {
+          name: "Monitoring & Logging",
+          icon: "Activity",
+          description: "Observability and monitoring",
+          items: [
+            { name: "Datadog", icon: "BarChart3", description: "APM & monitoring" },
+            { name: "Grafana", icon: "PieChart", description: "Dashboards" },
+            { name: "ELK Stack", icon: "FileText", description: "Log management" },
+            { name: "Prometheus", icon: "TrendingUp", description: "Metrics" }
+          ]
+        },
+        {
+          name: "Artifact Management",
+          icon: "Archive",
+          description: "Build artifact and package management",
+          items: [
+            { name: "ECR", icon: "Package", description: "Container registry" },
+            { name: "Artifactory", icon: "Archive", description: "Artifact storage" },
+            { name: "npm/yarn", icon: "Package", description: "Package registry" },
+            { name: "Docker Hub", icon: "Package", description: "Image registry" }
+          ]
+        }
+      ],
+      note: "We select the best tools for your specific needs, considering your existing stack, team expertise, and budget constraints while following industry best practices."
+    },
+    whyChooseUs: [
+      {
+        icon: "Award",
+        title: "DevOps Veterans",
+        description: "Implemented CI/CD pipelines for 100+ companies, from startups to enterprises"
+      },
+      {
+        icon: "Zap",
+        title: "Proven Efficiency Gains",
+        description: "Average 80% reduction in deployment time and 10x increase in release frequency"
+      },
+      {
+        icon: "CheckCircle2",
+        title: "Zero-Downtime Deployments",
+        description: "Blue-green and canary deployment strategies ensure 100% uptime during releases"
+      }
+    ],
+    ctaTitle: "Ready to Automate Your Deployments?",
+    ctaDescription: "Transform your development workflow with modern CI/CD pipelines and DevOps practices. Deploy faster, more reliably, and with greater confidence.",
+    ctaIcon: "GitBranch"
+  }
+};
+
 // Page-specific SEO configurations for unique meta titles
 export const pageSEO = {
   home: {
@@ -2505,6 +3479,67 @@ export const pageSEO = {
       title: "Page Not Found - 404 | Rahul Ladumor",
       description: "Oops! The page you're looking for doesn't exist. Explore our comprehensive AWS consulting services, cloud cost optimization solutions, and serverless architecture expertise to find what you need.",
       url: "https://www.rahulladumor.in/404",
+    }
+  },
+  
+  // Service Pages SEO
+  cloudMigrationConsulting: {
+    title: "Cloud Migration Consulting Services | AWS, Azure & GCP Experts",
+    description: "Expert cloud migration consulting services for seamless AWS, Azure, and Google Cloud migrations. Get 40% cost savings, 99.9% uptime, and zero downtime migrations. Proven expertise with 100+ successful migrations.",
+    keywords: ["Cloud Migration", "AWS Migration", "Azure Migration", "Google Cloud Migration", "Cloud Consulting", "Infrastructure Migration", "Kubernetes", "Terraform", "DevOps"],
+    canonicalUrl: "https://www.rahulladumor.in/services/cloud-migration-consulting",
+    openGraph: {
+      title: "Cloud Migration Consulting Services | AWS, Azure & GCP Experts",
+      description: "Expert cloud migration consulting services for seamless migrations to AWS, Azure, or Google Cloud. Get 40% cost savings, 99.9% uptime, and zero downtime migrations with proven expertise.",
+      url: "https://www.rahulladumor.in/services/cloud-migration-consulting",
+    }
+  },
+  
+  technicalMentorship: {
+    title: "Technical Mentorship Services | AWS & Cloud Career Coaching",
+    description: "Accelerate your cloud engineering career with personalized 1-on-1 mentorship from AWS Community Builders. Master cloud architecture, DevOps, system design, and land your dream job. 85% career advancement rate with 200+ engineers mentored.",
+    keywords: ["Technical Mentorship", "AWS Mentorship", "Cloud Career Coaching", "DevOps Training", "System Design", "Career Advancement", "Software Engineering Mentor", "Cloud Architect Coaching", "Interview Preparation"],
+    canonicalUrl: "https://www.rahulladumor.in/services/technical-mentorship",
+    openGraph: {
+      title: "Technical Mentorship Services | AWS & Cloud Career Coaching",
+      description: "Accelerate your cloud engineering career with personalized mentorship from AWS Community Builders. 85% career advancement rate. Master AWS, DevOps, system design, and interview skills.",
+      url: "https://www.rahulladumor.in/services/technical-mentorship",
+    }
+  },
+  
+  awsCloudArchitectureReview: {
+    title: "AWS Cloud Architecture Review | Security, Cost & Performance Audit",
+    description: "Comprehensive AWS infrastructure review and optimization. Get 40% cost savings, 3x performance improvement, and 99.99% uptime. Expert analysis of security, scalability, and Well-Architected Framework compliance.",
+    keywords: ["AWS Architecture Review", "Cloud Infrastructure Audit", "AWS Cost Optimization", "Security Assessment", "Performance Optimization", "AWS Well-Architected", "Cloud Consulting", "Infrastructure Analysis"],
+    canonicalUrl: "https://www.rahulladumor.in/services/aws-cloud-architecture-review",
+    openGraph: {
+      title: "AWS Cloud Architecture Review | Security, Cost & Performance Audit",
+      description: "Comprehensive AWS infrastructure review with 40% cost savings and 3x performance improvement. Expert analysis of security, scalability, and compliance with AWS best practices.",
+      url: "https://www.rahulladumor.in/services/aws-cloud-architecture-review",
+    }
+  },
+  
+  serverlessApplicationDevelopment: {
+    title: "Serverless Application Development | AWS Lambda & API Gateway",
+    description: "Build scalable, cost-efficient serverless applications with AWS Lambda, API Gateway, and DynamoDB. Get 70% cost reduction, infinite auto-scaling, and zero server management. Expert serverless architecture and development.",
+    keywords: ["Serverless Development", "AWS Lambda", "API Gateway", "DynamoDB", "Serverless Architecture", "Cloud Native", "Event-Driven", "Microservices", "Cost Optimization"],
+    canonicalUrl: "https://www.rahulladumor.in/services/serverless-application-development",
+    openGraph: {
+      title: "Serverless Application Development | AWS Lambda & API Gateway",
+      description: "Build scalable serverless applications with 70% cost reduction and infinite auto-scaling. Expert development with AWS Lambda, API Gateway, DynamoDB, and modern serverless patterns.",
+      url: "https://www.rahulladumor.in/services/serverless-application-development",
+    }
+  },
+  
+  devopsAutomationCiCd: {
+    title: "DevOps Automation & CI/CD Services | GitHub Actions, Docker, K8s",
+    description: "Streamline deployments with automated CI/CD pipelines and DevOps best practices. Get 80% faster deployments, 95% success rate, and 10x more releases. Expert automation with GitHub Actions, Docker, Kubernetes, and Terraform.",
+    keywords: ["DevOps Automation", "CI/CD Pipeline", "GitHub Actions", "Docker", "Kubernetes", "Terraform", "Infrastructure as Code", "Continuous Integration", "Deployment Automation"],
+    canonicalUrl: "https://www.rahulladumor.in/services/devops-automation-ci-cd",
+    openGraph: {
+      title: "DevOps Automation & CI/CD Services | GitHub Actions, Docker, K8s",
+      description: "Automate deployments with 80% faster speed and 95% success rate. Expert CI/CD implementation with GitHub Actions, Docker, Kubernetes, and Infrastructure as Code.",
+      url: "https://www.rahulladumor.in/services/devops-automation-ci-cd",
     }
   }
 };
