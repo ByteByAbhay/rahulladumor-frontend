@@ -3381,6 +3381,588 @@ export const servicePages = {
     ctaTitle: "Ready to Automate Your Deployments?",
     ctaDescription: "Transform your development workflow with modern CI/CD pipelines and DevOps practices. Deploy faster, more reliably, and with greater confidence.",
     ctaIcon: "GitBranch"
+  },
+
+  "ai-ml-model-development-deployment": {
+    slug: "ai-ml-model-development-deployment",
+    title: "AI/ML Model Development & Deployment",
+    subtitle: "Build, train, and deploy production-ready machine learning models with MLOps best practices, automated pipelines, and scalable infrastructure",
+    icon: "Brain",
+    stats: [
+      { value: "50+", label: "ML Models Deployed" },
+      { value: "95%", label: "Model Accuracy" },
+      { value: "10x", label: "Faster Inference" },
+      { value: "80%", label: "Cost Reduction" }
+    ],
+    benefits: [
+      {
+        icon: "Sparkles",
+        title: "Production-Ready ML Models",
+        description: "Transform research prototypes into scalable production systems. We handle data pipelines, model training, hyperparameter tuning, and deployment with monitoring and retraining workflows.",
+        metric: "95%+ model accuracy"
+      },
+      {
+        icon: "Zap",
+        title: "Real-Time Inference at Scale",
+        description: "Deploy models with sub-100ms latency using optimized inference engines, model quantization, and edge deployment. Handle millions of predictions per day cost-effectively.",
+        metric: "10x faster inference"
+      },
+      {
+        icon: "GitBranch",
+        title: "End-to-End MLOps Pipelines",
+        description: "Automate the entire ML lifecycle from data ingestion to model deployment. Version control for datasets and models, automated testing, CI/CD for ML, and continuous monitoring.",
+        metric: "Fully automated workflows"
+      },
+      {
+        icon: "DollarSign",
+        title: "Cost-Optimized Infrastructure",
+        description: "Right-size compute resources, leverage spot instances for training, optimize inference costs with serverless and edge deployment. Reduce ML infrastructure costs by 70-90%.",
+        metric: "80% cost savings"
+      },
+      {
+        icon: "Shield",
+        title: "Model Governance & Security",
+        description: "Implement model versioning, A/B testing, canary deployments, and rollback strategies. Ensure data privacy, model explainability, and compliance with regulations.",
+        metric: "Enterprise-grade security"
+      },
+      {
+        icon: "TrendingUp",
+        title: "Continuous Model Improvement",
+        description: "Monitor model performance, detect drift, automate retraining pipelines, and implement feedback loops. Keep models accurate and relevant as data evolves.",
+        metric: "Automated retraining"
+      }
+    ],
+    process: {
+      steps: [
+        {
+          title: "Problem Definition & Data Strategy",
+          description: "Define ML objectives, success metrics, and business impact. Assess data availability, quality, and labeling requirements. Design data collection and annotation strategies for optimal model performance.",
+          deliverables: [
+            "ML problem statement and success criteria",
+            "Data assessment and quality report",
+            "Feature engineering strategy",
+            "Labeling and annotation plan",
+            "Model performance benchmarks"
+          ],
+          duration: "Week 1-2"
+        },
+        {
+          title: "Model Development & Training",
+          description: "Build and train ML models using state-of-the-art frameworks. Experiment with multiple architectures, perform hyperparameter tuning, and validate model performance with rigorous testing.",
+          deliverables: [
+            "Trained ML models (multiple variants)",
+            "Model performance metrics and analysis",
+            "Feature importance and explainability",
+            "Training pipeline code and notebooks",
+            "Model versioning and experiment tracking"
+          ],
+          duration: "Week 3-6"
+        },
+        {
+          title: "MLOps Pipeline Implementation",
+          description: "Build automated pipelines for data processing, model training, validation, and deployment. Implement CI/CD for ML, model registry, and automated testing frameworks.",
+          deliverables: [
+            "Automated training pipelines",
+            "Model deployment automation",
+            "CI/CD for ML workflows",
+            "Model registry and versioning",
+            "Infrastructure as Code templates"
+          ],
+          duration: "Week 7-10"
+        },
+        {
+          title: "Production Deployment & Monitoring",
+          description: "Deploy models to production with monitoring, alerting, and automated retraining. Implement A/B testing, canary deployments, and performance optimization for cost-effective inference at scale.",
+          deliverables: [
+            "Production model deployment",
+            "Real-time monitoring dashboards",
+            "Automated retraining triggers",
+            "Performance optimization",
+            "Documentation and handoff"
+          ],
+          duration: "Week 11-12"
+        }
+      ]
+    },
+    tools: {
+      categories: [
+        {
+          name: "ML Frameworks",
+          icon: "Brain",
+          description: "Industry-leading machine learning frameworks",
+          items: [
+            { name: "TensorFlow", icon: "Brain", description: "Deep learning" },
+            { name: "PyTorch", icon: "Brain", description: "Research & production" },
+            { name: "Scikit-learn", icon: "Code", description: "Classical ML" },
+            { name: "XGBoost", icon: "TrendingUp", description: "Gradient boosting" }
+          ]
+        },
+        {
+          name: "MLOps Platforms",
+          icon: "GitBranch",
+          description: "End-to-end ML lifecycle management",
+          items: [
+            { name: "AWS SageMaker", icon: "Cloud", description: "Managed ML platform" },
+            { name: "MLflow", icon: "GitBranch", description: "Experiment tracking" },
+            { name: "Kubeflow", icon: "Boxes", description: "K8s-native MLOps" },
+            { name: "Weights & Biases", icon: "Activity", description: "Experiment tracking" }
+          ]
+        },
+        {
+          name: "Model Serving",
+          icon: "Zap",
+          description: "Scalable model inference",
+          items: [
+            { name: "TensorFlow Serving", icon: "Zap", description: "TF model serving" },
+            { name: "TorchServe", icon: "Zap", description: "PyTorch serving" },
+            { name: "AWS Lambda", icon: "Zap", description: "Serverless inference" },
+            { name: "SageMaker Endpoints", icon: "Cloud", description: "Managed endpoints" }
+          ]
+        },
+        {
+          name: "Data Processing",
+          icon: "Database",
+          description: "Big data and feature engineering",
+          items: [
+            { name: "Apache Spark", icon: "Zap", description: "Distributed processing" },
+            { name: "Pandas", icon: "Table", description: "Data manipulation" },
+            { name: "Dask", icon: "Layers", description: "Parallel computing" },
+            { name: "AWS Glue", icon: "Database", description: "ETL service" }
+          ]
+        },
+        {
+          name: "Model Monitoring",
+          icon: "Activity",
+          description: "Production model observability",
+          items: [
+            { name: "Evidently AI", icon: "Activity", description: "Drift detection" },
+            { name: "Prometheus", icon: "TrendingUp", description: "Metrics collection" },
+            { name: "Grafana", icon: "PieChart", description: "Visualization" },
+            { name: "CloudWatch", icon: "Activity", description: "AWS monitoring" }
+          ]
+        },
+        {
+          name: "LLM & GenAI",
+          icon: "Sparkles",
+          description: "Large language models and generative AI",
+          items: [
+            { name: "OpenAI API", icon: "Sparkles", description: "GPT models" },
+            { name: "LangChain", icon: "Link", description: "LLM applications" },
+            { name: "Hugging Face", icon: "Brain", description: "Transformer models" },
+            { name: "AWS Bedrock", icon: "Cloud", description: "Managed LLMs" }
+          ]
+        }
+      ],
+      note: "We select the optimal ML stack based on your use case, data volume, latency requirements, and budget. Our solutions are cloud-agnostic and can run on AWS, Azure, GCP, or on-premises."
+    },
+    whyChooseUs: [
+      {
+        icon: "Award",
+        title: "ML Engineering Expertise",
+        description: "Deployed 50+ production ML models across computer vision, NLP, recommendation systems, and predictive analytics"
+      },
+      {
+        icon: "Zap",
+        title: "Production-First Approach",
+        description: "We build for production from day one—not research prototypes. Every model is deployment-ready with monitoring and retraining"
+      },
+      {
+        icon: "DollarSign",
+        title: "Cost-Optimized ML",
+        description: "Reduce ML infrastructure costs by 80% with spot instances, serverless inference, and intelligent resource allocation"
+      }
+    ],
+    ctaTitle: "Ready to Deploy Production ML Models?",
+    ctaDescription: "Transform your ML research into scalable production systems with automated MLOps pipelines, real-time inference, and continuous model improvement.",
+    ctaIcon: "Brain"
+  },
+
+  "ai-powered-cloud-optimization": {
+    slug: "ai-powered-cloud-optimization",
+    title: "AI-Powered Cloud Optimization",
+    subtitle: "Leverage machine learning and AI to automatically optimize cloud costs, predict resource needs, and prevent performance issues before they impact your business",
+    icon: "Sparkles",
+    stats: [
+      { value: "70%", label: "Cost Reduction" },
+      { value: "99.99%", label: "Uptime Achieved" },
+      { value: "85%", label: "Fewer Incidents" },
+      { value: "24/7", label: "AI Monitoring" }
+    ],
+    benefits: [
+      {
+        icon: "Brain",
+        title: "Intelligent Cost Optimization",
+        description: "AI analyzes usage patterns, predicts future needs, and automatically right-sizes resources. Identifies waste, recommends reserved instances, and optimizes spot instance usage for maximum savings.",
+        metric: "70% cost reduction"
+      },
+      {
+        icon: "TrendingUp",
+        title: "Predictive Auto-Scaling",
+        description: "ML models predict traffic patterns and scale infrastructure proactively before demand spikes. Prevent over-provisioning and under-provisioning with intelligent capacity planning.",
+        metric: "Zero traffic-related outages"
+      },
+      {
+        icon: "AlertTriangle",
+        title: "Anomaly Detection & Prevention",
+        description: "AI monitors thousands of metrics in real-time, detects anomalies, and predicts failures before they occur. Automated remediation reduces incidents by 85% and prevents downtime.",
+        metric: "85% fewer incidents"
+      },
+      {
+        icon: "Zap",
+        title: "Performance Optimization",
+        description: "ML-driven performance tuning identifies bottlenecks, optimizes database queries, and recommends architecture improvements. Achieve 3-5x faster response times automatically.",
+        metric: "5x performance boost"
+      },
+      {
+        icon: "Shield",
+        title: "Security Threat Detection",
+        description: "AI-powered security monitoring detects unusual access patterns, identifies potential breaches, and automatically responds to threats. Continuous compliance monitoring and automated remediation.",
+        metric: "Real-time threat detection"
+      },
+      {
+        icon: "FileText",
+        title: "Intelligent Recommendations",
+        description: "Get actionable, prioritized recommendations based on your specific workload patterns. AI explains the impact, risk, and savings potential of each optimization opportunity.",
+        metric: "Actionable insights"
+      }
+    ],
+    process: {
+      steps: [
+        {
+          title: "Infrastructure Discovery & Baseline",
+          description: "Connect to your cloud accounts and analyze current infrastructure, costs, and performance metrics. Establish baseline measurements and identify quick wins for immediate impact.",
+          deliverables: [
+            "Complete infrastructure inventory",
+            "Current cost and performance baseline",
+            "Quick win opportunities (30-day ROI)",
+            "AI model training data collection",
+            "Anomaly detection setup"
+          ],
+          duration: "Week 1"
+        },
+        {
+          title: "AI Model Training & Calibration",
+          description: "Train custom ML models on your historical data to understand usage patterns, predict future needs, and identify optimization opportunities. Calibrate models for your specific workload characteristics.",
+          deliverables: [
+            "Custom ML models for your infrastructure",
+            "Usage pattern analysis and predictions",
+            "Cost forecasting models",
+            "Anomaly detection algorithms",
+            "Performance prediction models"
+          ],
+          duration: "Week 2-3"
+        },
+        {
+          title: "Automated Optimization Deployment",
+          description: "Deploy AI-powered optimization agents that continuously monitor, analyze, and optimize your infrastructure. Implement automated scaling policies, cost optimization rules, and performance tuning.",
+          deliverables: [
+            "AI optimization agents deployed",
+            "Automated scaling policies",
+            "Cost optimization automation",
+            "Performance tuning rules",
+            "Real-time monitoring dashboards"
+          ],
+          duration: "Week 4-5"
+        },
+        {
+          title: "Continuous Learning & Improvement",
+          description: "AI models continuously learn from your infrastructure behavior, adapt to changing patterns, and improve optimization strategies. Regular model retraining and performance reviews ensure sustained benefits.",
+          deliverables: [
+            "Continuous model improvement",
+            "Monthly optimization reports",
+            "Trend analysis and forecasting",
+            "ROI tracking and reporting",
+            "Ongoing support and tuning"
+          ],
+          duration: "Ongoing"
+        }
+      ]
+    },
+    tools: {
+      categories: [
+        {
+          name: "AI/ML Platforms",
+          icon: "Brain",
+          description: "Machine learning and AI infrastructure",
+          items: [
+            { name: "AWS SageMaker", icon: "Cloud", description: "ML platform" },
+            { name: "TensorFlow", icon: "Brain", description: "Deep learning" },
+            { name: "Scikit-learn", icon: "Code", description: "ML algorithms" },
+            { name: "Prophet", icon: "TrendingUp", description: "Time series forecasting" }
+          ]
+        },
+        {
+          name: "Cloud Cost Management",
+          icon: "DollarSign",
+          description: "Cost analysis and optimization",
+          items: [
+            { name: "AWS Cost Explorer", icon: "BarChart3", description: "Cost analytics" },
+            { name: "CloudHealth", icon: "DollarSign", description: "Multi-cloud costs" },
+            { name: "Spot.io", icon: "Zap", description: "Spot instance optimization" },
+            { name: "Kubecost", icon: "Package", description: "K8s cost management" }
+          ]
+        },
+        {
+          name: "Monitoring & Observability",
+          icon: "Activity",
+          description: "Real-time infrastructure monitoring",
+          items: [
+            { name: "Datadog", icon: "Activity", description: "APM & monitoring" },
+            { name: "Prometheus", icon: "TrendingUp", description: "Metrics collection" },
+            { name: "Grafana", icon: "PieChart", description: "Visualization" },
+            { name: "CloudWatch", icon: "Activity", description: "AWS monitoring" }
+          ]
+        },
+        {
+          name: "Anomaly Detection",
+          icon: "AlertTriangle",
+          description: "AI-powered anomaly detection",
+          items: [
+            { name: "AWS DevOps Guru", icon: "Brain", description: "ML-powered insights" },
+            { name: "Anodot", icon: "AlertTriangle", description: "Anomaly detection" },
+            { name: "Mona", icon: "Activity", description: "ML monitoring" },
+            { name: "Custom Models", icon: "Code", description: "Tailored detection" }
+          ]
+        },
+        {
+          name: "Auto-Scaling & Optimization",
+          icon: "Zap",
+          description: "Intelligent resource management",
+          items: [
+            { name: "AWS Auto Scaling", icon: "TrendingUp", description: "Dynamic scaling" },
+            { name: "KEDA", icon: "Boxes", description: "K8s event-driven scaling" },
+            { name: "Predictive Scaling", icon: "Brain", description: "ML-based scaling" },
+            { name: "Spot Instances", icon: "DollarSign", description: "Cost optimization" }
+          ]
+        },
+        {
+          name: "Data Analytics",
+          icon: "BarChart3",
+          description: "Big data processing and analysis",
+          items: [
+            { name: "AWS Athena", icon: "Database", description: "SQL analytics" },
+            { name: "QuickSight", icon: "PieChart", description: "BI dashboards" },
+            { name: "Apache Spark", icon: "Zap", description: "Data processing" },
+            { name: "Pandas", icon: "Table", description: "Data analysis" }
+          ]
+        }
+      ],
+      note: "Our AI optimization platform is cloud-agnostic and works with AWS, Azure, GCP, and hybrid environments. We customize the solution to your specific infrastructure and business requirements."
+    },
+    whyChooseUs: [
+      {
+        icon: "Brain",
+        title: "AI/ML Expertise",
+        description: "Built custom ML models for cloud optimization that have saved clients millions in infrastructure costs"
+      },
+      {
+        icon: "Zap",
+        title: "Proven Results",
+        description: "Average 70% cost reduction and 85% fewer incidents within 90 days of AI optimization deployment"
+      },
+      {
+        icon: "Shield",
+        title: "Risk-Free Implementation",
+        description: "We monitor and validate all AI recommendations before execution. You maintain full control with automated rollback capabilities"
+      }
+    ],
+    ctaTitle: "Ready to Optimize with AI?",
+    ctaDescription: "Let AI continuously optimize your cloud infrastructure for cost, performance, and reliability. Get started with a free AI-powered infrastructure analysis.",
+    ctaIcon: "Sparkles"
+  },
+
+  "data-engineering-mlops-consulting": {
+    slug: "data-engineering-mlops-consulting",
+    title: "Data Engineering & MLOps Consulting",
+    subtitle: "Build scalable data pipelines, implement MLOps best practices, and create data platforms that power analytics, ML models, and business intelligence at scale",
+    icon: "Database",
+    stats: [
+      { value: "10TB+", label: "Data Processed Daily" },
+      { value: "99.9%", label: "Pipeline Reliability" },
+      { value: "100x", label: "Faster Queries" },
+      { value: "50+", label: "Data Pipelines Built" }
+    ],
+    benefits: [
+      {
+        icon: "Workflow",
+        title: "Scalable Data Pipelines",
+        description: "Build robust ETL/ELT pipelines that handle terabytes of data daily. Automated data ingestion, transformation, validation, and quality checks with fault tolerance and monitoring.",
+        metric: "10TB+ daily processing"
+      },
+      {
+        icon: "Database",
+        title: "Modern Data Architecture",
+        description: "Design data lakes, data warehouses, and lakehouse architectures optimized for analytics and ML. Implement data mesh principles for decentralized data ownership and governance.",
+        metric: "100x faster queries"
+      },
+      {
+        icon: "GitBranch",
+        title: "Production MLOps",
+        description: "Implement end-to-end MLOps with automated training, testing, deployment, and monitoring. Version control for data, models, and code with reproducible ML pipelines.",
+        metric: "Fully automated ML lifecycle"
+      },
+      {
+        icon: "Zap",
+        title: "Real-Time Data Processing",
+        description: "Build streaming data pipelines for real-time analytics and ML inference. Process millions of events per second with sub-second latency using Kafka, Kinesis, and Flink.",
+        metric: "Sub-second latency"
+      },
+      {
+        icon: "Shield",
+        title: "Data Governance & Security",
+        description: "Implement data cataloging, lineage tracking, access controls, and compliance frameworks. Ensure GDPR, HIPAA, and SOC2 compliance with automated policy enforcement.",
+        metric: "Enterprise-grade governance"
+      },
+      {
+        icon: "TrendingUp",
+        title: "Advanced Analytics & BI",
+        description: "Enable self-service analytics with modern BI tools, semantic layers, and data marts. Empower teams with fast, reliable access to clean, transformed data.",
+        metric: "Self-service analytics"
+      }
+    ],
+    process: {
+      steps: [
+        {
+          title: "Data Strategy & Architecture Design",
+          description: "Assess current data landscape, define data strategy, and design target architecture. Identify data sources, use cases, and requirements for analytics, ML, and business intelligence.",
+          deliverables: [
+            "Data strategy document",
+            "Target architecture design",
+            "Data source inventory and assessment",
+            "Use case prioritization",
+            "Technology stack recommendations"
+          ],
+          duration: "Week 1-2"
+        },
+        {
+          title: "Data Pipeline Development",
+          description: "Build scalable data pipelines for ingestion, transformation, and loading. Implement data quality checks, error handling, and monitoring. Set up orchestration and scheduling.",
+          deliverables: [
+            "ETL/ELT pipeline implementation",
+            "Data quality framework",
+            "Orchestration and scheduling",
+            "Error handling and monitoring",
+            "Pipeline documentation"
+          ],
+          duration: "Week 3-8"
+        },
+        {
+          title: "MLOps Platform Implementation",
+          description: "Set up MLOps infrastructure for model training, deployment, and monitoring. Implement feature stores, model registry, and automated ML pipelines with CI/CD integration.",
+          deliverables: [
+            "MLOps platform setup",
+            "Feature store implementation",
+            "Model registry and versioning",
+            "Automated ML pipelines",
+            "CI/CD for ML workflows"
+          ],
+          duration: "Week 9-12"
+        },
+        {
+          title: "Data Governance & Optimization",
+          description: "Implement data cataloging, lineage tracking, and access controls. Optimize query performance, reduce costs, and establish data quality monitoring and alerting.",
+          deliverables: [
+            "Data catalog and lineage",
+            "Access control and security",
+            "Performance optimization",
+            "Cost optimization strategies",
+            "Training and documentation"
+          ],
+          duration: "Week 13-16"
+        }
+      ]
+    },
+    tools: {
+      categories: [
+        {
+          name: "Data Processing",
+          icon: "Zap",
+          description: "Batch and stream processing frameworks",
+          items: [
+            { name: "Apache Spark", icon: "Zap", description: "Distributed processing" },
+            { name: "Apache Flink", icon: "Workflow", description: "Stream processing" },
+            { name: "dbt", icon: "GitBranch", description: "Data transformation" },
+            { name: "AWS Glue", icon: "Database", description: "Serverless ETL" }
+          ]
+        },
+        {
+          name: "Data Storage",
+          icon: "Database",
+          description: "Data lakes, warehouses, and databases",
+          items: [
+            { name: "Snowflake", icon: "Database", description: "Cloud data warehouse" },
+            { name: "Databricks", icon: "Sparkles", description: "Lakehouse platform" },
+            { name: "AWS S3", icon: "HardDrive", description: "Data lake storage" },
+            { name: "BigQuery", icon: "Database", description: "GCP data warehouse" }
+          ]
+        },
+        {
+          name: "Streaming & Messaging",
+          icon: "Workflow",
+          description: "Real-time data streaming",
+          items: [
+            { name: "Apache Kafka", icon: "Workflow", description: "Event streaming" },
+            { name: "AWS Kinesis", icon: "Workflow", description: "Real-time streaming" },
+            { name: "Pub/Sub", icon: "MessageSquare", description: "GCP messaging" },
+            { name: "RabbitMQ", icon: "MessageSquare", description: "Message broker" }
+          ]
+        },
+        {
+          name: "Orchestration",
+          icon: "GitBranch",
+          description: "Workflow and pipeline orchestration",
+          items: [
+            { name: "Apache Airflow", icon: "GitBranch", description: "Workflow orchestration" },
+            { name: "Prefect", icon: "Workflow", description: "Modern orchestration" },
+            { name: "Dagster", icon: "GitBranch", description: "Data orchestration" },
+            { name: "AWS Step Functions", icon: "Workflow", description: "Serverless workflows" }
+          ]
+        },
+        {
+          name: "MLOps Tools",
+          icon: "Brain",
+          description: "ML lifecycle management",
+          items: [
+            { name: "MLflow", icon: "GitBranch", description: "Experiment tracking" },
+            { name: "Kubeflow", icon: "Boxes", description: "K8s-native MLOps" },
+            { name: "Feast", icon: "Database", description: "Feature store" },
+            { name: "DVC", icon: "GitBranch", description: "Data version control" }
+          ]
+        },
+        {
+          name: "Data Quality & Governance",
+          icon: "Shield",
+          description: "Data quality and governance tools",
+          items: [
+            { name: "Great Expectations", icon: "CheckCircle2", description: "Data validation" },
+            { name: "AWS Glue Data Catalog", icon: "FileText", description: "Data catalog" },
+            { name: "Collibra", icon: "Shield", description: "Data governance" },
+            { name: "Monte Carlo", icon: "Activity", description: "Data observability" }
+          ]
+        }
+      ],
+      note: "We design data platforms that are cloud-agnostic, scalable, and maintainable. Our solutions work with AWS, Azure, GCP, and on-premises infrastructure based on your requirements."
+    },
+    whyChooseUs: [
+      {
+        icon: "Award",
+        title: "Data Engineering Experts",
+        description: "Built 50+ production data pipelines processing petabytes of data for Fortune 500 companies and startups"
+      },
+      {
+        icon: "Zap",
+        title: "End-to-End Solutions",
+        description: "From data ingestion to ML deployment—we handle the entire data and ML lifecycle with production-grade infrastructure"
+      },
+      {
+        icon: "TrendingUp",
+        title: "Proven Performance",
+        description: "Achieved 100x query performance improvements and 99.9% pipeline reliability with automated monitoring and alerting"
+      }
+    ],
+    ctaTitle: "Ready to Build Your Data Platform?",
+    ctaDescription: "Transform your data infrastructure with scalable pipelines, modern data architecture, and production MLOps. Enable data-driven decision making and ML at scale.",
+    ctaIcon: "Database"
   }
 };
 
@@ -3540,6 +4122,42 @@ export const pageSEO = {
       title: "DevOps Automation & CI/CD Services | GitHub Actions, Docker, K8s",
       description: "Automate deployments with 80% faster speed and 95% success rate. Expert CI/CD implementation with GitHub Actions, Docker, Kubernetes, and Infrastructure as Code.",
       url: "https://www.rahulladumor.in/services/devops-automation-ci-cd",
+    }
+  },
+
+  aiMlModelDevelopmentDeployment: {
+    title: "AI/ML Model Development & Deployment | MLOps & Production ML",
+    description: "Build and deploy production-ready machine learning models with MLOps best practices. Get 95% model accuracy, 10x faster inference, and 80% cost reduction. Expert ML engineering with TensorFlow, PyTorch, AWS SageMaker, and automated pipelines.",
+    keywords: ["Machine Learning Consulting", "MLOps", "AI Model Deployment", "ML Engineering", "TensorFlow", "PyTorch", "AWS SageMaker", "Model Training", "Production ML", "Deep Learning"],
+    canonicalUrl: "https://www.rahulladumor.in/services/ai-ml-model-development-deployment",
+    openGraph: {
+      title: "AI/ML Model Development & Deployment | MLOps & Production ML",
+      description: "Transform ML research into production systems with 95% accuracy and 80% cost savings. Expert MLOps implementation with automated pipelines, real-time inference, and continuous model improvement.",
+      url: "https://www.rahulladumor.in/services/ai-ml-model-development-deployment",
+    }
+  },
+
+  aiPoweredCloudOptimization: {
+    title: "AI-Powered Cloud Optimization | ML-Driven Cost & Performance",
+    description: "Leverage AI and machine learning to automatically optimize cloud costs and performance. Achieve 70% cost reduction, 99.99% uptime, and 85% fewer incidents with intelligent auto-scaling, anomaly detection, and predictive optimization.",
+    keywords: ["AI Cloud Optimization", "ML Cost Optimization", "Predictive Auto-Scaling", "Anomaly Detection", "AI Infrastructure", "Cloud Cost Management", "Performance Optimization", "AWS Cost Optimization", "Machine Learning Operations"],
+    canonicalUrl: "https://www.rahulladumor.in/services/ai-powered-cloud-optimization",
+    openGraph: {
+      title: "AI-Powered Cloud Optimization | ML-Driven Cost & Performance",
+      description: "Let AI optimize your cloud infrastructure with 70% cost reduction and 85% fewer incidents. Predictive scaling, anomaly detection, and automated optimization powered by machine learning.",
+      url: "https://www.rahulladumor.in/services/ai-powered-cloud-optimization",
+    }
+  },
+
+  dataEngineeringMlopsConsulting: {
+    title: "Data Engineering & MLOps Consulting | Scalable Data Pipelines",
+    description: "Build scalable data pipelines and implement production MLOps platforms. Process 10TB+ data daily with 99.9% reliability, 100x faster queries, and automated ML lifecycle management. Expert data engineering with Spark, Airflow, Snowflake, and Databricks.",
+    keywords: ["Data Engineering", "MLOps Consulting", "Data Pipelines", "ETL", "Apache Spark", "Airflow", "Snowflake", "Databricks", "Data Lake", "Data Warehouse", "Feature Store", "ML Pipeline"],
+    canonicalUrl: "https://www.rahulladumor.in/services/data-engineering-mlops-consulting",
+    openGraph: {
+      title: "Data Engineering & MLOps Consulting | Scalable Data Pipelines",
+      description: "Transform your data infrastructure with scalable pipelines processing 10TB+ daily. End-to-end MLOps with 99.9% reliability, automated workflows, and modern data architecture.",
+      url: "https://www.rahulladumor.in/services/data-engineering-mlops-consulting",
     }
   }
 };
