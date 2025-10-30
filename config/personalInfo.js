@@ -1646,7 +1646,7 @@ export const personalInfo = {
     createdAt: "2025-10-16T06:23:20.567Z",
     updatedAt: "2025-10-16T06:23:20.567Z",
     __v: 0,
-  },
+  }
 };
 
 // Company/Work Information - REPLACE WITH YOUR ACTUAL WORK HISTORY
@@ -4159,7 +4159,7 @@ export const pageSEO = {
       description: "Transform your data infrastructure with scalable pipelines processing 10TB+ daily. End-to-end MLOps with 99.9% reliability, automated workflows, and modern data architecture.",
       url: "https://www.rahulladumor.in/services/data-engineering-mlops-consulting",
     }
-  }
+  },
 };
 
 // IMPORTANT NOTES:

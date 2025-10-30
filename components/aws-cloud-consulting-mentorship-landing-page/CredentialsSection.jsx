@@ -3,6 +3,7 @@ import Icon from "components/AppIcon";
 import Image from "components/AppImage";
 import { useRouter } from "next/navigation";
 import api from "../../utils/api/api";
+import { speakingEvents } from "../../config/eventsConfig";
 
 const CredentialsSection = ({ profileData, blogs }) => {
   const personalInfo = profileData || {};
@@ -72,27 +73,7 @@ const CredentialsSection = ({ profileData, blogs }) => {
 
   // Keep certifications as they are specific to the component
   // achievements now come from personalInfo
-
-  const speakingEvents = [
-    {
-      event: "AWS re:Invent 2023",
-      topic: "Cost Optimization Strategies",
-      image:
-        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=300&h=200&fit=crop",
-    },
-    {
-      event: "DevOps India Summit",
-      topic: "Infrastructure as Code",
-      image:
-        "https://images.unsplash.com/photo-1559223607-b4d0555ae227?w=300&h=200&fit=crop",
-    },
-    {
-      event: "Cloud Native Meetup",
-      topic: "Serverless Architecture",
-      image:
-        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=300&h=200&fit=crop",
-    },
-  ];
+  // speakingEvents imported from eventsConfig
 
   useEffect(() => {
     const certInterval = setInterval(() => {
@@ -337,30 +318,88 @@ const CredentialsSection = ({ profileData, blogs }) => {
         </div>
 
         {/* Speaking Engagements */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 border border-border">
-          <h3 className="text-2xl font-bold text-primary mb-6 text-center">
-            Recent Speaking Engagements
-          </h3>
+        {speakingEvents.length > 0 && (
+          <div className="bg-white rounded-2xl shadow-lg p-8 border border-border">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 sm:gap-0 mb-4 sm:mb-6">
+              <h3 className="text-xl sm:text-2xl font-bold text-primary">
+                Recent Speaking Engagements
+              </h3>
+              <button
+                onClick={() => router.push("/events")}
+                className="text-accent hover:text-accent/80 font-semibold text-xs sm:text-sm flex items-center space-x-1 transition-colors self-start sm:self-auto"
+                aria-label="View all speaking events"
+              >
+                <span>View All</span>
+                <Icon name="ArrowRight" size={14} className="sm:w-4 sm:h-4" />
+              </button>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {speakingEvents.map((event, index) => (
-              <div key={index} className="group cursor-pointer">
-                <div className="relative overflow-hidden rounded-lg mb-4">
-                  <Image
-                    src={event.image}
-                    alt={event.event}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <h4 className="font-semibold">{event.event}</h4>
-                    <p className="text-sm opacity-90">{event.topic}</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+              {speakingEvents.slice(0, 3).map((event, index) => (
+                <div
+                  key={event.id || index}
+                  className="group cursor-pointer bg-white rounded-lg md:rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-border"
+                >
+                  <div className="relative overflow-hidden h-40 sm:h-44 md:h-48">
+                    <Image
+                      src={event.image}
+                      alt={event.title || event.event}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div className="absolute top-3 right-3 md:top-4 md:right-4">
+                      <span className="bg-accent text-white text-[10px] sm:text-xs px-2 sm:px-3 py-1 rounded-full font-semibold">
+                        {event.type || "Event"}
+                      </span>
+                    </div>
+                    <div className="absolute bottom-3 left-3 right-3 md:bottom-4 md:left-4 md:right-4 text-white">
+                      <h4 className="font-bold text-sm sm:text-base md:text-lg mb-1 line-clamp-1">{event.event}</h4>
+                      <p className="text-xs sm:text-sm opacity-90 line-clamp-1">{event.topic}</p>
+                    </div>
+                  </div>
+
+                  <div className="p-4 md:p-5">
+                    <div className="flex flex-col sm:flex-row sm:items-center text-[10px] sm:text-xs text-text-secondary mb-3 gap-2 sm:gap-4">
+                      <div className="flex items-center space-x-1">
+                        <Icon name="Calendar" size={12} className="sm:w-3.5 sm:h-3.5" />
+                        <span className="whitespace-nowrap">
+                          {event.date
+                            ? new Date(event.date).toLocaleDateString("en-US", {
+                                month: "short",
+                                day: "numeric",
+                                year: "numeric",
+                              })
+                            : "Date TBA"}
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-1">
+                        <Icon name="MapPin" size={12} className="sm:w-3.5 sm:h-3.5" />
+                        <span className="truncate">{event.location}</span>
+                      </div>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-text-secondary mb-3 md:mb-4 line-clamp-2">
+                      {event.description}
+                    </p>
+
+                    <button
+                      onClick={() => router.push(event.staticPage || `/events/${event.slug}`)}
+                      className="w-full bg-primary text-white py-2 px-3 md:px-4 rounded-lg text-sm md:text-base font-semibold hover:bg-primary/90 transition-all duration-200 flex items-center justify-center space-x-2 group"
+                      aria-label={`View details for ${event.event}`}
+                    >
+                      <span>View Details</span>
+                      <Icon
+                        name="ArrowRight"
+                        size={14}
+                        className="sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform"
+                      />
+                    </button>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Latest Blog Articles */}
         <div className="mt-16">
