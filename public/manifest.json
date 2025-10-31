@@ -1,24 +1,30 @@
 {
-  "short_name": "Rahul Ladumor Pro",
-  "name": "Rahul Ladumor Pro - AWS Cloud Consulting & Mentorship",
-  "description": "Reduce AWS costs by 40% while scaling efficiently. Get proven solutions from 3x AWS certified expert.",
+  "short_name": "Rahul Ladumor",
+  "name": "Rahul Ladumor - AWS Solutions Architect & Cost Optimization Expert",
+  "description": "Cut AWS costs by 60% with proven strategies. 4x AWS Community Builder | Serverless Expert | 8+ years experience mentoring 200+ engineers.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "assets/images/icon-192.png",
+      "src": "/apple-touch-icon.png",
       "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any maskable"
+      "sizes": "180x180",
+      "purpose": "any"
     },
     {
-      "src": "assets/images/icon-512.png",
+      "src": "/favicon-32x32.png",
       "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any maskable"
+      "sizes": "32x32",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16",
+      "purpose": "any"
     }
   ],
   "start_url": "/",
@@ -26,8 +32,34 @@
   "orientation": "portrait-primary",
   "theme_color": "#1B365D",
   "background_color": "#FFFFFF",
-  "categories": ["business", "consulting", "education"],
+  "categories": ["business", "consulting", "education", "technology"],
   "lang": "en-US",
   "scope": "/",
-  "id": "rahul-ladumor-pro"
+  "id": "rahul-ladumor-aws-consulting",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "Book Consultation",
+      "short_name": "Book",
+      "description": "Schedule a free discovery call",
+      "url": "/booking",
+      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32" }]
+    },
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "description": "View AWS consulting services",
+      "url": "/services",
+      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32" }]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Get in touch",
+      "url": "/contact",
+      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32" }]
+    }
+  ]
 }
