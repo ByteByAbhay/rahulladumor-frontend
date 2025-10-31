@@ -1,7 +1,7 @@
 {
   "short_name": "Rahul Ladumor",
-  "name": "Rahul Ladumor - AWS Solutions Architect & Cost Optimization Expert",
-  "description": "Cut AWS costs by 60% with proven strategies. 4x AWS Community Builder | Serverless Expert | 8+ years experience mentoring 200+ engineers.",
+  "name": "Rahul Ladumor - 4x AWS Community Builder | Serverless Expert",
+  "description": "Cut AWS costs by 60% with proven strategies. 4x AWS Community Builder specializing in serverless architecture, DevOps automation, and cloud cost optimization. 8+ years experience mentoring 200+ engineers.",
   "icons": [
     {
       "src": "/favicon.ico",
@@ -27,12 +27,12 @@
       "purpose": "any"
     }
   ],
-  "start_url": "/",
+  "start_url": "/?utm_source=pwa",
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "#1B365D",
   "background_color": "#FFFFFF",
-  "categories": ["business", "consulting", "education", "technology"],
+  "categories": ["business", "consulting", "education", "technology", "productivity"],
   "lang": "en-US",
   "scope": "/",
   "id": "rahul-ladumor-aws-consulting",
@@ -41,25 +41,39 @@
   "related_applications": [],
   "shortcuts": [
     {
-      "name": "Book Consultation",
+      "name": "Book Free Consultation",
       "short_name": "Book",
-      "description": "Schedule a free discovery call",
-      "url": "/booking",
-      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32" }]
+      "description": "Schedule a free 30-min discovery call",
+      "url": "/booking?utm_source=pwa_shortcut",
+      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" }]
     },
     {
-      "name": "Services",
+      "name": "AWS Services",
       "short_name": "Services",
-      "description": "View AWS consulting services",
-      "url": "/services",
-      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32" }]
+      "description": "View cloud consulting services",
+      "url": "/services?utm_source=pwa_shortcut",
+      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" }]
     },
     {
-      "name": "Contact",
+      "name": "Contact Me",
       "short_name": "Contact",
-      "description": "Get in touch",
-      "url": "/contact",
-      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32" }]
+      "description": "Get in touch for AWS consulting",
+      "url": "/contact?utm_source=pwa_shortcut",
+      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" }]
+    },
+    {
+      "name": "About Rahul",
+      "short_name": "About",
+      "description": "Learn about my AWS expertise",
+      "url": "/about?utm_source=pwa_shortcut",
+      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" }]
+    },
+    {
+      "name": "Client Reviews",
+      "short_name": "Reviews",
+      "description": "Read success stories & testimonials",
+      "url": "/reviews?utm_source=pwa_shortcut",
+      "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" }]
     }
   ]
 }
